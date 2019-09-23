@@ -1,0 +1,11 @@
+{
+    "id": 9852,
+    "method": "get_device_prop_exp",
+    "params": [
+        [
+            "lumi.158d00023d4650",
+            "temperature",
+            "humidity"
+        ]
+    ]
+}
