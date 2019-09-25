@@ -20,10 +20,10 @@ class European_Standard_Page(BasePage):
     def get_home_device_element(self):
         device_name = self.custom_name.get_european_standard_device_name()
         if device_name != "":
-            print('device_name不为空')
+            # print('device_name不为空')
             return self.get_custom_element(device_name, 10, 0.5)
         else:
-            print('device_name为空')
+            # print('device_name为空')
             return self.my_local.get_element('home_european_standard', self.element)
 
     '''
@@ -32,10 +32,10 @@ class European_Standard_Page(BasePage):
     def get_device_room(self):
         room_name = self.custom_name.get_european_standard_room_name()
         if room_name != "":
-            print('room_name不为空')
+            # print('room_name不为空')
             return self.get_custom_element(room_name, 10, 0.5)
         else:
-            print('room_name为空')
+            # print('room_name为空')
             return self.find_element('device_room', self.common_element)
 
     '''

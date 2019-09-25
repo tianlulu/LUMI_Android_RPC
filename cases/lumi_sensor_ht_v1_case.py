@@ -14,6 +14,7 @@ import time
 class Sensor_Ht_V1_Case(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
+        print('开始Sensor_Ht_V1_Case')
         global operation_json
         operation_json = OperationJson()
         cls.sensor_ht_v1_handle = Sensor_Ht_V1_Handle()

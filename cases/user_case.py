@@ -23,13 +23,16 @@ class All_Cases():
             print(e)
 
     def deal_device_info(self):
-        choose_list_info = self.get_choose_device_from_jenkins()
+        # choose_list_info = self.get_choose_device_from_jenkins()
         # choose_list_info = ['222', '222', 'lumi.european.standard', 'jjj', 'kk', 'kkk', 'kkk', '888', '999', '00000',
         #                '', '','ddd','eee','lumi.sensor.ht.v1']
+
+        # [ 'Sweet', 'Sweet-米家温湿度', 'lumi.sensor.ht.v1','Sweet', 'Sweet-欧标插座', 'lumi.european.standard','','','']
+        choose_list_info = self.get_choose_device_from_jenkins()
         print('用户选择的设备:',choose_list_info)
         temp_list = []
         for item in self.split_list(choose_list_info, 3):
-            print('item:',item)
+            # print('item:',item)
             if('' not in item):
                 temp_list.append(item)
             else:
@@ -57,12 +60,13 @@ class All_Cases():
                 my_custom_name.set_sensor_ht_v1_room_name(device_list[device_info][0])
                 my_custom_name.set_sensor_ht_v1_device_name(device_list[device_info][1])
                 suite.addTests(unittest.TestLoader().loadTestsFromTestCase(T2))
-            filename = '/Users/lumi/Documents/jenkins/workspace/miot_android_rpc/report//HTMLReport.html'
-            with open(filename, 'wb') as  f:
-                HTMLTestRunner.HTMLTestRunner(stream=f,
-                                              title='MathFunc Test Report',
-                                              description='测试报告详情:').run(suite)
-            server.kill_server()
+
+        filename = '/Users/lumi/Documents/jenkins/workspace/miot_android_rpc/report//HTMLReport.html'
+        with open(filename, 'wb') as  f:
+            HTMLTestRunner.HTMLTestRunner(stream=f,
+                                          title='MathFunc Test Report',
+                                          description='测试报告详情:').run(suite)
+        server.kill_server()
 
 
     def split_list(self,listTemp, n):

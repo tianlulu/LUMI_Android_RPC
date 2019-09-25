@@ -27,18 +27,18 @@ class BasePage:
             return False
 
     '''
-    自定义放假中的元素
+    自定义房间中的元素
     '''
     def get_custom_element(self, message, timeout, poll_frequency):
         try:
             custom_element = ("xpath", "//*[contains(@text, " + "'" + message + "'" + ")]")
             toast = WebDriverWait(self.driver, timeout, poll_frequency)\
                 .until(EC.presence_of_element_located(custom_element))
-            print('获取到了元素:',toast.text,type)
+            # print('获取到了元素:',toast.text,type)
             return self.driver.find_element_by_xpath(custom_element[1])
         except Exception:
             # raise e
-            print('没有获取到元素')
+            # print('没有获取到元素')
             return None
 
     '''

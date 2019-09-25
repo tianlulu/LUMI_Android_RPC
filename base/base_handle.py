@@ -51,7 +51,7 @@ class BaseHandle:
         while i < count:
             # 找房间
             element = page_model.get_device_room()
-            print('找到的房间号:',element)
+            # print('找到的房间号:',element)
             if element != None:
                 element.click()
                 print('滑动了'+str(i)+'次找到房间')
@@ -85,7 +85,6 @@ class BaseHandle:
                 break
             else:
                 self.swipe_with('up')
-                print('向上滑动了%次',i)
                 i=i+1
                 if(i == count):
                     print('滑动了'+str(i)+'次仍然没有找到该设备')

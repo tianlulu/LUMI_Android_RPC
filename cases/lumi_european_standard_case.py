@@ -16,6 +16,7 @@ from base.base_driver import DriverUtil
 class European_Standard_Case(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
+        print('开始European_Standard_Case')
         global operation_json
         operation_json = OperationJson()
         cls.european_standard_handle = European_Standard_Handle()

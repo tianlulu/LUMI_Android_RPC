@@ -18,10 +18,10 @@ class Sensor_Ht_V1_Page(BasePage):
         device_name = self.custom_name.get_sensor_ht_v1_device_name()
         print('device_name:',device_name)
         if device_name != "":
-            print('device_name不为空',device_name)
+            # print('device_name不为空',device_name)
             return self.get_custom_element(device_name, 5, 0.5)
         else:
-            print('device_name为空')
+            # print('device_name为空')
             return self.my_local.get_element('home_temperature_and_humidity', self.element)
 
     '''
@@ -31,10 +31,10 @@ class Sensor_Ht_V1_Page(BasePage):
         room_name = self.custom_name.get_sensor_ht_v1_room_name()
         print('room_name:',room_name)
         if room_name != "":
-            print('room_name不为空',room_name)
+            # print('room_name不为空',room_name)
             return self.get_custom_element(room_name, 5, 0.5)
         else:
-            print('room_name为空')
+            # print('room_name为空')
             return self.find_element('device_room', self.common_element)
 
 
