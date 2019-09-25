@@ -49,8 +49,8 @@ class European_Standard_Case(unittest.TestCase):
         print('method:' + method)
         self.assertEqual(method,'get_prop_plug')
         param_values = data['params']
-        self.assertTrue(param_values[0] == 'channel_0','预期参数：channel_0 实际参数：' + param_values[0])
-        self.assertTrue(param_values[1] == 'load_power','预期参数：load_power 实际参数：' + param_values[1])
+        self.assertTrue(param_values[0] == 'channel_0','请求参数错误：预期参数：channel_0 实际参数：' + param_values[0])
+        self.assertTrue(param_values[1] == 'load_power','请求参数错误：预期参数：load_power 实际参数：' + param_values[1])
         for value in param_values:
             print('params中带有' + value + '参数')
 
@@ -91,8 +91,8 @@ class European_Standard_Case(unittest.TestCase):
         self.assertEqual(method,'toggle_plug')
         param_values = data['params']
         print('method:' + method)
-        self.assertTrue('channel_0' == param_values[0],'预期参数：channel_0 实际参数：' + param_values[0])
-        self.assertTrue('on' == param_values[1],'预期参数：on 实际参数：' + param_values[1])
+        self.assertTrue('channel_0' == param_values[0],'请求参数错误：预期参数：channel_0 实际参数：' + param_values[0])
+        self.assertTrue('on' == param_values[1],'请求参数错误：预期参数：on 实际参数：' + param_values[1])
         for value in param_values:
             print('params中带有' + value + '参数')
 
@@ -106,8 +106,8 @@ class European_Standard_Case(unittest.TestCase):
         print('method:' + method)
         self.assertEqual(method,'toggle_plug')
         param_values = data['params']
-        self.assertTrue('channel_0' == param_values[0],'预期参数：channel_0 实际参数：' + param_values[0])
-        self.assertTrue('off' == param_values[1],'预期参数：off 实际参数：' + param_values[1])
+        self.assertTrue('channel_0' == param_values[0],'请求参数错误：预期参数：channel_0 实际参数：' + param_values[0])
+        self.assertTrue('off' == param_values[1],'请求参数错误：预期参数：off 实际参数：' + param_values[1])
         for value in param_values:
             print('params中带有' + value + '参数')
 
@@ -124,9 +124,9 @@ class European_Standard_Case(unittest.TestCase):
         print('method:' + method)
         self.assertEqual(method,'get_device_prop')
         param_values = data['params']
-        self.assertTrue('en_night_tip_light' == param_values[1],'预期参数：en_night_tip_light 实际参数：' + param_values[1])
-        self.assertTrue('poweroff_memory' == param_values[2],'预期参数：poweroff_memory 实际参数：' + param_values[2])
-        self.assertTrue('max_power' == param_values[3],'预期参数：max_power 实际参数：' + param_values[3])
+        self.assertTrue('en_night_tip_light' == param_values[1],'请求参数错误：预期参数：en_night_tip_light 实际参数：' + param_values[1])
+        self.assertTrue('poweroff_memory' == param_values[2],'请求参数错误：预期参数：poweroff_memory 实际参数：' + param_values[2])
+        self.assertTrue('max_power' == param_values[3],'请求参数错误：预期参数：max_power 实际参数：' + param_values[3])
         for value in param_values:
             print('params中带有' + value + '参数')
 
@@ -145,8 +145,8 @@ class European_Standard_Case(unittest.TestCase):
         param_values = data['params']
         key_sid = list(param_values.keys())[0]
         key_max_powers = list(param_values.keys())[1]
-        self.assertTrue('sid' == key_sid,'预期参数：sid 实际参数：' + key_sid)
-        self.assertTrue('max_power' == key_max_powers,'预期参数：max_power 实际参数：' + key_max_powers)
+        self.assertTrue('sid' == key_sid,'请求参数错误：预期参数：sid 实际参数：' + key_sid)
+        self.assertTrue('max_power' == key_max_powers,'请求参数错误：预期参数：max_power 实际参数：' + key_max_powers)
         for value in param_values.keys():
             print('params中带有' + value + '参数')
 
@@ -165,8 +165,8 @@ class European_Standard_Case(unittest.TestCase):
         param_values = data['params']
         key_sid = list(param_values.keys())[0]
         key_memory = list(param_values.keys())[1]
-        self.assertTrue('sid' == key_sid,'预期参数：sid 实际参数：' + key_sid)
-        self.assertTrue('poweroff_memory' == key_memory,'预期参数：poweroff_memory 实际参数：' + key_memory)
+        self.assertTrue('sid' == key_sid,'请求参数错误：预期参数：sid 实际参数：' + key_sid)
+        self.assertTrue('poweroff_memory' == key_memory,'请求参数错误：预期参数：poweroff_memory 实际参数：' + key_memory)
         for value in param_values.keys():
             print('params中带有' + value + '参数')
 

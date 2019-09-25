@@ -2,17 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="64bcebdc-fd77-4fa5-ba4e-ddc9fe185121" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/base/base_handle.py" beforeDir="false" afterPath="$PROJECT_DIR$/base/base_handle.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/base/base_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/base/base_page.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cases/lumi_european_standard_case.py" beforeDir="false" afterPath="$PROJECT_DIR$/cases/lumi_european_standard_case.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cases/lumi_sensor_ht_v1_case.py" beforeDir="false" afterPath="$PROJECT_DIR$/cases/lumi_sensor_ht_v1_case.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cases/new.py" beforeDir="false" afterPath="$PROJECT_DIR$/cases/new.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cases/user_case.py" beforeDir="false" afterPath="$PROJECT_DIR$/cases/user_case.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/page/lumi_european_standard_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/page/lumi_european_standard_page.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/page/lumi_sensor_ht_v1_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/page/lumi_sensor_ht_v1_page.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/HTMLReport.html" beforeDir="false" afterPath="$PROJECT_DIR$/report/HTMLReport.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/util/freedom_name.py" beforeDir="false" afterPath="$PROJECT_DIR$/util/freedom_name.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -51,11 +42,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/cases/lumi_sensor_ht_v1_case.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="224">
-              <caret line="27" column="57" selection-start-line="27" selection-start-column="57" selection-end-line="27" selection-end-column="57" />
+            <state relative-caret-position="-1039">
+              <caret line="51" column="60" selection-start-line="51" selection-start-column="60" selection-end-line="51" selection-end-column="60" />
             </state>
           </provider>
         </entry>
@@ -96,11 +87,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/base/base_page.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="51" column="25" selection-start-line="51" selection-start-column="25" selection-end-line="51" selection-end-column="25" />
+            <state relative-caret-position="214">
+              <caret line="44" column="8" lean-forward="true" selection-start-line="44" selection-start-column="8" selection-end-line="44" selection-end-column="8" />
               <folding>
                 <element signature="e#13#68#0" expanded="true" />
               </folding>
@@ -129,8 +120,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/cases/lumi_european_standard_case.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="234">
-              <caret line="30" column="67" selection-start-line="30" selection-start-column="67" selection-end-line="30" selection-end-column="67" />
+            <state relative-caret-position="2856">
+              <caret line="168" column="64" selection-start-line="168" selection-start-column="64" selection-end-line="168" selection-end-column="64" />
             </state>
           </provider>
         </entry>
@@ -236,19 +227,19 @@
         <option value="$PROJECT_DIR$/util/get_by_local.py" />
         <option value="$PROJECT_DIR$/handle/lumi_sensor_ht_v1_handle.py" />
         <option value="$PROJECT_DIR$/util/freedom_name.py" />
-        <option value="$PROJECT_DIR$/cases/lumi_sensor_ht_v1_case.py" />
-        <option value="$PROJECT_DIR$/cases/lumi_european_standard_case.py" />
         <option value="$PROJECT_DIR$/cases/user_case.py" />
         <option value="$PROJECT_DIR$/cases/new.py" />
         <option value="$PROJECT_DIR$/base/base_handle.py" />
         <option value="$PROJECT_DIR$/page/lumi_sensor_ht_v1_page.py" />
         <option value="$PROJECT_DIR$/page/lumi_european_standard_page.py" />
         <option value="$PROJECT_DIR$/base/base_page.py" />
+        <option value="$PROJECT_DIR$/cases/lumi_european_standard_case.py" />
+        <option value="$PROJECT_DIR$/cases/lumi_sensor_ht_v1_case.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="311" />
+    <option name="x" value="111" />
     <option name="y" value="23" />
     <option name="width" value="1358" />
     <option name="height" value="744" />
@@ -521,7 +512,7 @@
       <workItem from="1569224641074" duration="9602000" />
       <workItem from="1569239647256" duration="965000" />
       <workItem from="1569307104790" duration="2354000" />
-      <workItem from="1569383721203" duration="10197000" />
+      <workItem from="1569383721203" duration="10499000" />
     </task>
     <servers />
   </component>
@@ -558,7 +549,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="715441000" />
+    <option name="totallyTimeSpent" value="715743000" />
   </component>
   <component name="TodoView" selected-index="1">
     <todo-panel id="selected-file">
@@ -570,7 +561,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="461" y="23" width="1358" height="744" extended-state="0" />
+    <frame x="111" y="23" width="1358" height="744" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.85625" visible="true" weight="0.122340426" />
@@ -587,7 +578,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.32624114" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5003808" side_tool="true" weight="0.25531915" />
-      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.4996192" visible="true" weight="0.2791411" />
+      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.4996192" visible="true" weight="0.31748468" />
       <window_info anchor="bottom" id="Python Console" order="12" weight="0.4287856" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -886,13 +877,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cases/lumi_european_standard_case.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="30" column="67" selection-start-line="30" selection-start-column="67" selection-end-line="30" selection-end-column="67" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/handle/lumi_european_standard_handle.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -907,13 +891,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="714">
           <caret line="42" column="8" selection-start-line="42" selection-start-column="8" selection-end-line="42" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cases/lumi_sensor_ht_v1_case.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="27" column="57" selection-start-line="27" selection-start-column="57" selection-end-line="27" selection-end-column="57" />
         </state>
       </provider>
     </entry>
@@ -949,11 +926,25 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/base/base_page.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="51" column="25" selection-start-line="51" selection-start-column="25" selection-end-line="51" selection-end-column="25" />
+        <state relative-caret-position="214">
+          <caret line="44" column="8" lean-forward="true" selection-start-line="44" selection-start-column="8" selection-end-line="44" selection-end-column="8" />
           <folding>
             <element signature="e#13#68#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cases/lumi_european_standard_case.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2856">
+          <caret line="168" column="64" selection-start-line="168" selection-start-column="64" selection-end-line="168" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cases/lumi_sensor_ht_v1_case.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1039">
+          <caret line="51" column="60" selection-start-line="51" selection-start-column="60" selection-end-line="51" selection-end-column="60" />
         </state>
       </provider>
     </entry>

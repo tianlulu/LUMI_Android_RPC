@@ -48,8 +48,8 @@ class Sensor_Ht_V1_Case(unittest.TestCase):
         self.assertEqual(method,'get_device_prop_exp')
         param_list = data['params'][0]
 
-        self.assertTrue(param_list[1] == 'temperature','预期参数：temperature 实际参数：' + param_list[1])
-        self.assertTrue(param_list[2] == 'humidity','预期参数：humidity 实际参数：' + param_list[2])
+        self.assertTrue(param_list[1] == 'temperature','请求参数错误：预期参数：temperature 实际参数：' + param_list[1])
+        self.assertTrue(param_list[2] == 'humidity','请求参数错误：预期参数：humidity 实际参数：' + param_list[2])
         for value in param_list:
             print('params中带有' + value + '参数')
 
