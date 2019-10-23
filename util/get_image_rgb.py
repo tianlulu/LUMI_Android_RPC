@@ -32,7 +32,6 @@ class ImageRGBD:
         top_image = image.crop(box = (x, y, x+w, y+h))
         # print('top_image_size:',x, y, x+w, y+h)
         # print('top_image:',top_image.size)
-
         top_rgba = top_image.getpixel((top_image.size[0]/2, top_image.size[1]/2))
         return top_rgba
 

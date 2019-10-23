@@ -1,3 +1,7 @@
+'''
+用户自定义设房间名称、设备名称的set get方法
+'''
+
 class My_Custom_Name:
     model_name = ""
     european_standard_device_name = ""
@@ -73,18 +77,6 @@ class My_Custom_Name:
 
 if __name__ == '__main__':
     my_custom = My_Custom_Name()
-
-    # my_custom.set_sensor_ht_v1_room_name('1112222')
-    # print(my_custom.get_sensor_ht_v1_room_name())
-    #
-    # my_custom.set_sensor_ht_v1_device_name('mmdddddmmm')
-    # print(my_custom.get_sensor_ht_v1_device_name())
-
-    # my_custom.set_european_standard_room_name('helllo')
-    # print(my_custom.get_european_standard_room_name())
-    #
-    # my_custom.set_sensor_ht_v1_device_name('hello')
-    # print(my_custom.get_sensor_ht_v1_device_name())
 
 
 

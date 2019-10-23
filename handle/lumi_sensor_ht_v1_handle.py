@@ -10,27 +10,59 @@ class Sensor_Ht_V1_Handle(BaseHandle):
         self.sensor_ht_v1_page = Sensor_Ht_V1_Page()
 
     '''
-    上滑到顶部 最多滑动50次直到找到这样元素为止
-    '''
-    def scroll_to_top(self):
-        return self.to_top(self.sensor_ht_v1_page)
-
-
-    '''
-    首页滑动控件直到欧标插座出现并点击:设置最多滑动50次能够找到元素
-    首页--滚动--找到设备
-    '''
-    def get_sensor_ht_v1_element(self):
-       return self.get_home_device(self.sensor_ht_v1_page)
-
-
-    '''
     首页滑动控件直到欧标插座出现并点击:设置最多滑动50次能够找到元素
     首页--房间--具体房间--设备
     '''
     def get_room_sensor_ht_v1_element(self):
         self.get_room_element()
         return self.get_room_device(self.sensor_ht_v1_page)
+
+
+    '''
+    通用返回按钮
+    '''
+    def click_universal_back_element(self):
+        element = self.sensor_ht_v1_page.get_universal_back_element()
+        return self.element_operation(element)
+
+    '''
+    无网络状态toast
+    '''
+    def get_fail_toast(self, message):
+        toast_element = self.sensor_ht_v1_page.get_toast_element(message)
+        if toast_element:
+            # print('无网络状态')
+            return True
+        else:
+            print('有网络状态')
+            return False
+
+    '''
+    判断设备是否离线
+    '''
+    def is_offline_element(self):
+        element = self.sensor_ht_v1_page.get_offline_element()
+        if element:
+            print('设备离线')
+            return True
+        else:
+            print('设备在线')
+            return False
+
+
+    '''
+    上滑到顶部找到'+'按钮
+    '''
+    def scroll_to_top(self):
+        return self.to_top(self.sensor_ht_v1_page)
+
+
+    '''
+    首页滑动控件直到米家温湿度
+    首页--滚动--找到设备
+    '''
+    def get_sensor_ht_v1_element(self):
+       return self.get_home_device(self.sensor_ht_v1_page)
 
 
     def get_room_element(self):
@@ -63,38 +95,10 @@ class Sensor_Ht_V1_Handle(BaseHandle):
         return self.element_operation(element)
 
 
-    def click_universal_back_element(self):
-        element = self.sensor_ht_v1_page.get_universal_back_element()
-        return self.element_operation(element)
-
 
     def click_offline_close(self):
         element = self.sensor_ht_v1_page.get_offline_close()
         return self.element_operation(element)
-
-    '''
-    判断设备是否离线
-    '''
-    def is_offline_element(self):
-        element = self.sensor_ht_v1_page.get_offline_element()
-        if element:
-            print('设备离线')
-            return True
-        else:
-            print('设备在线')
-            return False
-
-    '''
-    获取toast元素
-    '''
-    def get_fail_toast(self, message):
-        toast_element = self.sensor_ht_v1_page.get_toast_element(message)
-        if toast_element:
-            # print('无网络状态')
-            return True
-        else:
-            print('有网络状态')
-            return False
 
 
     def element_operation(self, element):

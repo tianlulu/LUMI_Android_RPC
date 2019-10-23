@@ -6,11 +6,11 @@ class Test:
         tuple = ('xpath', "//*[contains(@text, '2升级版空调伴侣')]")
         print(tuple[1])
 
-        # operation_json = OperationJson('../util/rpc_data.json')
-        # data = operation_json.read_data()
-        # print(data)
-        # param_list = data['params'][0]
-        # print(param_list[1])
+        operation_json = OperationJson('../util/rpc_data.json')
+        data = operation_json.read_data()
+        print(data)
+        param_list = data['params'][0]
+        print(param_list[1])
 
 
         # print(data['method'])

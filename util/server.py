@@ -14,10 +14,10 @@ class Server:
         self.device_list = self.get_devices()
         self.write_file = WriteUserCommand()
 
+    '''
+    获取可用的设备信息
+    '''
     def get_devices(self):
-        '''
-        获取可用的设备信息
-        '''
         # 处理result_list的结果,也就是真正想要的设备信息，有时候device是offline用不了
         devices_list = []
 
@@ -41,7 +41,6 @@ class Server:
         else:
             return  None
 
-
     def create_port_list(self,start_port):
         '''
         拿到所有的port列表
@@ -64,18 +63,6 @@ class Server:
         first_port_list = self.create_port_list(4700)
         second_port_list = self.create_port_list(4900)
         device_list = self.device_list
-        '''
-        如果有俩个设备，就会有2个线程 第一个线程跑2遍 第二个线程跑2遍 一共四遍就会重复写入yaml文件中
-            for i in range(len(device_list)):
-            # 按照格式拼接command
-            # command = 'appium -p '+str(first_port_list[i])+' -bp '+str(second_port_list[i]) + ' -U '+str(device_list[i])\
-            #           +' --no-reset --session-override'
-            command = 'appium -p '+str(first_port_list[i])+ ' -bp '+str(second_port_list[i])
-            # print(command)
-            command_list.append(command)
-            # 将获得的数据写进yaml文件
-            self.write_file.write_yaml_data(i,device_list[i],second_port_list[i],first_port_list[i])
-        '''
         command = 'appium -p '+str(first_port_list[i])+' -bp '+str(second_port_list[i]) + ' -U '+str(device_list[i])\
                   +' --no-reset --session-override'
         # command = 'appium -p ' + str(first_port_list[i]) + ' -bp ' + str(second_port_list[i])
@@ -96,19 +83,8 @@ class Server:
         :return:
         '''
         print('执行的线程数', i)
-
         command_list = self.create_command_list(i)
-
-        '''
-        command_list现在返回值永远只有一个，不会存在多个的情况command_list[i]不合适
-        如果有俩个设备  第一个4700 
-                      第二个4701
-        第一个线程进来的时候i=0   command_list[0]=4700没问题
-        第一个线程进来的时候i=0   command_list[1]不存在 因为command_list列表中只有1个
-        '''
-        # self.dos.execute_cmd_result(command_list[i])
         self.dos.execute_cmd_result(command_list[0])
-        # self.dos.execute_cmd_result('adb devices')
 
 
     def execute_command_on_thread(self):
@@ -139,7 +115,7 @@ class Server:
         node_list = self.dos.execute_cmd_result('ps -ef|grep node')
         if node_list != None:
             if len(node_list) > 0:
-                # mac下杀掉node相关进程 windows:taskkill -F -PID node.exe"
+                # windows下杀掉node相关进程 windows:taskkill -F -PID node.exe"
                 # self.dos.excute_cmd('kill -s 9 `pgrep node`')
                 self.dos.excute_cmd('pkill node')
 

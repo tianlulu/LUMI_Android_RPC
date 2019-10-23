@@ -17,7 +17,6 @@ class BaseHandle:
         elif direction == 'down':
             self.swipe_common.swipe_down()
 
-
     '''
     直接从首页滚动找到设备
     '''

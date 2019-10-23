@@ -7,9 +7,7 @@ from util.server import Server
 from util.write_user_command import WriteUserCommand
 from util.operation_json import OperationJson
 from handle.lumi_sensor_ht_v1_handle import Sensor_Ht_V1_Handle
-from dos.dos_cmd import DosCmd
-from base.base_driver import DriverUtil
-import time
+
 
 class Sensor_Ht_V1_Case(unittest.TestCase):
     @classmethod

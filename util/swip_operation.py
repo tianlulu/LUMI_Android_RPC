@@ -45,24 +45,6 @@ class Swip_Common():
         # print('滑动距离:',x1,y,x1,y1)
         self.driver.swipe(x1, y, x1, y1, 2000)
 
-
-    '''
-        # 按照一定的比例向左边滑动
-        def swipe_left(self):
-            # [100,200]
-            x1 = self.get_size()[0]/10*9
-            y1 = self.get_size()[1]/2
-            x = self.get_size()[0]/10
-            self.driver.swipe(x1, y1, x, y1,2000)
-
-        # 向右边滑动
-        def swipe_right(self):
-            # [100,200]
-            x1 = self.get_size()[0]/10
-            y1 = self.get_size()[1]/2
-            x = self.get_size()[0]/10*9
-            self.driver.swipe(x1, y1, x, y1,2000)
-        '''
     # 向上滑动
     def swipe_up(self):
         # [100,200]
@@ -78,3 +60,21 @@ class Swip_Common():
         y1 = self.get_size()[1]/10*4
         y = self.get_size()[1]/10*8
         self.driver.swipe(x1, y1, x1, y,1000)
+
+    '''
+         # 按照一定的比例向左边滑动
+         def swipe_left(self):
+             # [100,200]
+             x1 = self.get_size()[0]/10*9
+             y1 = self.get_size()[1]/2
+             x = self.get_size()[0]/10
+             self.driver.swipe(x1, y1, x, y1,2000)
+
+         # 向右边滑动
+         def swipe_right(self):
+             # [100,200]
+             x1 = self.get_size()[0]/10
+             y1 = self.get_size()[1]/2
+             x = self.get_size()[0]/10*9
+             self.driver.swipe(x1, y1, x, y1,2000)
+    '''

@@ -6,9 +6,8 @@ import unittest
 from util.server import Server
 from util.write_user_command import WriteUserCommand
 from util.operation_json import OperationJson
-from handle.lumi_european_standard_handle import European_Standard_Handle
+from handle.lumi_plug_mmeu01_handle import European_Standard_Handle
 from dos.dos_cmd import DosCmd
-from base.base_driver import DriverUtil
 
 '''
 欧标插座测试用例--demo
@@ -254,6 +253,7 @@ def get_suite():
                                   title='欧标插座测试用例结果',
                                   description='测试报告详情:').run(suite)
     file_result.close()
+
 
 if __name__ == '__main__':
     server = Server()
