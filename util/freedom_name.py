@@ -8,12 +8,23 @@ class My_Custom_Name:
     european_standard_room_name = ""
     sensor_ht_v1_device_name = ""
     sensor_ht_v1_room_name = ""
+    ctrl_ln1_aq1_device_name = ""
+    ctrl_ln1_aq1_room_name = ""
+
+    def set_ctrl_ln1_aq1_device_name(self,custom_device_name):
+        global ctrl_ln1_aq1_device_name
+        ctrl_ln1_aq1_device_name = custom_device_name
+        return ctrl_ln1_aq1_device_name
+
+    def set_ctrl_ln1_aq1_room_name(self, custom_room_name):
+        global ctrl_ln1_aq1_room_name
+        ctrl_ln1_aq1_room_name = custom_room_name
+        return ctrl_ln1_aq1_room_name
 
     def set_european_standard_device_name(self,custom_device_name):
         global european_standard_device_name
         european_standard_device_name = custom_device_name
         return european_standard_device_name
-
 
     def set_european_standard_room_name(self,custom_room_name):
         global european_standard_room_name
@@ -34,6 +45,20 @@ class My_Custom_Name:
         global model_name
         model_name = model_key
         return model_name
+
+
+    def get_ctrl_ln1_aq1_device_name(self):
+        try:
+            return ctrl_ln1_aq1_device_name
+        except Exception:
+            return My_Custom_Name.ctrl_ln1_aq1_device_name
+
+
+    def get_ctrl_ln1_aq1_room_name(self):
+        try:
+            return ctrl_ln1_aq1_room_name
+        except Exception:
+            return My_Custom_Name.ctrl_ln1_aq1_room_name
 
 
     def get_european_standard_device_name(self):
@@ -77,6 +102,9 @@ class My_Custom_Name:
 
 if __name__ == '__main__':
     my_custom = My_Custom_Name()
+    my_custom.set_ctrl_ln1_aq1_room_name('')
+    print(my_custom.get_ctrl_ln1_aq1_room_name())
+
 
 
 

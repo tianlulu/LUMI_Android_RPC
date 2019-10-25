@@ -1,12 +1,11 @@
 {
-    "id": 1,
+    "id": 1264,
     "method": "get_device_prop_exp",
-    "accessKey": "IOS00026747c5acafc2",
     "params": [
         [
-            "lumi.158d00023d4650",
-            "temperature",
-            "humidity"
+            "lumi.158d00014ab105",
+            "channel_0",
+            "load_power"
         ]
     ]
 }

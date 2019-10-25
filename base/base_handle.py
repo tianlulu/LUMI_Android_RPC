@@ -44,7 +44,7 @@ class BaseHandle:
     从房间里面找到设备
     step1:找房间
     '''
-    def get_room_device(self,page_model):
+    def find_room(self,page_model):
         i=0
         count = 4
         while i < count:
@@ -55,7 +55,8 @@ class BaseHandle:
                 element.click()
                 print('滑动了'+str(i)+'次找到房间')
                 # 找设备
-                self.is_flag =self.find_device(page_model)
+                # self.is_flag =self.find_device(page_model)
+                self.is_flag = True
                 break
             else:
                 self.swipe_with('up')
@@ -79,8 +80,8 @@ class BaseHandle:
             element = page_model.get_home_device_element()
             if element != None:
                 element.click()
-                self.is_flag = True
                 print('滑动了'+str(i)+'次找到设备')
+                self.is_flag = True
                 break
             else:
                 self.swipe_with('up')
@@ -95,11 +96,10 @@ class BaseHandle:
     '''用例运行完之后返回滚动到首页顶部'''
     def to_top(self,page_model):
         i = 0
-        count = 40
+        count = 20
         while i < count:
             element = page_model.get_add_device_element()
             if element:
-                # page_model.get_add_device_element()
                 print('向下滑动了' + str(i) + '次到达顶部')
                 self.is_flag = True
                 break

@@ -4,6 +4,7 @@ from selenium.webdriver.support import expected_conditions as EC
 from base.base_driver import DriverUtil
 from util.get_by_local import GetByLocal
 from util.freedom_name import My_Custom_Name
+from util.get_image_rgb import ImageRGBD
 
 class BasePage:
     def __init__(self):
@@ -27,12 +28,12 @@ class BasePage:
             return False
 
     '''
-    自定义房间中的元素
+    获取自定义房间中的设备名称（如：欧标插座）
     '''
     def get_custom_element(self, message, timeout, poll_frequency):
         try:
             custom_element = ("xpath", "//*[contains(@text, " + "'" + message + "'" + ")]")
-            toast = WebDriverWait(self.driver, timeout, poll_frequency)\
+            WebDriverWait(self.driver, timeout, poll_frequency)\
                 .until(EC.presence_of_element_located(custom_element))
             # print('获取到了元素:',toast.text,type)
             return self.driver.find_element_by_xpath(custom_element[1])
@@ -95,6 +96,16 @@ class BasePage:
             return True
         else:
             return False
+
+
+    '''
+    截屏
+    '''
+    def get_screen_shot_image(self):
+        imageRGB = ImageRGBD()
+        file_path = imageRGB.get_screenshot_path()
+        self.driver.get_screenshot_as_file(file_path)
+        return file_path
 
 
 

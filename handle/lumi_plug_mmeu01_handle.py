@@ -1,8 +1,7 @@
 #coding=utf8
+from base.base_handle import BaseHandle
 from page.lumi_plug_mmeu01_page import European_Standard_Page
 from util.get_image_rgb import ImageRGBD
-import time
-from base.base_handle import BaseHandle
 
 
 class European_Standard_Handle(BaseHandle):
@@ -11,19 +10,19 @@ class European_Standard_Handle(BaseHandle):
         self.european_standard_page = European_Standard_Page()
 
     '''
+    首页滑动控件直到房间出现(如:Sweet)
+    首页--room--具体房间
+    '''
+    def click_room_element(self):
+        self.get_room_element()
+        return self.find_room(self.european_standard_page)
+
+    '''
     首页滑动控件直到欧标插座出现
-    首页--房间--具体房间--设备
+    首页--room--具体房间--设备
     '''
-    def get_room_european_standard_element(self):
-        self.get_room_element()#默认为room房间号
-        return self.get_room_device(self.european_standard_page)
-
-
-    '''
-    首页--滚动--找到设备
-    '''
-    def get_european_standard_element(self):
-        return self.get_home_device(self.european_standard_page)
+    def click_device_element(self):
+        return self.find_device(self.european_standard_page)
 
     '''
     无网络状态toast
@@ -153,7 +152,6 @@ class European_Standard_Handle(BaseHandle):
 
     def element_operation(self, element):
         if element:
-            print(element, '元素存在')
             element.click()
             return True
         else:

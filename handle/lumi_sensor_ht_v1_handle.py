@@ -10,12 +10,19 @@ class Sensor_Ht_V1_Handle(BaseHandle):
         self.sensor_ht_v1_page = Sensor_Ht_V1_Page()
 
     '''
-    首页滑动控件直到欧标插座出现并点击:设置最多滑动50次能够找到元素
-    首页--房间--具体房间--设备
+    首页滑动控件直到房间出现(如:Sweet)
+    首页--room--具体房间
     '''
-    def get_room_sensor_ht_v1_element(self):
+    def click_room_element(self):
         self.get_room_element()
-        return self.get_room_device(self.sensor_ht_v1_page)
+        return self.find_room(self.sensor_ht_v1_page)
+
+    '''
+    首页滑动控件直到米家温湿度出现
+    首页--room--具体房间--设备
+    '''
+    def click_device_element(self):
+        return self.find_device(self.sensor_ht_v1_page)
 
 
     '''
@@ -24,6 +31,7 @@ class Sensor_Ht_V1_Handle(BaseHandle):
     def click_universal_back_element(self):
         element = self.sensor_ht_v1_page.get_universal_back_element()
         return self.element_operation(element)
+
 
     '''
     无网络状态toast
@@ -84,16 +92,9 @@ class Sensor_Ht_V1_Handle(BaseHandle):
         return self.element_operation(element)
 
 
-    def get_custom_element(self,message):
-        custom_element = self.sensor_ht_v1_page.get_custom_element(message,5, 0.01)
-        if custom_element:
-            print('找到了自定义元素',message)
-
-
     def click_use_back_element(self):
         element = self.sensor_ht_v1_page.get_use_back_element()
         return self.element_operation(element)
-
 
 
     def click_offline_close(self):
@@ -103,7 +104,6 @@ class Sensor_Ht_V1_Handle(BaseHandle):
 
     def element_operation(self, element):
         if element:
-            # print(element, '元素存在')
             element.click()
             return True
         else:

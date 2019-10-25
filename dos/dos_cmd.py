@@ -47,7 +47,6 @@ class DosCmd():
         os.popen('mitmdump -s addons.py').readlines()
 
 
-
 if __name__ == '__main__':
     dos_cmd = DosCmd()
     # dos_cmd.execute_cmd_result('adb devices')

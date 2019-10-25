@@ -8,7 +8,9 @@ from util.write_user_command import WriteUserCommand
 from util.operation_json import OperationJson
 from handle.lumi_sensor_ht_v1_handle import Sensor_Ht_V1_Handle
 
-
+'''
+米家温湿度测试用例
+'''
 class Sensor_Ht_V1_Case(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
@@ -22,8 +24,12 @@ class Sensor_Ht_V1_Case(unittest.TestCase):
 
     def test_case1(self):
         '''找到米家温湿度设备'''
+        global room_exists
+        room_exists = self.sensor_ht_v1_handle.click_room_element()
+        self.assertTrue(room_exists, '滑动到底部仍然没有找到房间')
+
         global device_exists
-        device_exists = self.sensor_ht_v1_handle.get_room_sensor_ht_v1_element()
+        device_exists = self.sensor_ht_v1_handle.click_device_element()
         self.assertTrue(device_exists, '滑动到底部仍然没有找到设备')
 
     def test_case2(self):
@@ -59,8 +65,13 @@ class Sensor_Ht_V1_Case(unittest.TestCase):
             1、点击关闭按钮
             2、点击返回首页   
         '''
+        if room_exists == False:
+            print('房间不存在')
+            self.assertTrue(self.sensor_ht_v1_handle.scroll_to_top(), "下滑到最后没有找到+按钮")
+            return
+
         if device_exists == False:
-            print('设备不在房间内')
+            print('设备不存在')
             self.assertTrue(self.sensor_ht_v1_handle.click_universal_back_element(), '返回到房间列表的箭头按钮不存在')
             self.assertTrue(self.sensor_ht_v1_handle.scroll_to_top(), "下滑到最后没有找到+按钮")
             return
@@ -89,16 +100,6 @@ class Sensor_Ht_V1_Case(unittest.TestCase):
     def tearDownClass(cls):
         print('tearDownClass')
 
-# appium_init初始化
-def appium_init():
-    server = Server()
-    server.execute_command_on_thread()
-
-# 通过yaml中的个数获取运行的进程个数()
-def get_count():
-    write_file =WriteUserCommand()
-    return write_file.get_yaml_file_lines()
-
 def get_suite():
     # 定义一个测试容器
     suite = unittest.TestSuite()
@@ -117,7 +118,6 @@ def get_suite():
                                   title='米家温湿度测试报告',
                                   description='测试报告详情:').run(suite)
     file_result.close()
-
 
 if __name__ == '__main__':
     server = Server()

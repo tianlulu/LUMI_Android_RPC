@@ -1,7 +1,5 @@
 #coding=utf8
-from util.get_by_local import GetByLocal
 from util.swip_operation import Swip_Common
-from util.get_image_rgb import ImageRGBD
 from base.base_page import BasePage
 
 '''
@@ -14,15 +12,14 @@ class European_Standard_Page(BasePage):
         self.element = 'european_standard_element'
 
     '''
-    首页欧标插座
+    房间欧标插座
     '''
     def get_home_device_element(self):
         device_name = self.custom_name.get_european_standard_device_name()
+        # print('device_name:',device_name)
         if device_name != "":
-            # print('device_name不为空')
             return self.get_custom_element(device_name, 10, 0.5)
         else:
-            # print('device_name为空')
             return self.my_local.get_element('home_european_standard', self.element)
 
     '''
@@ -31,10 +28,8 @@ class European_Standard_Page(BasePage):
     def get_device_room(self):
         room_name = self.custom_name.get_european_standard_room_name()
         if room_name != "":
-            # print('room_name不为空')
             return self.get_custom_element(room_name, 10, 0.5)
         else:
-            # print('room_name为空')
             return self.find_element('device_room', self.common_element)
 
 
@@ -84,14 +79,6 @@ class European_Standard_Page(BasePage):
     def cancel_maximum_power_limit(self):
         return self.find_element('maximum_power_limit_cancel', self.element)
 
-    '''
-    截屏
-    '''
-    def get_screen_shot_image(self):
-        imageRGB = ImageRGBD()
-        file_path = imageRGB.get_screenshot_path()
-        self.driver.get_screenshot_as_file(file_path)
-        return file_path
 
     '''
     控件内向上滑动页面
