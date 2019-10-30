@@ -4,6 +4,7 @@ sys.path.append('/Users/lumi/Documents/items/MIOT/Appium_Android_RPC')
 from cases.lumi_plug_mmeu01_case import European_Standard_Case as  T1
 from cases.lumi_sensor_ht_v1_case import Sensor_Ht_V1_Case as T2
 from cases.lumi_ctrl_ln1_aq1_case import Ctrl_Ln1_Aq1_Case as T3
+from cases.lumi_ctrl_neutral1_v1_case import Ctrl_Neutral1_V1_Case as T4
 from util.server import Server
 import unittest,HTMLTestRunner
 
@@ -17,7 +18,6 @@ class All_Cases():
         except Exception as e:
             print(sys.argv)
             print(e)
-
 
     def run_test(self,device_list):
         # print('设备枚举:', device_list, type(device_list))
@@ -37,10 +37,13 @@ class All_Cases():
                 suite.addTests(unittest.TestLoader().loadTestsFromTestCase(T2))
             if model == "lumi.ctrl_ln1.aq1":
                 suite.addTests(unittest.TestLoader().loadTestsFromTestCase(T3))
+            if model == "lumi.ctrl_neutral.v1":
+                suite.addTests(unittest.TestLoader().loadTestsFromTestCase(T4))
             if model == "all_case":
                 suite.addTests(unittest.TestLoader().loadTestsFromTestCase(T1))
                 suite.addTests(unittest.TestLoader().loadTestsFromTestCase(T2))
                 suite.addTests(unittest.TestLoader().loadTestsFromTestCase(T3))
+                suite.addTests(unittest.TestLoader().loadTestsFromTestCase(T4))
         filename = '/Users/lumi/Documents/jenkins/workspace/miot_android_rpc/report//HTMLReport.html'
         with open(filename, 'wb') as  f:
             HTMLTestRunner.HTMLTestRunner(stream=f,
@@ -59,7 +62,6 @@ if __name__ ==   '__main__':
     # for i in range(len(class_list)):
     #     print(class_list[i])
     #     print(class_list[i].split(':')[1])
-
     test_cases = All_Cases()
     test_cases.get_choose_device_from_jenkins()
 

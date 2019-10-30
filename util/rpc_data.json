@@ -1,9 +1,9 @@
 {
     "sid": "lumi.158d00014ab105",
-    "id": 9333,
+    "id": 4607,
     "method": "toggle_ctrl_neutral",
     "params": [
         "channel_0",
-        "off"
+        "on"
     ]
 }

@@ -2,7 +2,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <title>MathFunc Test Report</title>
+    <title>Aqara墙壁开关(零火线单键版)测试用例结果</title>
     <meta name="generator" content="HTMLTestRunner 0.9.1"/>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
     
@@ -199,10 +199,10 @@
     <div id="div_base">
         
     <div class='page-header'>
-        <h1>MathFunc Test Report</h1>
-    <p class='attribute'><strong>开始时间:</strong> 2019-10-30 10:46:34</p>
-<p class='attribute'><strong>运行时长:</strong> 0:02:40.408849</p>
-<p class='attribute'><strong>状态:</strong> 通过 3 失败 11 错误 1</p>
+        <h1>Aqara墙壁开关(零火线单键版)测试用例结果</h1>
+    <p class='attribute'><strong>开始时间:</strong> 2019-10-30 20:23:34</p>
+<p class='attribute'><strong>运行时长:</strong> 0:00:30.906054</p>
+<p class='attribute'><strong>状态:</strong> 通过 1 失败 3</p>
 
     </div>
     <div style="float: left;width:50%;"><p class='description'>测试报告详情:</p></div>
@@ -234,16 +234,16 @@
         </tr>
         
     <tr class='failClass'>
-        <td>cases.lumi_plug_mmeu01_case.European_Standard_Case</td>
-        <td>8</td>
+        <td>Ctrl_Ln1_Aq1_Case</td>
+        <td>4</td>
         <td>1</td>
-        <td>7</td>
+        <td>3</td>
         <td>0</td>
-        <td><a href="javascript:showClassDetail('c1',8)">详情</a></td>
+        <td><a href="javascript:showClassDetail('c1',4)">详情</a></td>
     </tr>
 
 <tr id='ft1.1' class='none'>
-    <td class='failCase'><div class='testcase'>test_case1: 找出欧标插座设备</div></td>
+    <td class='failCase'><div class='testcase'>test_case1: 找出Aqara墙壁开关(零火线单键版)</div></td>
     <td colspan='5' align='center'>
 
     <!--css div popup start-->
@@ -252,63 +252,13 @@
 
     <div id='div_ft1.1' class="popup_window">
         <pre>ft1.1: setUp
-xpath===============================
-xpath===============================
-=======================retteg==================================
-xpath===============================
-=======================retteg==================================
-xpath===============================
-=======================retteg==================================
-xpath===============================
-=======================retteg==================================
-xpath===============================
-=======================retteg==================================
-xpath===============================
-=======================retteg==================================
-xpath===============================
-=======================retteg==================================
-xpath===============================
-=======================retteg==================================
-xpath===============================
-=======================retteg==================================
-xpath===============================
-=======================retteg==================================
-xpath===============================
-=======================retteg==================================
-xpath===============================
-=======================retteg==================================
-xpath===============================
-=======================retteg==================================
-xpath===============================
-=======================retteg==================================
-xpath===============================
-=======================retteg==================================
-xpath===============================
-=======================retteg==================================
-xpath===============================
-=======================retteg==================================
-xpath===============================
-=======================retteg==================================
-xpath===============================
-=======================retteg==================================
-xpath===============================
-=======================retteg==================================
-xpath===============================
-=======================retteg==================================
-xpath===============================
-=======================retteg==================================
-xpath===============================
-=======================retteg==================================
-xpath===============================
-=======================retteg==================================
-xpath===============================
-=======================retteg==================================
-滑动了4次仍然没有找到该房间
+滑动了0次找到房间
+滑动了5次仍然没有找到该设备
 tearDown
 Traceback (most recent call last):
-  File "/Users/lumi/Documents/items/MIOT/Appium_Android_RPC/cases/lumi_plug_mmeu01_case.py", line 29, in test_case1
-    self.assertTrue(room_exists,'滑动到底部仍然没有找到房间')
-AssertionError: False is not true : 滑动到底部仍然没有找到房间
+  File "lumi_ctrl_ln1_aq1_case.py", line 31, in test_case1
+    self.assertTrue(device_exists, '滑动到底部仍然没有找到设备')
+AssertionError: False is not true : 滑动到底部仍然没有找到设备
 </pre>
     </div>
     <!--css div popup end-->
@@ -317,7 +267,7 @@ AssertionError: False is not true : 滑动到底部仍然没有找到房间
 </tr>
 
 <tr id='ft1.2' class='none'>
-    <td class='failCase'><div class='testcase'>test_case2: 进入首页(get_prop_plug)</div></td>
+    <td class='failCase'><div class='testcase'>test_case2: 进入首页(get_device_prop_exp)</div></td>
     <td colspan='5' align='center'>
 
     <!--css div popup start-->
@@ -328,9 +278,9 @@ AssertionError: False is not true : 滑动到底部仍然没有找到房间
         <pre>ft1.2: setUp
 tearDown
 Traceback (most recent call last):
-  File "/Users/lumi/Documents/items/MIOT/Appium_Android_RPC/cases/lumi_plug_mmeu01_case.py", line 37, in test_case2
-    self.assertTrue(room_exists, '房间不存在')
-AssertionError: False is not true : 房间不存在
+  File "lumi_ctrl_ln1_aq1_case.py", line 36, in test_case2
+    self.assertTrue(device_exists, '设备不存在')
+AssertionError: False is not true : 设备不存在
 </pre>
     </div>
     <!--css div popup end-->
@@ -339,7 +289,7 @@ AssertionError: False is not true : 房间不存在
 </tr>
 
 <tr id='ft1.3' class='none'>
-    <td class='failCase'><div class='testcase'>test_case3: top开关(toggle_plug)</div></td>
+    <td class='failCase'><div class='testcase'>test_case3: 打开/关闭开关（toggle_ctrl_neutral)</div></td>
     <td colspan='5' align='center'>
 
     <!--css div popup start-->
@@ -350,9 +300,9 @@ AssertionError: False is not true : 房间不存在
         <pre>ft1.3: setUp
 tearDown
 Traceback (most recent call last):
-  File "/Users/lumi/Documents/items/MIOT/Appium_Android_RPC/cases/lumi_plug_mmeu01_case.py", line 61, in test_case3
-    self.assertTrue(room_exists, '房间不存在')
-AssertionError: False is not true : 房间不存在
+  File "lumi_ctrl_ln1_aq1_case.py", line 63, in test_case3
+    self.assertTrue(device_exists, '设备不存在')
+AssertionError: False is not true : 设备不存在
 </pre>
     </div>
     <!--css div popup end-->
@@ -360,467 +310,18 @@ AssertionError: False is not true : 房间不存在
     </td>
 </tr>
 
-<tr id='ft1.4' class='none'>
-    <td class='failCase'><div class='testcase'>test_case4: 开启/关闭(toggle_plug)</div></td>
-    <td colspan='5' align='center'>
-
-    <!--css div popup start-->
-    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.4')" >
-        失败</a>
-
-    <div id='div_ft1.4' class="popup_window">
-        <pre>ft1.4: setUp
-tearDown
-Traceback (most recent call last):
-  File "/Users/lumi/Documents/items/MIOT/Appium_Android_RPC/cases/lumi_plug_mmeu01_case.py", line 76, in test_case4
-    self.assertTrue(room_exists, '房间不存在')
-AssertionError: False is not true : 房间不存在
-</pre>
-    </div>
-    <!--css div popup end-->
-
-    </td>
-</tr>
-
-<tr id='ft1.5' class='none'>
-    <td class='failCase'><div class='testcase'>test_case5: '更多功能(get_device_prop)</div></td>
-    <td colspan='5' align='center'>
-
-    <!--css div popup start-->
-    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.5')" >
-        失败</a>
-
-    <div id='div_ft1.5' class="popup_window">
-        <pre>ft1.5: setUp
-tearDown
-Traceback (most recent call last):
-  File "/Users/lumi/Documents/items/MIOT/Appium_Android_RPC/cases/lumi_plug_mmeu01_case.py", line 121, in test_case5
-    self.assertTrue(room_exists, '房间不存在')
-AssertionError: False is not true : 房间不存在
-</pre>
-    </div>
-    <!--css div popup end-->
-
-    </td>
-</tr>
-
-<tr id='ft1.6' class='none'>
-    <td class='failCase'><div class='testcase'>test_case6: '确认最大功率设置(set_device_prop)</div></td>
-    <td colspan='5' align='center'>
-
-    <!--css div popup start-->
-    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.6')" >
-        失败</a>
-
-    <div id='div_ft1.6' class="popup_window">
-        <pre>ft1.6: setUp
-tearDown
-Traceback (most recent call last):
-  File "/Users/lumi/Documents/items/MIOT/Appium_Android_RPC/cases/lumi_plug_mmeu01_case.py", line 141, in test_case6
-    self.assertTrue(room_exists, '房间不存在')
-AssertionError: False is not true : 房间不存在
-</pre>
-    </div>
-    <!--css div popup end-->
-
-    </td>
-</tr>
-
-<tr id='ft1.7' class='none'>
-    <td class='failCase'><div class='testcase'>test_case7: '断电记忆(set_device_prop)</div></td>
-    <td colspan='5' align='center'>
-
-    <!--css div popup start-->
-    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.7')" >
-        失败</a>
-
-    <div id='div_ft1.7' class="popup_window">
-        <pre>ft1.7: setUp
-tearDown
-Traceback (most recent call last):
-  File "/Users/lumi/Documents/items/MIOT/Appium_Android_RPC/cases/lumi_plug_mmeu01_case.py", line 162, in test_case7
-    self.assertTrue(room_exists, '房间不存在')
-AssertionError: False is not true : 房间不存在
-</pre>
-    </div>
-    <!--css div popup end-->
-
-    </td>
-</tr>
-
-<tr id='pt1.8' class='hiddenRow'>
-    <td class='none'><div class='testcase'>test_case8: 返回首页：滑动到顶部</div></td>
-    <td colspan='5' align='center'>
-
-    <!--css div popup start-->
-    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.8')" >
-        通过</a>
-
-    <div id='div_pt1.8' class="popup_window">
-        <pre>pt1.8: setUp
-房间不存在
-=======================retteg==================================
-=======================retteg==================================
-=======================retteg==================================
-=======================retteg==================================
-=======================retteg==================================
-=======================retteg==================================
-=======================retteg==================================
-=======================retteg==================================
-=======================retteg==================================
-=======================retteg==================================
-=======================retteg==================================
-=======================retteg==================================
-=======================retteg==================================
-=======================retteg==================================
-=======================retteg==================================
-=======================retteg==================================
-=======================retteg==================================
-=======================retteg==================================
-=======================retteg==================================
-=======================retteg==================================
-=======================retteg==================================
-=======================retteg==================================
-=======================retteg==================================
-=======================retteg==================================
-=======================retteg==================================
-=======================retteg==================================
-向下滑动了3次到达顶部
-tearDown
-</pre>
-    </div>
-    <!--css div popup end-->
-
-    </td>
-</tr>
-
-    <tr class='errorClass'>
-        <td>cases.lumi_sensor_ht_v1_case.Sensor_Ht_V1_Case</td>
-        <td>3</td>
-        <td>1</td>
-        <td>1</td>
-        <td>1</td>
-        <td><a href="javascript:showClassDetail('c2',3)">详情</a></td>
-    </tr>
-
-<tr id='ft2.1' class='none'>
-    <td class='failCase'><div class='testcase'>test_case1: 找到米家温湿度设备</div></td>
-    <td colspan='5' align='center'>
-
-    <!--css div popup start-->
-    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft2.1')" >
-        失败</a>
-
-    <div id='div_ft2.1' class="popup_window">
-        <pre>ft2.1: setUp
-xpath===============================
-xpath===============================
-=======================retteg==================================
-xpath===============================
-=======================retteg==================================
-xpath===============================
-=======================retteg==================================
-xpath===============================
-=======================retteg==================================
-xpath===============================
-=======================retteg==================================
-xpath===============================
-=======================retteg==================================
-xpath===============================
-=======================retteg==================================
-xpath===============================
-=======================retteg==================================
-xpath===============================
-=======================retteg==================================
-xpath===============================
-=======================retteg==================================
-xpath===============================
-=======================retteg==================================
-xpath===============================
-=======================retteg==================================
-xpath===============================
-=======================retteg==================================
-xpath===============================
-=======================retteg==================================
-xpath===============================
-=======================retteg==================================
-xpath===============================
-=======================retteg==================================
-xpath===============================
-=======================retteg==================================
-xpath===============================
-=======================retteg==================================
-xpath===============================
-=======================retteg==================================
-xpath===============================
-=======================retteg==================================
-xpath===============================
-=======================retteg==================================
-xpath===============================
-=======================retteg==================================
-xpath===============================
-=======================retteg==================================
-xpath===============================
-=======================retteg==================================
-xpath===============================
-=======================retteg==================================
-xpath===============================
-=======================retteg==================================
-xpath===============================
-=======================retteg==================================
-xpath===============================
-=======================retteg==================================
-滑动了4次仍然没有找到该房间
-tearDown
-Traceback (most recent call last):
-  File "/Users/lumi/Documents/items/MIOT/Appium_Android_RPC/cases/lumi_sensor_ht_v1_case.py", line 29, in test_case1
-    self.assertTrue(room_exists, '滑动到底部仍然没有找到房间')
-AssertionError: False is not true : 滑动到底部仍然没有找到房间
-</pre>
-    </div>
-    <!--css div popup end-->
-
-    </td>
-</tr>
-
-<tr id='ft2.2' class='none'>
-    <td class='errorCase'><div class='testcase'>test_case2: 进入温湿度首页(get_device_prop_exp)</div></td>
-    <td colspan='5' align='center'>
-
-    <!--css div popup start-->
-    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft2.2')" >
-        错误</a>
-
-    <div id='div_ft2.2' class="popup_window">
-        <pre>ft2.2: setUp
-tearDown
-Traceback (most recent call last):
-  File "/Users/lumi/Documents/items/MIOT/Appium_Android_RPC/cases/lumi_sensor_ht_v1_case.py", line 37, in test_case2
-    self.assertTrue(device_exists, '该设备不在房间内')
-NameError: name 'device_exists' is not defined
-</pre>
-    </div>
-    <!--css div popup end-->
-
-    </td>
-</tr>
-
-<tr id='pt2.3' class='hiddenRow'>
-    <td class='none'><div class='testcase'>test_case3: 返回首页：滑动到顶部</div></td>
-    <td colspan='5' align='center'>
-
-    <!--css div popup start-->
-    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt2.3')" >
-        通过</a>
-
-    <div id='div_pt2.3' class="popup_window">
-        <pre>pt2.3: setUp
-房间不存在
-=======================retteg==================================
-=======================retteg==================================
-=======================retteg==================================
-=======================retteg==================================
-=======================retteg==================================
-=======================retteg==================================
-=======================retteg==================================
-=======================retteg==================================
-=======================retteg==================================
-=======================retteg==================================
-=======================retteg==================================
-=======================retteg==================================
-=======================retteg==================================
-=======================retteg==================================
-=======================retteg==================================
-=======================retteg==================================
-=======================retteg==================================
-=======================retteg==================================
-=======================retteg==================================
-=======================retteg==================================
-=======================retteg==================================
-=======================retteg==================================
-=======================retteg==================================
-=======================retteg==================================
-=======================retteg==================================
-=======================retteg==================================
-向下滑动了3次到达顶部
-tearDown
-</pre>
-    </div>
-    <!--css div popup end-->
-
-    </td>
-</tr>
-
-    <tr class='failClass'>
-        <td>cases.lumi_ctrl_ln1_aq1_case.Ctrl_Ln1_Aq1_Case</td>
-        <td>4</td>
-        <td>1</td>
-        <td>3</td>
-        <td>0</td>
-        <td><a href="javascript:showClassDetail('c3',4)">详情</a></td>
-    </tr>
-
-<tr id='ft3.1' class='none'>
-    <td class='failCase'><div class='testcase'>test_case1: 找出Aqara墙壁开关(零火线单键版)</div></td>
-    <td colspan='5' align='center'>
-
-    <!--css div popup start-->
-    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft3.1')" >
-        失败</a>
-
-    <div id='div_ft3.1' class="popup_window">
-        <pre>ft3.1: setUp
-xpath===============================
-xpath===============================
-=======================retteg==================================
-xpath===============================
-=======================retteg==================================
-xpath===============================
-=======================retteg==================================
-xpath===============================
-=======================retteg==================================
-xpath===============================
-=======================retteg==================================
-xpath===============================
-=======================retteg==================================
-xpath===============================
-=======================retteg==================================
-xpath===============================
-=======================retteg==================================
-xpath===============================
-=======================retteg==================================
-xpath===============================
-=======================retteg==================================
-xpath===============================
-=======================retteg==================================
-xpath===============================
-=======================retteg==================================
-xpath===============================
-=======================retteg==================================
-xpath===============================
-=======================retteg==================================
-xpath===============================
-=======================retteg==================================
-xpath===============================
-=======================retteg==================================
-xpath===============================
-=======================retteg==================================
-xpath===============================
-=======================retteg==================================
-xpath===============================
-=======================retteg==================================
-xpath===============================
-=======================retteg==================================
-xpath===============================
-=======================retteg==================================
-xpath===============================
-=======================retteg==================================
-xpath===============================
-=======================retteg==================================
-xpath===============================
-=======================retteg==================================
-xpath===============================
-=======================retteg==================================
-xpath===============================
-=======================retteg==================================
-xpath===============================
-=======================retteg==================================
-xpath===============================
-=======================retteg==================================
-滑动了4次仍然没有找到该房间
-tearDown
-Traceback (most recent call last):
-  File "/Users/lumi/Documents/items/MIOT/Appium_Android_RPC/cases/lumi_ctrl_ln1_aq1_case.py", line 27, in test_case1
-    self.assertTrue(room_exists,'滑动到底部仍然没有找到房间')
-AssertionError: False is not true : 滑动到底部仍然没有找到房间
-</pre>
-    </div>
-    <!--css div popup end-->
-
-    </td>
-</tr>
-
-<tr id='ft3.2' class='none'>
-    <td class='failCase'><div class='testcase'>test_case2: 进入首页(get_device_prop_exp)</div></td>
-    <td colspan='5' align='center'>
-
-    <!--css div popup start-->
-    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft3.2')" >
-        失败</a>
-
-    <div id='div_ft3.2' class="popup_window">
-        <pre>ft3.2: setUp
-tearDown
-Traceback (most recent call last):
-  File "/Users/lumi/Documents/items/MIOT/Appium_Android_RPC/cases/lumi_ctrl_ln1_aq1_case.py", line 35, in test_case2
-    self.assertTrue(room_exists,'房间不存在')
-AssertionError: False is not true : 房间不存在
-</pre>
-    </div>
-    <!--css div popup end-->
-
-    </td>
-</tr>
-
-<tr id='ft3.3' class='none'>
-    <td class='failCase'><div class='testcase'>test_case3: 打开/关闭开关（toggle_ctrl_neutral)</div></td>
-    <td colspan='5' align='center'>
-
-    <!--css div popup start-->
-    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft3.3')" >
-        失败</a>
-
-    <div id='div_ft3.3' class="popup_window">
-        <pre>ft3.3: setUp
-tearDown
-Traceback (most recent call last):
-  File "/Users/lumi/Documents/items/MIOT/Appium_Android_RPC/cases/lumi_ctrl_ln1_aq1_case.py", line 62, in test_case3
-    self.assertTrue(room_exists, '房间不存在')
-AssertionError: False is not true : 房间不存在
-</pre>
-    </div>
-    <!--css div popup end-->
-
-    </td>
-</tr>
-
-<tr id='pt3.4' class='hiddenRow'>
+<tr id='pt1.4' class='hiddenRow'>
     <td class='none'><div class='testcase'>test_case4: 返回首页：滑动到顶部</div></td>
     <td colspan='5' align='center'>
 
     <!--css div popup start-->
-    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt3.4')" >
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.4')" >
         通过</a>
 
-    <div id='div_pt3.4' class="popup_window">
-        <pre>pt3.4: setUp
-房间不存在
-=======================retteg==================================
-=======================retteg==================================
-=======================retteg==================================
-=======================retteg==================================
-=======================retteg==================================
-=======================retteg==================================
-=======================retteg==================================
-=======================retteg==================================
-=======================retteg==================================
-=======================retteg==================================
-=======================retteg==================================
-=======================retteg==================================
-=======================retteg==================================
-=======================retteg==================================
-=======================retteg==================================
-=======================retteg==================================
-=======================retteg==================================
-=======================retteg==================================
-=======================retteg==================================
-=======================retteg==================================
-=======================retteg==================================
-=======================retteg==================================
-=======================retteg==================================
-=======================retteg==================================
-=======================retteg==================================
-向下滑动了3次到达顶部
+    <div id='div_pt1.4' class="popup_window">
+        <pre>pt1.4: setUp
+设备不存在
+向下滑动了0次到达顶部
 tearDown
 </pre>
     </div>
@@ -831,10 +332,10 @@ tearDown
 
         <tr id='total_row'>
             <td>总计</td>
-            <td>15</td>
-            <td>3</td>
-            <td>11</td>
+            <td>4</td>
             <td>1</td>
+            <td>3</td>
+            <td>0</td>
             <td>&nbsp;</td>
         </tr>
     </table>
@@ -868,9 +369,9 @@ tearDown
                     radius : '60%',
                     center: ['50%', '60%'],
                     data:[
-                        {value:3, name:'通过'},
-                        {value:11, name:'失败'},
-                        {value:1, name:'错误'}
+                        {value:1, name:'通过'},
+                        {value:3, name:'失败'},
+                        {value:0, name:'错误'}
                     ],
                     itemStyle: {
                         emphasis: {

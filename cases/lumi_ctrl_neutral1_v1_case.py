@@ -5,16 +5,16 @@ import unittest
 from util.operation_json import OperationJson
 from util.server import Server
 import HTMLTestRunner
-from handle.lumi_ctrl_ln1_aq1_handle import Ctrl_Ln1_Aq1_Handle
+from handle.lumi_ctrl_neutral1_v1_handle import Ctrl_Neutral1_V1_Handle
 
 '''
-Aqara墙壁开关(零火线单键版)测试用例
+Aqara墙壁开关(单火线单键版)测试用例
 '''
-class Ctrl_Ln1_Aq1_Case(unittest.TestCase):
+class Ctrl_Neutral1_V1_Case(unittest.TestCase):
     @classmethod
     def setUpClass(cls) -> None:
-        print('开始Ctrl_Ln1_Aq1_Case')
-        cls.ctrl_ln1_handle = Ctrl_Ln1_Aq1_Handle()
+        print('开始Ctrl_Neutral1_V1_Case')
+        cls.ctrl_neutral1_v1_handle = Ctrl_Neutral1_V1_Handle()
         cls.operation_json = OperationJson()
 
     def setUp(self) -> None:
@@ -23,11 +23,11 @@ class Ctrl_Ln1_Aq1_Case(unittest.TestCase):
     def test_case1(self):
         '''找出Aqara墙壁开关(零火线单键版)'''
         global room_exists
-        room_exists = self.ctrl_ln1_handle.click_room_element()
+        room_exists = self.ctrl_neutral1_v1_handle.click_room_element()
         self.assertTrue(room_exists,'滑动到底部仍然没有找到房间')
 
         global device_exists
-        device_exists = self.ctrl_ln1_handle.click_device_element()
+        device_exists = self.ctrl_neutral1_v1_handle.click_device_element()
         self.assertTrue(device_exists, '滑动到底部仍然没有找到设备')
 
     def test_case2(self):
@@ -36,12 +36,12 @@ class Ctrl_Ln1_Aq1_Case(unittest.TestCase):
         self.assertTrue(device_exists, '设备不存在')
 
         global is_no_network
-        is_no_network = self.ctrl_ln1_handle.get_fail_toast('请求失败，请检查网络')
+        is_no_network = self.ctrl_neutral1_v1_handle.get_fail_toast('请求失败，请检查网络')
         self.assertFalse(is_no_network,'无网络状态，请联网后重试')
 
         # 判断设备是否离线状态
         global is_offline
-        is_offline = self.ctrl_ln1_handle.is_offline_element()
+        is_offline = self.ctrl_neutral1_v1_handle.is_offline_element()
         self.assertFalse(is_offline,'设备已离线，请重新连接设备')
 
         data = self.operation_json.read_data()
@@ -64,9 +64,9 @@ class Ctrl_Ln1_Aq1_Case(unittest.TestCase):
         self.assertFalse(is_no_network, '无网络状态，请联网后重试')
         self.assertFalse(is_offline, '设备已离线，请重新连接设备')
         gray_rgba = (216, 216, 216, 255)
-        rgba = self.ctrl_ln1_handle.get_light_bulb_element_rgba()
-        # print('得到的灯泡颜色为:',rgba)
-        self.assertTrue(self.ctrl_ln1_handle.click_on_off_light_element(), '找不到开关按钮')
+        rgba = self.ctrl_neutral1_v1_handle.get_light_bulb_element_rgba()
+        print('得到的灯泡颜色为:',rgba)
+        self.assertTrue(self.ctrl_neutral1_v1_handle.click_on_off_light_element(), '找不到开关按钮')
         if rgba == gray_rgba:
             self.set_toggle_plug_on()
         else:
@@ -106,13 +106,13 @@ class Ctrl_Ln1_Aq1_Case(unittest.TestCase):
         '''返回首页：滑动到顶部'''
         if room_exists == False:
             print('房间不存在')
-            self.assertTrue(self.ctrl_ln1_handle.scroll_to_top(), "下滑到最后没有找到+按钮")
+            self.assertTrue(self.ctrl_neutral1_v1_handle.scroll_to_top(), "下滑到最后没有找到+按钮")
             return
 
         if device_exists == False:
             print('设备不存在')
-            self.assertTrue(self.ctrl_ln1_handle.click_room_list_back_element(),'返回到房间列表的箭头按钮不存在')
-            self.assertTrue(self.ctrl_ln1_handle.scroll_to_top(),'下滑到最后没有找到+按钮')
+            self.assertTrue(self.ctrl_neutral1_v1_handle.click_room_list_back_element(),'返回到房间列表的箭头按钮不存在')
+            self.assertTrue(self.ctrl_neutral1_v1_handle.scroll_to_top(),'下滑到最后没有找到+按钮')
             return
 
         if is_no_network:
@@ -122,16 +122,16 @@ class Ctrl_Ln1_Aq1_Case(unittest.TestCase):
 
         if is_offline:
             print('设备离线状态')
-            self.assertTrue(self.ctrl_ln1_handle.click_offline_close(),'离线框右上角关闭按钮不存在')
+            self.assertTrue(self.ctrl_neutral1_v1_handle.click_offline_close(),'离线框右上角关闭按钮不存在')
             self.expected_conditions()
             return
 
         self.expected_conditions()
 
     def expected_conditions(self):
-        self.assertTrue(self.ctrl_ln1_handle.click_plugin_back_homepage_element(), '返回到房间里面的箭头按钮不存在')
-        self.assertTrue(self.ctrl_ln1_handle.click_room_list_back_element(), '返回到房间列表的箭头按钮不存在')
-        self.assertTrue(self.ctrl_ln1_handle.scroll_to_top(), "下滑到最后没有找到+按钮")
+        self.assertTrue(self.ctrl_neutral1_v1_handle.click_plugin_back_homepage_element(), '返回到房间里面的箭头按钮不存在')
+        self.assertTrue(self.ctrl_neutral1_v1_handle.click_room_list_back_element(), '返回到房间列表的箭头按钮不存在')
+        self.assertTrue(self.ctrl_neutral1_v1_handle.scroll_to_top(), "下滑到最后没有找到+按钮")
 
     def tearDown(self) -> None:
         '''用例结束'''
@@ -144,10 +144,10 @@ class Ctrl_Ln1_Aq1_Case(unittest.TestCase):
 def get_suite():
     # 定义一个测试容器
     suite = unittest.TestSuite()
-    suite.addTest(Ctrl_Ln1_Aq1_Case('test_case1'))
-    suite.addTest(Ctrl_Ln1_Aq1_Case('test_case2'))
-    suite.addTest(Ctrl_Ln1_Aq1_Case('test_case3'))
-    suite.addTest(Ctrl_Ln1_Aq1_Case('test_case4'))
+    suite.addTest(Ctrl_Neutral1_V1_Case('test_case1'))
+    suite.addTest(Ctrl_Neutral1_V1_Case('test_case2'))
+    suite.addTest(Ctrl_Neutral1_V1_Case('test_case3'))
+    suite.addTest(Ctrl_Neutral1_V1_Case('test_case4'))
     # unittest.TextTestRunner().run(suite)
     # 定义个报告存放的路径，支持相对路径
     # filename = '../report/tesecase'+str(i)+'_report'+'.html'
@@ -156,7 +156,7 @@ def get_suite():
     file_result = open(filename, 'wb')
     # 定义测试报告
     HTMLTestRunner.HTMLTestRunner(stream=file_result,
-                                  title='Aqara墙壁开关(零火线单键版)测试用例结果',
+                                  title='Aqara墙壁开关(单火线单键版)测试用例结果',
                                   description='测试报告详情:').run(suite)
     file_result.close()
 

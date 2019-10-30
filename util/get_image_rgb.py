@@ -36,11 +36,11 @@ class ImageRGBD:
         return top_rgba
 
 
-    '''
-    获取截图中的模块多个元素中心位置的rgba值
-    '''
-    def get_elements_rgb(self):
-        pass
+
+
+
+
+
 
 
 
