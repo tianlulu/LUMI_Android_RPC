@@ -59,7 +59,7 @@ class Sensor_Ht_V1_Case(unittest.TestCase):
 
 
     def test_case3(self):
-        '''返回首页吧：滑动到顶部'''
+        '''返回首页：滑动到顶部'''
         '''
         if is_offline():
             1、点击关闭按钮
@@ -72,11 +72,12 @@ class Sensor_Ht_V1_Case(unittest.TestCase):
 
         if device_exists == False:
             print('设备不存在')
-            self.assertTrue(self.sensor_ht_v1_handle.click_universal_back_element(), '返回到房间列表的箭头按钮不存在')
+            self.assertTrue(self.sensor_ht_v1_handle.click_room_list_back_element(), '返回到房间列表的箭头按钮不存在')
             self.assertTrue(self.sensor_ht_v1_handle.scroll_to_top(), "下滑到最后没有找到+按钮")
             return
 
         if is_no_network:
+            print('无网络状态')
             self.expected_conditions()
             return
 
@@ -89,8 +90,9 @@ class Sensor_Ht_V1_Case(unittest.TestCase):
         self.expected_conditions()
 
     def expected_conditions(self):
-        self.assertTrue(self.sensor_ht_v1_handle.click_use_back_element(), '返回到房间里面的箭头按钮不存在')
-        self.assertTrue(self.sensor_ht_v1_handle.click_universal_back_element(), '返回到房间列表的箭头按钮不存在')
+        # self.assertTrue(self.sensor_ht_v1_handle.click_universal_back_element(), '返回到房间里面的箭头按钮不存在')
+        self.assertTrue(self.sensor_ht_v1_handle.click_plugin_back_homepage_element(), '返回到房间里面的箭头按钮不存在')
+        self.assertTrue(self.sensor_ht_v1_handle.click_room_list_back_element(), '返回到房间列表的箭头按钮不存在')
         self.assertTrue(self.sensor_ht_v1_handle.scroll_to_top(), "下滑到最后没有找到+按钮")
 
     def tearDown(self):

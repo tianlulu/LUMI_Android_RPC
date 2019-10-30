@@ -100,6 +100,8 @@ class European_Standard_Page(BasePage):
         return self.find_element('on_off_light', self.element)
 
 
+
+
     '''
     定时
     def get_timing_element(self):

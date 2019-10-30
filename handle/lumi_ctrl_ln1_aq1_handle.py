@@ -2,6 +2,7 @@
 from base.base_handle import BaseHandle
 from page.lumi_ctrl_ln1_aq1_page import  Ctrl_Ln1_Aq1_Page
 from util.get_image_rgb import ImageRGBD
+from selenium.common import exceptions as ex
 
 class Ctrl_Ln1_Aq1_Handle(BaseHandle):
     def __init__(self):
@@ -55,14 +56,6 @@ class Ctrl_Ln1_Aq1_Handle(BaseHandle):
             return False
 
     '''
-    通用返回按钮
-    '''
-    def click_universal_back_element(self):
-        element = self.ctrl_ln1_page.get_universal_back_element()
-        return self.element_operation(element)
-
-
-    '''
     上滑到顶部找到'+'按钮
     '''
     def scroll_to_top(self):
@@ -76,12 +69,27 @@ class Ctrl_Ln1_Aq1_Handle(BaseHandle):
         element = self.ctrl_ln1_page.get_offline_close()
         return self.element_operation(element)
 
+
     '''
-    返回到房间里面的箭头按钮
+    插件首页返回按钮
     '''
-    def click_use_back_element(self):
-        element = self.ctrl_ln1_page.get_use_back_element()
+    def click_plugin_back_homepage_element(self):
+        element = self.ctrl_ln1_page.get_plugin_back_homepage_element()
         return self.element_operation(element)
+
+
+    '''
+    通过返回按钮:房间页面返回房间列表页面
+    '''
+    def click_room_list_back_element(self):
+        # element = self.ctrl_ln1_page.get_room_list_back_element()
+        # return self.element_operation(element)
+        try:
+            self.element = self.ctrl_ln1_page.get_room_list_back_element()
+        except ex.StaleElementReferenceException:
+            print('StaleElementReferenceExceptionStaleElementReferenceExceptionStaleElementReferenceException')
+            self.element = self.ctrl_ln1_page.get_room_list_back_element()
+        return self.element_operation(self.element)
 
 
     '''
@@ -100,6 +108,7 @@ class Ctrl_Ln1_Aq1_Handle(BaseHandle):
         # 获取该元素中心位置的RGB颜色
         return image_rgb.get_element_rgb(light_element,file_path)
 
+
     '''
     开启/关闭电源按钮
     '''
@@ -110,7 +119,12 @@ class Ctrl_Ln1_Aq1_Handle(BaseHandle):
 
     def element_operation(self,element):
         if element:
-            element.click()
+            try:
+                element.click()
+            except ex.StaleElementReferenceException:
+                print('Ctrl_Ln1_Aq1_Handle--------------get_room_list_back_element')
+                element = self.ctrl_ln1_page.get_room_list_back_element()
+                element.click()
             return True
         else:
             print('元素不存在')

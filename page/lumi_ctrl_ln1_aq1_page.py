@@ -41,8 +41,3 @@ class Ctrl_Ln1_Aq1_Page(BasePage):
     def get_on_off_element(self):
         return self.find_element('on_off', self.element)
 
-    '''
-    插件首页返回按钮
-    '''
-    def get_use_back_element(self):
-        return self.find_element('use_back', self.element)

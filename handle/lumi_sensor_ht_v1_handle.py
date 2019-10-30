@@ -3,6 +3,7 @@ from page.lumi_sensor_ht_v1_page import Sensor_Ht_V1_Page
 from util.swip_operation import Swip_Common
 import time
 from base.base_handle import BaseHandle
+from selenium.common import exceptions as ex
 
 class Sensor_Ht_V1_Handle(BaseHandle):
     def __init__(self):
@@ -24,13 +25,6 @@ class Sensor_Ht_V1_Handle(BaseHandle):
     def click_device_element(self):
         return self.find_device(self.sensor_ht_v1_page)
 
-
-    '''
-    通用返回按钮
-    '''
-    def click_universal_back_element(self):
-        element = self.sensor_ht_v1_page.get_universal_back_element()
-        return self.element_operation(element)
 
 
     '''
@@ -92,19 +86,34 @@ class Sensor_Ht_V1_Handle(BaseHandle):
         return self.element_operation(element)
 
 
-    def click_use_back_element(self):
-        element = self.sensor_ht_v1_page.get_use_back_element()
-        return self.element_operation(element)
-
-
     def click_offline_close(self):
         element = self.sensor_ht_v1_page.get_offline_close()
         return self.element_operation(element)
 
 
+    '''
+    插件首页返回按钮
+    '''
+    def click_plugin_back_homepage_element(self):
+        element = self.sensor_ht_v1_page.get_plugin_back_homepage_element()
+        return self.element_operation(element)
+
+    '''
+    通过返回按钮:房间页面返回房间列表页面
+    '''
+    def click_room_list_back_element(self):
+        element = self.sensor_ht_v1_page.get_room_list_back_element()
+        return self.element_operation(element)
+
+
     def element_operation(self, element):
         if element:
-            element.click()
+            try:
+                element.click()
+            except ex.StaleElementReferenceException:
+                print('Sensor_Ht_V1_Handle--------------get_room_list_back_element')
+                element = self.sensor_ht_v1_page.get_room_list_back_element()
+                element.click()
             return True
         else:
             print('元素不存在')

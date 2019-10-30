@@ -2,7 +2,7 @@
 from base.base_handle import BaseHandle
 from page.lumi_plug_mmeu01_page import European_Standard_Page
 from util.get_image_rgb import ImageRGBD
-
+from selenium.common import exceptions as ex
 
 class European_Standard_Handle(BaseHandle):
     def __init__(self):
@@ -104,20 +104,11 @@ class European_Standard_Handle(BaseHandle):
         else:
             return None
 
-
     '''
     断电记忆
     '''
     def click_power_off_memory_element(self):
         element=self.european_standard_page.get_failure_memory_element()
-        return self.element_operation(element)
-
-
-    '''
-    通用返回按钮
-    '''
-    def click_universal_back_element(self):
-        element = self.european_standard_page.get_universal_back_element()
         return self.element_operation(element)
 
 
@@ -150,14 +141,6 @@ class European_Standard_Handle(BaseHandle):
         self.european_standard_page.swipe_up_based_on_element(element)
 
 
-    def element_operation(self, element):
-        if element:
-            element.click()
-            return True
-        else:
-            print('元素不存在')
-            return False
-
     '''
     点击最大功率限制
     ''' 
@@ -165,8 +148,35 @@ class European_Standard_Handle(BaseHandle):
         element= self.european_standard_page.get_max_power_limit_element()
         return self.element_operation(element)
 
+    '''
+    插件首页返回按钮
+    '''
+    def click_plugin_back_homepage_element(self):
+        element = self.european_standard_page.get_plugin_back_homepage_element()
+        return self.element_operation(element)
 
-'''
+    '''
+    通过返回按钮:房间页面返回房间列表页面
+    '''
+    def click_room_list_back_element(self):
+        element = self.european_standard_page.get_room_list_back_element()
+        return self.element_operation(element)
+
+
+    def element_operation(self, element):
+        if element:
+            try:
+                element.click()
+            except ex.StaleElementReferenceException:
+                print('European_Standard_Handle--------------get_room_list_back_element')
+                element = self.european_standard_page.get_room_list_back_element()
+                element.click()
+            return True
+        else:
+            print('元素不存在')
+            return False
+
+    '''
     def click_offline_close_element(self):
         element = self.european_standard_page.get_offline_close()
         return self.element_operation(element)

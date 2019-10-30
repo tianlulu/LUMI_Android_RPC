@@ -5,7 +5,7 @@ from base.base_driver import DriverUtil
 from util.get_by_local import GetByLocal
 from util.freedom_name import My_Custom_Name
 from util.get_image_rgb import ImageRGBD
-
+from selenium.common import exceptions as ex
 class BasePage:
     def __init__(self):
         self.driver = DriverUtil.get_driver()
@@ -73,14 +73,6 @@ class BasePage:
     def get_offline_element(self):
         return self.find_element('is_offline',self.common_element)
 
-
-    '''
-    通过返回按钮
-    '''
-    def get_universal_back_element(self):
-        return self.find_element('universal_back', self.common_element)
-
-
     '''
     离线框关闭按钮
     '''
@@ -96,6 +88,19 @@ class BasePage:
             return True
         else:
             return False
+
+    '''
+    插件首页的返回按钮
+    '''
+    def get_plugin_back_homepage_element(self):
+        return self.find_element('plugin_back_homepage', self.common_element)
+
+
+    '''
+    通过返回按钮:房间页面返回房间列表页面
+    '''
+    def get_room_list_back_element(self):
+        return self.find_element('room_list_back', self.common_element)
 
 
     '''

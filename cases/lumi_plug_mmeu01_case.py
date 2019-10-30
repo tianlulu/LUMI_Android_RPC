@@ -60,8 +60,8 @@ class European_Standard_Case(unittest.TestCase):
         '''top开关(toggle_plug)'''
         self.assertTrue(room_exists, '房间不存在')
         self.assertTrue(device_exists, '设备不存在')
-        self.assertFalse(is_offline, '设备已离线，请重新连接设备')
         self.assertFalse(is_no_network, '无网络状态，请联网后重试')
+        self.assertFalse(is_offline, '设备已离线，请重新连接设备')
         gray_rgba = (67, 74, 81, 255)
         rgba = self.european_standard_handle.get_top_element_rgba()
         self.assertTrue(self.european_standard_handle.click_top_element(), '找不到top顶部按钮')
@@ -75,8 +75,8 @@ class European_Standard_Case(unittest.TestCase):
         '''开启/关闭(toggle_plug)'''
         self.assertTrue(room_exists, '房间不存在')
         self.assertTrue(device_exists, '设备不存在')
-        self.assertFalse(is_offline, '设备已离线，请重新连接设备')
         self.assertFalse(is_no_network, '无网络状态，请联网后重试')
+        self.assertFalse(is_offline, '设备已离线，请重新连接设备')
         gray_rgba = (67, 74, 81, 255)
         rgba = self.european_standard_handle.get_top_element_rgba()
         self.assertTrue(self.european_standard_handle.click_on_off_light_element(), '找不到开启/关闭按钮')
@@ -120,8 +120,8 @@ class European_Standard_Case(unittest.TestCase):
         ''''更多功能(get_device_prop)'''
         self.assertTrue(room_exists, '房间不存在')
         self.assertTrue(device_exists, '设备不存在')
-        self.assertFalse(is_offline, '设备已离线，请重新连接设备')
         self.assertFalse(is_no_network, '无网络状态，请联网后重试')
+        self.assertFalse(is_offline, '设备已离线，请重新连接设备')
         self.assertTrue(self.european_standard_handle.click_more_element(), '找不到更多三个点')
         data = operation_json.read_data()
         print('请求参数:', data)
@@ -140,8 +140,8 @@ class European_Standard_Case(unittest.TestCase):
         ''''确认最大功率设置(set_device_prop)'''
         self.assertTrue(room_exists, '房间不存在')
         self.assertTrue(device_exists, '设备不存在')
-        self.assertFalse(is_offline, '设备已离线，请重新连接设备')
         self.assertFalse(is_no_network, '无网络状态，请联网后重试')
+        self.assertFalse(is_offline, '设备已离线，请重新连接设备')
         self.assertTrue(self.european_standard_handle.click_confirm_power_limit(), '找不到设置最大功率到元素pickView')
         data = operation_json.read_data()
         print('请求参数:', data)
@@ -161,8 +161,8 @@ class European_Standard_Case(unittest.TestCase):
         ''''断电记忆(set_device_prop)'''
         self.assertTrue(room_exists, '房间不存在')
         self.assertTrue(device_exists, '设备不存在')
-        self.assertFalse(is_offline, '设备已离线，请重新连接设备')
         self.assertFalse(is_no_network, '无网络状态，请联网后重试')
+        self.assertFalse(is_offline, '设备已离线，请重新连接设备')
         self.assertTrue(self.european_standard_handle.click_power_off_memory_element(), '找不到断电记忆元素')
         data = operation_json.read_data()
         print('请求参数:', data)
@@ -179,7 +179,7 @@ class European_Standard_Case(unittest.TestCase):
 
 
     def test_case8(self):
-        '''返回首页吧：滑动到顶部'''
+        '''返回首页：滑动到顶部'''
         if room_exists == False:
             print('房间不存在')
             self.assertTrue(self.european_standard_handle.scroll_to_top(), "下滑到最后没有找到+按钮")
@@ -188,27 +188,33 @@ class European_Standard_Case(unittest.TestCase):
         if device_exists == False:
             print('设备不存在')
             # 返回到房间列表
-            self.assertTrue(self.european_standard_handle.click_universal_back_element(), '返回到房间列表的箭头按钮不存在')
+            self.assertTrue(self.european_standard_handle.click_room_list_back_element(), '返回到房间列表的箭头按钮不存在')
             # 滑动直到顶部
             self.assertTrue(self.european_standard_handle.scroll_to_top(), "下滑到最后没有找到+按钮")
             return
 
+        if is_no_network:
+            print('无网络状态')
+            self.expected_conditions()
+            return
+
 
         if is_offline:
+            print('设备离线状态')
             self.assertTrue(self.european_standard_handle.click_offline_close(), '离线框右上角关闭按钮不存在')
             self.expected_conditions()
             return
 
         # 返回到插件首页
-        self.assertTrue(self.european_standard_handle.click_universal_back_element(), '返回到插件首页的箭头按钮不存在')
+        self.assertTrue(self.european_standard_handle.click_plugin_back_homepage_element(), '返回到插件首页的箭头按钮不存在')
         self.expected_conditions()
 
 
     def expected_conditions(self):
         # 返回到主界面
-        self.assertTrue(self.european_standard_handle.click_universal_back_element(), '返回到房间里面的箭头按钮不存在')
+        self.assertTrue(self.european_standard_handle.click_plugin_back_homepage_element(), '返回到房间里面的箭头按钮不存在')
         # 返回到房间列表
-        self.assertTrue(self.european_standard_handle.click_universal_back_element(), '返回到房间列表的箭头按钮不存在')
+        self.assertTrue(self.european_standard_handle.click_room_list_back_element(), '返回到房间列表的箭头按钮不存在')
         # 滑动直到顶部
         self.assertTrue(self.european_standard_handle.scroll_to_top(), "下滑到最后没有找到+按钮")
 

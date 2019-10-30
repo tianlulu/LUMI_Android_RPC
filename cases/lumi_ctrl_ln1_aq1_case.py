@@ -61,8 +61,8 @@ class Ctrl_Ln1_Aq1_Case(unittest.TestCase):
         '''打开/关闭开关（toggle_ctrl_neutral)'''
         self.assertTrue(room_exists, '房间不存在')
         self.assertTrue(device_exists, '设备不存在')
-        self.assertFalse(is_offline, '设备已离线，请重新连接设备')
         self.assertFalse(is_no_network, '无网络状态，请联网后重试')
+        self.assertFalse(is_offline, '设备已离线，请重新连接设备')
         gray_rgba = (200, 207, 218, 255)
         rgba = self.ctrl_ln1_handle.get_light_bulb_element_rgba()
         # print('得到的灯泡颜色为:',rgba)
@@ -103,6 +103,7 @@ class Ctrl_Ln1_Aq1_Case(unittest.TestCase):
 
 
     def test_case4(self):
+        '''返回首页：滑动到顶部'''
         if room_exists == False:
             print('房间不存在')
             self.assertTrue(self.ctrl_ln1_handle.scroll_to_top(), "下滑到最后没有找到+按钮")
@@ -110,8 +111,13 @@ class Ctrl_Ln1_Aq1_Case(unittest.TestCase):
 
         if device_exists == False:
             print('设备不存在')
-            self.assertTrue(self.ctrl_ln1_handle.click_universal_back_element(),'返回到房间列表的箭头按钮不存在')
+            self.assertTrue(self.ctrl_ln1_handle.click_room_list_back_element(),'返回到房间列表的箭头按钮不存在')
             self.assertTrue(self.ctrl_ln1_handle.scroll_to_top(),'下滑到最后没有找到+按钮')
+            return
+
+        if is_no_network:
+            print('无网络状态')
+            self.expected_conditions()
             return
 
         if is_offline:
@@ -123,8 +129,8 @@ class Ctrl_Ln1_Aq1_Case(unittest.TestCase):
         self.expected_conditions()
 
     def expected_conditions(self):
-        self.assertTrue(self.ctrl_ln1_handle.click_universal_back_element(), '返回到房间里面的箭头按钮不存在')
-        self.assertTrue(self.ctrl_ln1_handle.click_universal_back_element(), '返回到房间列表的箭头按钮不存在')
+        self.assertTrue(self.ctrl_ln1_handle.click_plugin_back_homepage_element(), '返回到房间里面的箭头按钮不存在')
+        self.assertTrue(self.ctrl_ln1_handle.click_room_list_back_element(), '返回到房间列表的箭头按钮不存在')
         self.assertTrue(self.ctrl_ln1_handle.scroll_to_top(), "下滑到最后没有找到+按钮")
 
     def tearDown(self) -> None:
@@ -134,7 +140,6 @@ class Ctrl_Ln1_Aq1_Case(unittest.TestCase):
     @classmethod
     def tearDownClass(cls) -> None:
         print('tearDownClass')
-
 
 def get_suite():
     # 定义一个测试容器
