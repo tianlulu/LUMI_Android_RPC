@@ -1,13 +1,13 @@
 #coding=utf8
 from base.base_handle import BaseHandle
-from page.lumi_ctrl_ln1_aq1_page import  Ctrl_Ln1_Aq1_Page
+from page.lumi_ctrl_ln1_v1_page import  Ctrl_Ln1_V1_Page
 from util.get_image_rgb import ImageRGBD
 from selenium.common import exceptions as ex
 
-class Ctrl_Ln1_Aq1_Handle(BaseHandle):
+class Ctrl_Ln1_V1_Handle(BaseHandle):
     def __init__(self):
         BaseHandle.__init__(self)
-        self.ctrl_ln1_page = Ctrl_Ln1_Aq1_Page()
+        self.ctrl_ln1_page = Ctrl_Ln1_V1_Page()
 
     '''
     首页滑动控件直到房间出现(如:Sweet)
@@ -18,7 +18,7 @@ class Ctrl_Ln1_Aq1_Handle(BaseHandle):
         return self.find_room(self.ctrl_ln1_page)
 
     '''
-    首页滑动控件直到Aqara墙壁开关(零火线单键版)出现
+    首页滑动控件直到墙壁开关(零火线单键版)出现
     首页--room--具体房间--设备
     '''
     def click_device_element(self):

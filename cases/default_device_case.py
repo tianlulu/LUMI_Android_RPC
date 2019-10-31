@@ -5,6 +5,7 @@ from cases.lumi_plug_mmeu01_case import European_Standard_Case as  T1
 from cases.lumi_sensor_ht_v1_case import Sensor_Ht_V1_Case as T2
 from cases.lumi_ctrl_ln1_aq1_case import Ctrl_Ln1_Aq1_Case as T3
 from cases.lumi_ctrl_neutral1_v1_case import Ctrl_Neutral1_V1_Case as T4
+from cases.lumi_ctrl_ln1_v1_case import Ctrl_Ln1_V1_Case as T5
 from util.server import Server
 import unittest,HTMLTestRunner
 
@@ -39,11 +40,14 @@ class All_Cases():
                 suite.addTests(unittest.TestLoader().loadTestsFromTestCase(T3))
             if model == "lumi.ctrl_neutral.v1":
                 suite.addTests(unittest.TestLoader().loadTestsFromTestCase(T4))
+            if model == "lumi.ctrl_ln1.v1":
+                suite.addTests(unittest.TestLoader().loadTestsFromTestCase(T5))
             if model == "all_case":
                 suite.addTests(unittest.TestLoader().loadTestsFromTestCase(T1))
                 suite.addTests(unittest.TestLoader().loadTestsFromTestCase(T2))
                 suite.addTests(unittest.TestLoader().loadTestsFromTestCase(T3))
                 suite.addTests(unittest.TestLoader().loadTestsFromTestCase(T4))
+                suite.addTests(unittest.TestLoader().loadTestsFromTestCase(T5))
         filename = '/Users/lumi/Documents/jenkins/workspace/miot_android_rpc/report//HTMLReport.html'
         with open(filename, 'wb') as  f:
             HTMLTestRunner.HTMLTestRunner(stream=f,

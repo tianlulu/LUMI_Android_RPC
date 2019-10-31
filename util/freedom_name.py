@@ -1,7 +1,6 @@
 '''
 用户自定义设房间名称、设备名称的set get方法
 '''
-
 class My_Custom_Name:
     model_name = ""
     european_standard_device_name = ""
@@ -10,15 +9,25 @@ class My_Custom_Name:
     sensor_ht_v1_room_name = ""
     ctrl_ln1_aq1_device_name = ""
     ctrl_ln1_aq1_room_name = ""
+    ctrl_ln1_v1_room_name = ""
+    ctrl_ln1_v1_device_name = ""
     ctrl_neutral_v1_room_name = ""
     ctrl_neutral_v1_device_name = ""
 
+    def set_ctrl_ln1_v1_device_name(self,custom_device_name):
+        global ctrl_ln1_v1_device_name
+        ctrl_ln1_v1_device_name = custom_device_name
+        return ctrl_ln1_v1_device_name
+
+    def set_ctrl_ln1_v1_room_name(self,custom_room_name):
+        global ctrl_ln1_v1_room_name
+        ctrl_ln1_v1_room_name = custom_room_name
+        return custom_room_name
 
     def set_ctrl_neutral_v1_device_name(self,custom_device_name):
         global ctrl_neutral_v1_device_name
         ctrl_neutral_v1_device_name = custom_device_name
         return ctrl_neutral_v1_device_name
-
 
     def set_ctrl_neutral_v1_room_name(self,custom_room_name):
         global ctrl_neutral_v1_room_name
@@ -59,6 +68,18 @@ class My_Custom_Name:
         global model_name
         model_name = model_key
         return model_name
+
+    def get_ctrl_ln1_v1_room_name(self):
+        try:
+            return ctrl_ln1_v1_room_name
+        except Exception:
+            return My_Custom_Name.ctrl_ln1_v1_room_name
+
+    def get_ctrl_ln1_v1_device_name(self):
+        try:
+            return ctrl_ln1_v1_device_name
+        except Exception:
+            return My_Custom_Name.ctrl_ln1_v1_device_name
 
     def get_ctrl_neutral_v1_device_name(self):
         try:

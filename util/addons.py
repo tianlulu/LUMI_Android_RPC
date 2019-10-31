@@ -58,7 +58,6 @@ def request(flow):
                 # ctx.log.warn(str(json_data.values()))
         ctx.log.alert('遍历post的body值 end=========================================')
 
-
 def response(flow):
     path = '/app/home/rpc/'
     if path in flow.request.path:
