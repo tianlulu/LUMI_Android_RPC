@@ -13,6 +13,31 @@ class My_Custom_Name:
     ctrl_ln1_v1_device_name = ""
     ctrl_neutral_v1_room_name = ""
     ctrl_neutral_v1_device_name = ""
+    switch_b1lacn02_room_name = ""
+    switch_b1lacn02_device_name = ""
+    switch_b1nacn02_room_name = ""
+    switch_b1nacn02_device_name = ""
+
+
+    def set_switch_b1nacn02_device_name(self,custom_device_name):
+        global switch_b1nacn02_device_name
+        switch_b1nacn02_device_name = custom_device_name
+        return switch_b1nacn02_device_name
+
+    def set_switch_b1nacn02_room_name(self,custom_room_name):
+        global switch_b1nacn02_room_name
+        switch_b1nacn02_room_name = custom_room_name
+        return switch_b1nacn02_room_name
+
+    def set_switch_b1lacn02_device_name(self,custom_device_name):
+        global switch_b1lacn02_device_name
+        switch_b1lacn02_device_name = custom_device_name
+        return switch_b1lacn02_device_name
+
+    def set_switch_b1lacn02_room_name(self,custom_room_name):
+        global switch_b1lacn02_room_name
+        switch_b1lacn02_room_name = custom_room_name
+        return switch_b1lacn02_room_name
 
     def set_ctrl_ln1_v1_device_name(self,custom_device_name):
         global ctrl_ln1_v1_device_name
@@ -68,6 +93,21 @@ class My_Custom_Name:
         global model_name
         model_name = model_key
         return model_name
+
+
+    def get_switch_b1lacn02_room_name(self):
+        try:
+            return switch_b1lacn02_room_name
+        except Exception:
+            return My_Custom_Name.switch_b1lacn02_room_name
+
+
+    def get_switch_b1lacn02_device_name(self):
+        try:
+            return switch_b1lacn02_device_name
+        except Exception:
+            return My_Custom_Name.switch_b1lacn02_device_name
+
 
     def get_ctrl_ln1_v1_room_name(self):
         try:

@@ -65,7 +65,7 @@ class Ctrl_Neutral1_V1_Case(unittest.TestCase):
         self.assertFalse(is_offline, '设备已离线，请重新连接设备')
         gray_rgba = (216, 216, 216, 255)
         rgba = self.ctrl_neutral1_v1_handle.get_light_bulb_element_rgba()
-        print('得到的灯泡颜色为:',rgba)
+        # print('得到的灯泡颜色为:',rgba)
         self.assertTrue(self.ctrl_neutral1_v1_handle.click_on_off_light_element(), '找不到开关按钮')
         if rgba == gray_rgba:
             self.set_toggle_plug_on()
