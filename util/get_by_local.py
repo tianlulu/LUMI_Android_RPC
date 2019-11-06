@@ -12,6 +12,9 @@ class GetByLocal:
             # 根据Readini中的关键字获取定位信息 id classname xpath
             # eg：id>com.xiaomi.gateway:id/plug_big_toggle_iv
             local = read_ini.get_value(key,section)
+            print(local)
+
+
             # if local != None:
             # 以>分隔 id > com.xiaomi.gateway:id/plug_big_toggle_iv
             by = local.split('>')[0]

@@ -1,6 +1,7 @@
 #coding=utf8
 import sys
 sys.path.append('/Users/lumi/Documents/items/MIOT/Appium_Android_RPC')
+
 import unittest
 from util.operation_json import OperationJson
 from util.server import Server

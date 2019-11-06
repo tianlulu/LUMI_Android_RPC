@@ -2,7 +2,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <title>墙壁开关(零火线单键版)测试用例结果</title>
+    <title>Aqara墙壁开关(零火线单键版)测试用例结果</title>
     <meta name="generator" content="HTMLTestRunner 0.9.1"/>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
     
@@ -199,10 +199,10 @@
     <div id="div_base">
         
     <div class='page-header'>
-        <h1>墙壁开关(零火线单键版)测试用例结果</h1>
-    <p class='attribute'><strong>开始时间:</strong> 2019-10-31 15:15:15</p>
-<p class='attribute'><strong>运行时长:</strong> 0:00:37.714257</p>
-<p class='attribute'><strong>状态:</strong> 通过 4</p>
+        <h1>Aqara墙壁开关(零火线单键版)测试用例结果</h1>
+    <p class='attribute'><strong>开始时间:</strong> 2019-11-04 16:22:26</p>
+<p class='attribute'><strong>运行时长:</strong> 0:01:00.080545</p>
+<p class='attribute'><strong>状态:</strong> 通过 3 失败 1</p>
 
     </div>
     <div style="float: left;width:50%;"><p class='description'>测试报告详情:</p></div>
@@ -233,11 +233,11 @@
             <td>查看</td>
         </tr>
         
-    <tr class='passClass'>
-        <td>Ctrl_Ln1_V1_Case</td>
+    <tr class='failClass'>
+        <td>Ctrl_Ln1_Aq1_Case</td>
         <td>4</td>
-        <td>4</td>
-        <td>0</td>
+        <td>3</td>
+        <td>1</td>
         <td>0</td>
         <td><a href="javascript:showClassDetail('c1',4)">详情</a></td>
     </tr>
@@ -252,8 +252,8 @@
 
     <div id='div_pt1.1' class="popup_window">
         <pre>pt1.1: setUp
-滑动了0次找到房间
-滑动了0次找到设备
+滑动了1次找到房间
+滑动了1次找到设备
 tearDown
 </pre>
     </div>
@@ -276,9 +276,9 @@ Exception message Message:
 
 有网络状态
 设备在线
-请求参数: {'id': 8018, 'method': 'get_device_prop_exp', 'params': [['lumi.158d00012a403f', 'channel_0', 'load_power']]}
+请求参数: {'id': 7834, 'method': 'get_device_prop_exp', 'params': [['lumi.158d00014ab105', 'channel_0', 'load_power']]}
 method:get_device_prop_exp
-params中带有lumi.158d00012a403f参数
+params中带有lumi.158d00014ab105参数
 params中带有channel_0参数
 params中带有load_power参数
 tearDown
@@ -289,22 +289,28 @@ tearDown
     </td>
 </tr>
 
-<tr id='pt1.3' class='hiddenRow'>
-    <td class='none'><div class='testcase'>test_case3: 打开/关闭开关（toggle_ctrl_neutral)</div></td>
+<tr id='ft1.3' class='none'>
+    <td class='failCase'><div class='testcase'>test_case3: 打开/关闭开关（toggle_ctrl_neutral)</div></td>
     <td colspan='5' align='center'>
 
     <!--css div popup start-->
-    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.3')" >
-        通过</a>
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.3')" >
+        失败</a>
 
-    <div id='div_pt1.3' class="popup_window">
-        <pre>pt1.3: setUp
+    <div id='div_ft1.3' class="popup_window">
+        <pre>ft1.3: setUp
 打开开关
-请求参数: {'sid': 'lumi.158d00012a403f', 'id': 8019, 'method': 'toggle_ctrl_neutral', 'params': ['channel_0', 'on']}
-method:toggle_ctrl_neutral
-params中带有channel_0参数
-params中带有on参数
+请求参数: {'id': 7834, 'method': 'get_device_prop_exp', 'params': [['lumi.158d00014ab105', 'channel_0', 'load_power']]}
 tearDown
+Traceback (most recent call last):
+  File "lumi_ctrl_ln1_aq1_case.py", line 71, in test_case3
+    self.set_toggle_plug_on()
+  File "lumi_ctrl_ln1_aq1_case.py", line 82, in set_toggle_plug_on
+    self.assertEqual(method, 'toggle_ctrl_neutral')
+AssertionError: 'get_device_prop_exp' != 'toggle_ctrl_neutral'
+- get_device_prop_exp
++ toggle_ctrl_neutral
+
 </pre>
     </div>
     <!--css div popup end-->
@@ -322,7 +328,8 @@ tearDown
 
     <div id='div_pt1.4' class="popup_window">
         <pre>pt1.4: setUp
-向下滑动了0次到达顶部
+Ctrl_Ln1_Aq1_Handle--------------get_room_list_back_element
+向下滑动了2次到达顶部
 tearDown
 </pre>
     </div>
@@ -334,8 +341,8 @@ tearDown
         <tr id='total_row'>
             <td>总计</td>
             <td>4</td>
-            <td>4</td>
-            <td>0</td>
+            <td>3</td>
+            <td>1</td>
             <td>0</td>
             <td>&nbsp;</td>
         </tr>
@@ -370,8 +377,8 @@ tearDown
                     radius : '60%',
                     center: ['50%', '60%'],
                     data:[
-                        {value:4, name:'通过'},
-                        {value:0, name:'失败'},
+                        {value:3, name:'通过'},
+                        {value:1, name:'失败'},
                         {value:0, name:'错误'}
                     ],
                     itemStyle: {

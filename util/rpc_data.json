@@ -1,9 +1,11 @@
 {
-    "sid": "lumi.158d00012a403f",
-    "id": 6802,
-    "method": "toggle_ctrl_neutral",
+    "id": 7834,
+    "method": "get_device_prop_exp",
     "params": [
-        "channel_0",
-        "off"
+        [
+            "lumi.158d00014ab105",
+            "channel_0",
+            "load_power"
+        ]
     ]
 }

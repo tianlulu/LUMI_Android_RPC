@@ -1,4 +1,3 @@
-
 import configparser
 # read_ini = configparser.ConfigParser()
 # read_ini.read('../config/LocalElement.ini')
@@ -19,6 +18,7 @@ class Readini:
         read_ini = configparser.ConfigParser()
         read_ini.read(self.file_path)
         return read_ini
+
 
     # 通过key获取对应的value
     def get_value(self,key,section=None):

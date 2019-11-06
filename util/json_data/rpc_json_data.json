@@ -1,0 +1,23 @@
+{
+    "request_data:": {
+        "id": 3410,
+        "method": "get_device_prop_exp",
+        "params": [
+            [
+                "lumi.158d00014ab105",
+                "channel_0",
+                "load_power"
+            ]
+        ]
+    },
+    "response_data:": {
+        "code": 0,
+        "id": 3410,
+        "result": [
+            [
+                "off",
+                0
+            ]
+        ]
+    }
+}
