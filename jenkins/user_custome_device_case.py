@@ -49,6 +49,11 @@ class All_Cases():
             room_name = device_list[device_info][0]
             device_name = device_list[device_info][1]
             model = device_list[device_info][2]
+<<<<<<< HEAD
+=======
+            print('room_name:',room_name,type(room_name))
+            print('device_name:',device_name,type(device_name))
+>>>>>>> fcef23fce4f51bd66c318018e152b9ededa28cb4
             if model == "lumi.ctrl_ln1.aq1":
                 print('lumi.ctrl_ln1.aq1')
                 my_custom_name.set_ctrl_ln1_aq1_room_name(room_name)
