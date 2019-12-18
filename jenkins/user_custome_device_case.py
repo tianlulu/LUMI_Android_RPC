@@ -52,16 +52,6 @@ class All_Cases():
             print('room_name:',room_name,type(room_name))
             print('device_name:',device_name,type(device_name))
             print('model:',model,type(model))
-            # if model == "lumi.plug.mmeu01":
-            #     print('lumi.european.standard')
-            #     my_custom_name.set_european_standard_room_name(room_name)
-            #     my_custom_name.set_european_standard_device_name(device_name)
-            #     suite.addTests(unittest.TestLoader().loadTestsFromTestCase(T1))
-            # if model == "lumi.sensor.ht.v1":
-            #     print('lumi.sensor.ht.v1')
-            #     my_custom_name.set_sensor_ht_v1_room_name(room_name)
-            #     my_custom_name.set_sensor_ht_v1_device_name(device_name)
-            #     suite.addTests(unittest.TestLoader().loadTestsFromTestCase(T2))
             if model == "lumi.ctrl_ln1.aq1":
                 print('lumi.ctrl_ln1.aq1')
                 my_custom_name.set_ctrl_ln1_aq1_room_name(room_name)
