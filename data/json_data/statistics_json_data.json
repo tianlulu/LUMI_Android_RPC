@@ -1,0 +1,100 @@
+{
+    "featchTemperatureHumidityPressure": [
+        {
+            "type": "success",
+            "requestTime": 1575441230782,
+            "params": [
+                {
+                    "did": "254984411",
+                    "siid": 2,
+                    "piid": 1
+                },
+                {
+                    "did": "254984411",
+                    "siid": 2,
+                    "piid": 2
+                },
+                {
+                    "did": "254984411",
+                    "siid": 2,
+                    "piid": 3
+                }
+            ],
+            "response": [
+                {
+                    "did": "254984411",
+                    "siid": 2,
+                    "piid": 1,
+                    "value": 26.26,
+                    "code": 0,
+                    "updateTime": 1575440580203
+                },
+                {
+                    "did": "254984411",
+                    "siid": 2,
+                    "piid": 2,
+                    "value": 35.57,
+                    "code": 0,
+                    "updateTime": 1575440610068
+                },
+                {
+                    "did": "254984411",
+                    "siid": 2,
+                    "piid": 3,
+                    "value": 101.2,
+                    "code": 0,
+                    "updateTime": 1575434807306
+                }
+            ],
+            "responseTime": 1575441231196
+        },
+        {
+            "type": "success",
+            "requestTime": 1575441234344,
+            "params": [
+                {
+                    "did": "254984411",
+                    "siid": 2,
+                    "piid": 1
+                },
+                {
+                    "did": "254984411",
+                    "siid": 2,
+                    "piid": 2
+                },
+                {
+                    "did": "254984411",
+                    "siid": 2,
+                    "piid": 3
+                }
+            ],
+            "response": [
+                {
+                    "did": "254984411",
+                    "siid": 2,
+                    "piid": 1,
+                    "value": 26.26,
+                    "code": 0,
+                    "updateTime": 1575440580203
+                },
+                {
+                    "did": "254984411",
+                    "siid": 2,
+                    "piid": 2,
+                    "value": 35.57,
+                    "code": 0,
+                    "updateTime": 1575440610068
+                },
+                {
+                    "did": "254984411",
+                    "siid": 2,
+                    "piid": 3,
+                    "value": 101.2,
+                    "code": 0,
+                    "updateTime": 1575434807306
+                }
+            ],
+            "responseTime": 1575441234444
+        }
+    ]
+}

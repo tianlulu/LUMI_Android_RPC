@@ -1,0 +1,11 @@
+{
+    "request_data": {
+        "newName": "自动化重命名 1575021689569",
+        "did": "lumi.158d00019fd23d"
+    },
+    "response_data": {
+        "code": 0,
+        "message": "ok",
+        "result": true
+    }
+}

@@ -295,7 +295,7 @@ def get_suite():
     # 定义个报告存放的路径，支持相对路径
     # filename = '../report/tesecase'+str(i)+'_report'+'.html'
     # filename = '../report/HTMLReport.html'
-    filename = '/Users/lumi/Documents/items/MIOT/Appium_Android_RPC/report/HTMLReport.html'
+    filename = './report/HTMLReport.html'
     file_result = open(filename, 'wb')
     # 定义测试报告
     HTMLTestRunner.HTMLTestRunner(stream=file_result,

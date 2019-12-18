@@ -200,9 +200,9 @@
         
     <div class='page-header'>
         <h1>Aqara墙壁开关(零火线单键版)测试用例结果</h1>
-    <p class='attribute'><strong>开始时间:</strong> 2019-11-04 16:22:26</p>
-<p class='attribute'><strong>运行时长:</strong> 0:01:00.080545</p>
-<p class='attribute'><strong>状态:</strong> 通过 3 失败 1</p>
+    <p class='attribute'><strong>开始时间:</strong> 2019-12-02 16:11:06</p>
+<p class='attribute'><strong>运行时长:</strong> 0:05:52.791112</p>
+<p class='attribute'><strong>状态:</strong> 通过 24 失败 7 错误 3</p>
 
     </div>
     <div style="float: left;width:50%;"><p class='description'>测试报告详情:</p></div>
@@ -233,13 +233,13 @@
             <td>查看</td>
         </tr>
         
-    <tr class='failClass'>
+    <tr class='errorClass'>
         <td>Ctrl_Ln1_Aq1_Case</td>
-        <td>4</td>
+        <td>34</td>
+        <td>24</td>
+        <td>7</td>
         <td>3</td>
-        <td>1</td>
-        <td>0</td>
-        <td><a href="javascript:showClassDetail('c1',4)">详情</a></td>
+        <td><a href="javascript:showClassDetail('c1',34)">详情</a></td>
     </tr>
 
 <tr id='pt1.1' class='hiddenRow'>
@@ -252,8 +252,18 @@
 
     <div id='div_pt1.1' class="popup_window">
         <pre>pt1.1: setUp
-滑动了1次找到房间
-滑动了1次找到设备
+元素不存在
+room_name: 
+元素不存在
+room_name: 
+元素不存在
+room_name: 
+滑动了2次找到房间
+已经不在房间里面了
+过了加载页面,成功进入插件
+滑动了0次找到设备
+有网络状态
+设备在线
 tearDown
 </pre>
     </div>
@@ -263,7 +273,7 @@ tearDown
 </tr>
 
 <tr id='pt1.2' class='hiddenRow'>
-    <td class='none'><div class='testcase'>test_case2: 进入首页(get_device_prop_exp)</div></td>
+    <td class='none'><div class='testcase'>test_case2: 进入首页获取设备状态(get_device_prop_exp)</div></td>
     <td colspan='5' align='center'>
 
     <!--css div popup start-->
@@ -272,15 +282,9 @@ tearDown
 
     <div id='div_pt1.2' class="popup_window">
         <pre>pt1.2: setUp
-Exception message Message: 
-
-有网络状态
-设备在线
-请求参数: {'id': 7834, 'method': 'get_device_prop_exp', 'params': [['lumi.158d00014ab105', 'channel_0', 'load_power']]}
-method:get_device_prop_exp
-params中带有lumi.158d00014ab105参数
-params中带有channel_0参数
-params中带有load_power参数
+请求参数: {'id': 6552, 'method': 'get_device_prop_exp', 'params': [['lumi.158d0002112ad0', 'channel_0', 'load_power']]}
+请求方法为:get_device_prop_exp
+获取到的开关状态为off
 tearDown
 </pre>
     </div>
@@ -289,28 +293,22 @@ tearDown
     </td>
 </tr>
 
-<tr id='ft1.3' class='none'>
-    <td class='failCase'><div class='testcase'>test_case3: 打开/关闭开关（toggle_ctrl_neutral)</div></td>
+<tr id='pt1.3' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_case3: 打开/关闭开关（toggle_ctrl_neutral)</div></td>
     <td colspan='5' align='center'>
 
     <!--css div popup start-->
-    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.3')" >
-        失败</a>
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.3')" >
+        通过</a>
 
-    <div id='div_ft1.3' class="popup_window">
-        <pre>ft1.3: setUp
-打开开关
-请求参数: {'id': 7834, 'method': 'get_device_prop_exp', 'params': [['lumi.158d00014ab105', 'channel_0', 'load_power']]}
+    <div id='div_pt1.3' class="popup_window">
+        <pre>pt1.3: setUp
+请求参数: {'sid': 'lumi.158d0002112ad0', 'id': 6553, 'method': 'toggle_ctrl_neutral', 'params': ['channel_0', 'on']}
+请求方法为:toggle_ctrl_neutral
+成功打开开关
+params请求参数中带有channel_0
+params请求参数中带有on
 tearDown
-Traceback (most recent call last):
-  File "lumi_ctrl_ln1_aq1_case.py", line 71, in test_case3
-    self.set_toggle_plug_on()
-  File "lumi_ctrl_ln1_aq1_case.py", line 82, in set_toggle_plug_on
-    self.assertEqual(method, 'toggle_ctrl_neutral')
-AssertionError: 'get_device_prop_exp' != 'toggle_ctrl_neutral'
-- get_device_prop_exp
-+ toggle_ctrl_neutral
-
 </pre>
     </div>
     <!--css div popup end-->
@@ -319,7 +317,7 @@ AssertionError: 'get_device_prop_exp' != 'toggle_ctrl_neutral'
 </tr>
 
 <tr id='pt1.4' class='hiddenRow'>
-    <td class='none'><div class='testcase'>test_case4: 返回首页：滑动到顶部</div></td>
+    <td class='none'><div class='testcase'>test_case4: 是否请求当日电量接口</div></td>
     <td colspan='5' align='center'>
 
     <!--css div popup start-->
@@ -328,8 +326,981 @@ AssertionError: 'get_device_prop_exp' != 'toggle_ctrl_neutral'
 
     <div id='div_pt1.4' class="popup_window">
         <pre>pt1.4: setUp
-Ctrl_Ln1_Aq1_Handle--------------get_room_list_back_element
-向下滑动了2次到达顶部
+请求参数:did 参数值:lumi.158d0002112ad0
+请求参数:key 参数值:powerCost
+请求参数:data_type 参数值:stat_day
+请求参数:limit 参数值:1000
+请求参数:start_date 参数值:2019/12/02
+请求参数:end_date 参数值:2019/12/03
+tearDown
+</pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='pt1.5' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_case5: 是否请求当月电量接口</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.5')" >
+        通过</a>
+
+    <div id='div_pt1.5' class="popup_window">
+        <pre>pt1.5: setUp
+请求参数:did 参数值:lumi.158d0002112ad0
+请求参数:key 参数值:powerCost
+请求参数:data_type 参数值:stat_month
+请求参数:limit 参数值:1000
+请求参数:start_date 参数值:2019/12/01
+请求参数:end_date 参数值:2020/01/01
+tearDown
+</pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='pt1.6' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_case6: 点击今日用电:进入当日电量统计页面</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.6')" >
+        通过</a>
+
+    <div id='div_pt1.6' class="popup_window">
+        <pre>pt1.6: setUp
+请求参数:did 参数值:lumi.158d0002112ad0
+请求参数:key 参数值:powerCost
+请求参数:data_type 参数值:stat_day
+请求参数:limit 参数值:1000
+请求参数:start_date 参数值:2019/11/02
+请求参数:end_date 参数值:2019/12/03
+返回参数: {'code': 0, 'message': 'ok', 'result': []}
+页面当日电量度数为: 0.0度
+tearDown
+</pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='pt1.7' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_case7: 点击"月":统计当月用电</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.7')" >
+        通过</a>
+
+    <div id='div_pt1.7' class="popup_window">
+        <pre>pt1.7: setUp
+请求参数:did 参数值:lumi.158d0002112ad0
+请求参数:key 参数值:powerCost
+请求参数:data_type 参数值:stat_month
+请求参数:limit 参数值:1000
+请求参数:start_date 参数值:2018/12/02
+请求参数:end_date 参数值:2019/12/03
+返回参数: {'code': 0, 'message': 'sds throttle', 'result': []}
+页面当月电量度数为: 0.0度
+tearDown
+</pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='pt1.8' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_case8: 点击当月电量:进入当月电量统计页面</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.8')" >
+        通过</a>
+
+    <div id='div_pt1.8' class="popup_window">
+        <pre>pt1.8: setUp
+请求参数:did 参数值:lumi.158d0002112ad0
+请求参数:key 参数值:powerCost
+请求参数:data_type 参数值:stat_month
+请求参数:limit 参数值:1000
+请求参数:start_date 参数值:2018/12/02
+请求参数:end_date 参数值:2019/12/03
+返回参数: {'code': 0, 'message': 'sds throttle', 'result': []}
+页面当月电量度数为: 0.0度
+tearDown
+</pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='pt1.9' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_case9: 点击"日":统计当日电量</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.9')" >
+        通过</a>
+
+    <div id='div_pt1.9' class="popup_window">
+        <pre>pt1.9: setUp
+请求参数:did 参数值:lumi.158d0002112ad0
+请求参数:key 参数值:powerCost
+请求参数:data_type 参数值:stat_day
+请求参数:limit 参数值:1000
+请求参数:start_date 参数值:2019/11/02
+请求参数:end_date 参数值:2019/12/03
+返回参数: {'code': 0, 'message': 'ok', 'result': []}
+页面当日电量度数为: 0.0度
+tearDown
+</pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='ft1.10' class='none'>
+    <td class='errorCase'><div class='testcase'>test_case10: 点击功率历史记录:进入当日功率历史记录页面</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.10')" >
+        错误</a>
+
+    <div id='div_ft1.10' class="popup_window">
+        <pre>ft1.10: setUp
+本日功率请求参数: {'did': 'lumi.158d0002112ad0', 'key': 'load_power', 'data_type': 'stat_day_v3', 'limit': 1000, 'time_start': 1575129600, 'time_end': 1575274390}
+请求参数:did 参数值:lumi.158d0002112ad0
+请求参数:key 参数值:load_power
+请求参数:data_type 参数值:stat_day_v3
+请求参数:limit 参数值:1000
+请求参数:time_start 参数值:1575129600
+请求参数:time_end 参数值:1575274390
+当日功率请求后的返回参数: {'code': 0, 'message': 'ok', 'result': []}
+&lt;class 'Exception'&gt;
+tearDown
+Traceback (most recent call last):
+  File "lumi_ctrl_ln1_aq1_case.py", line 116, in test_case10
+    self.one_button_wall_switch_business.get_the_correct_power_data(self.one_button_wall_switch_data, True)
+  File "/Users/lumi/Documents/items/MIOT/Appium_Android_RPC/on_button_switch/on_button_wall_switch_business.py", line 167, in get_the_correct_power_data
+    interface_day_power = interface_power_or_time[0]
+TypeError: 'NoneType' object is not subscriptable
+</pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='pt1.11' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_case11: 点击"周":统计本周功率</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.11')" >
+        通过</a>
+
+    <div id='div_pt1.11' class="popup_window">
+        <pre>pt1.11: setUp
+本周功率请求参数: {'did': 'lumi.158d0002112ad0', 'key': 'load_power', 'data_type': 'stat_week_v3', 'limit': 1000, 'time_start': 1574611200, 'time_end': 1575274401}
+请求参数:did 参数值:lumi.158d0002112ad0
+请求参数:key 参数值:load_power
+请求参数:data_type 参数值:stat_week_v3
+请求参数:limit 参数值:1000
+请求参数:time_start 参数值:1574611200
+请求参数:time_end 参数值:1575274401
+当月功率请求后的返回参数: {'code': 0, 'message': 'ok', 'result': [{'value': '[0]', 'time': 1574777400}]}
+item: {'value': '[0]', 'time': 1574777400}
+接口返回的功率瓦数为: 0.00
+接口返回的最新时间为: 2019/11/26 22:10
+页面本周功率显示为 0.00 W
+页面当前时间为: 2019/11/26 22:10:00
+tearDown
+</pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='pt1.12' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_case12: 定时功能:时间段定时，执行一次,未设置关闭时间</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.12')" >
+        通过</a>
+
+    <div id='div_pt1.12' class="popup_window">
+        <pre>pt1.12: setUp
+从1758.0滑动到609.0的位置
+从1318.0滑动到1827.0的位置
+获取到了toast: 米家：请设置关闭时间
+tearDown
+</pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='ft1.13' class='none'>
+    <td class='failCase'><div class='testcase'>test_case13: 定时功能:时间段定时，执行一次</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.13')" >
+        失败</a>
+
+    <div id='div_ft1.13' class="popup_window">
+        <pre>ft1.13: setUp
+从1758.0滑动到609.0的位置
+从1318.0滑动到1624.0的位置
+时间段定时结束时间为: 次日 03:10
+时间段定时开启时间为: 明天 06:08
+请求参数:enable_push 参数值:1
+请求参数:enable_timer 参数值:1
+请求参数:enable_timer_off 参数值:1
+请求参数:enable_timer_on 参数值:1
+请求参数:off_method 参数值:toggle_ctrl_neutral
+请求参数:off_param 参数值:['channel_0', 'off']
+请求参数:off_time 参数值:42 10 3 3 12 * 2019
+请求参数:on_method 参数值:toggle_ctrl_neutral
+请求参数:on_param 参数值:['channel_0', 'on']
+请求参数:on_time 参数值:42 8 6 3 12 * 2019
+请求参数:timer_type 参数值:0
+请求参数:on_filter 参数值:
+请求参数:off_filter 参数值:
+请求时间参数应该为: 8 6 03 12 * 2019
+tearDown
+Traceback (most recent call last):
+  File "lumi_ctrl_ln1_aq1_case.py", line 134, in test_case13
+    self.one_button_wall_switch_data.checking_timing_set(TIME_TYPE.time_on_off,TIME_CUSTOME_TYPE.once,on_off_time_text[0],on_off_time_text[1])
+  File "/Users/lumi/Documents/items/MIOT/Appium_Android_RPC/on_button_switch/on_button_wall_switch_data.py", line 284, in checking_timing_set
+    assert self.get_on_off_once_time(start_time_str) in setting_data['on_time'], '时间段定时on_time请求参数错误'
+AssertionError: 时间段定时on_time请求参数错误
+</pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='pt1.14' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_case14: 定时功能:时间段定时,每天</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.14')" >
+        通过</a>
+
+    <div id='div_pt1.14' class="popup_window">
+        <pre>pt1.14: setUp
+从1703.0滑动到609.0的位置
+从1318.0滑动到1827.0的位置
+从1758.0滑动到609.0的位置
+从1318.0滑动到1624.0的位置
+时间段定时结束时间为: 06:10
+时间段定时开启时间为: 05:08
+请求参数:enable_push 参数值:1
+请求参数:enable_timer 参数值:1
+请求参数:enable_timer_off 参数值:1
+请求参数:enable_timer_on 参数值:1
+请求参数:off_method 参数值:toggle_ctrl_neutral
+请求参数:off_param 参数值:['channel_0', 'off']
+请求参数:off_time 参数值:55 10 6 * * 0,1,2,3,4,5,6 2019
+请求参数:on_method 参数值:toggle_ctrl_neutral
+请求参数:on_param 参数值:['channel_0', 'on']
+请求参数:on_time 参数值:55 8 5 * * 0,1,2,3,4,5,6 2019
+请求参数:timer_type 参数值:0
+请求参数:on_filter 参数值:
+请求参数:off_filter 参数值:
+05:08
+请求时间参数应该为: 8 5 * * 0,1,2,3,4,5,6 2019
+06:10
+请求时间参数应该为: 10 6 * * 0,1,2,3,4,5,6 2019
+tearDown
+</pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='pt1.15' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_case15: 定时功能:时间段定时,法定工作日</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.15')" >
+        通过</a>
+
+    <div id='div_pt1.15' class="popup_window">
+        <pre>pt1.15: setUp
+从1318.0滑动到1827.0的位置
+从1703.0滑动到1421.0的位置
+从1758.0滑动到609.0的位置
+从1318.0滑动到1624.0的位置
+时间段定时结束时间为: 次日 02:11
+时间段定时开启时间为: 11:16
+请求参数:enable_push 参数值:1
+请求参数:enable_timer 参数值:1
+请求参数:enable_timer_off 参数值:1
+请求参数:enable_timer_on 参数值:1
+请求参数:off_method 参数值:toggle_ctrl_neutral
+请求参数:off_param 参数值:['channel_0', 'off']
+请求参数:off_time 参数值:10 11 2 * * 0,1,2,3,4,5,6 2019
+请求参数:on_method 参数值:toggle_ctrl_neutral
+请求参数:on_param 参数值:['channel_0', 'on']
+请求参数:on_time 参数值:10 16 11 * * 0,1,2,3,4,5,6 2019
+请求参数:timer_type 参数值:0
+请求参数:on_filter 参数值:cn_workday
+请求参数:off_filter 参数值:cn_workday
+11:16
+请求时间参数应该为: 16 11 * * 0,1,2,3,4,5,6 2019
+02:11
+请求时间参数应该为: 11 2 * * 0,1,2,3,4,5,6 2019
+tearDown
+</pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='pt1.16' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_case16: 定时功能:时间段定时,法定节假日</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.16')" >
+        通过</a>
+
+    <div id='div_pt1.16' class="popup_window">
+        <pre>pt1.16: setUp
+从1703.0滑动到1421.0的位置
+从1318.0滑动到1827.0的位置
+从1758.0滑动到609.0的位置
+从1318.0滑动到1624.0的位置
+时间段定时结束时间为: 次日 06:11
+时间段定时开启时间为: 18:09
+请求参数:enable_push 参数值:1
+请求参数:enable_timer 参数值:1
+请求参数:enable_timer_off 参数值:1
+请求参数:enable_timer_on 参数值:1
+请求参数:off_method 参数值:toggle_ctrl_neutral
+请求参数:off_param 参数值:['channel_0', 'off']
+请求参数:off_time 参数值:23 11 6 * * 0,1,2,3,4,5,6 2019
+请求参数:on_method 参数值:toggle_ctrl_neutral
+请求参数:on_param 参数值:['channel_0', 'on']
+请求参数:on_time 参数值:23 9 18 * * 0,1,2,3,4,5,6 2019
+请求参数:timer_type 参数值:0
+请求参数:on_filter 参数值:cn_freeday
+请求参数:off_filter 参数值:cn_freeday
+18:09
+请求时间参数应该为: 9 18 * * 0,1,2,3,4,5,6 2019
+06:11
+请求时间参数应该为: 11 6 * * 0,1,2,3,4,5,6 2019
+tearDown
+</pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='pt1.17' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_case17: 定时功能:时间段定时，自定义</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.17')" >
+        通过</a>
+
+    <div id='div_pt1.17' class="popup_window">
+        <pre>pt1.17: setUp
+从1758.0滑动到609.0的位置
+从1318.0滑动到1624.0的位置
+从1318.0滑动到1624.0的位置
+从1318.0滑动到1624.0的位置
+时间段定时结束时间为: 13:11
+时间段定时开启时间为: 06:11
+请求参数:enable_push 参数值:1
+请求参数:enable_timer 参数值:1
+请求参数:enable_timer_off 参数值:1
+请求参数:enable_timer_on 参数值:1
+请求参数:off_method 参数值:toggle_ctrl_neutral
+请求参数:off_param 参数值:['channel_0', 'off']
+请求参数:off_time 参数值:38 11 13 * * 0 2019
+请求参数:on_method 参数值:toggle_ctrl_neutral
+请求参数:on_param 参数值:['channel_0', 'on']
+请求参数:on_time 参数值:38 11 6 * * 0 2019
+请求参数:timer_type 参数值:0
+请求参数:on_filter 参数值:
+请求参数:off_filter 参数值:
+06:11
+请求时间参数应该为: 11 6 * * 0 2019
+13:11
+请求时间参数应该为: 11 13 * * 0 2019
+tearDown
+</pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='ft1.18' class='none'>
+    <td class='failCase'><div class='testcase'>test_case18: 定时功能:定时开启,执行一次</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.18')" >
+        失败</a>
+
+    <div id='div_ft1.18' class="popup_window">
+        <pre>ft1.18: setUp
+从1758.0滑动到609.0的位置
+从1318.0滑动到1218.0的位置
+设置的定时开启时间为: 明天 06:15
+请求参数:enable_push 参数值:1
+请求参数:enable_timer 参数值:1
+请求参数:enable_timer_off 参数值:0
+请求参数:enable_timer_on 参数值:1
+请求参数:off_method 参数值:toggle_ctrl_neutral
+请求参数:off_param 参数值:['channel_0', 'off']
+请求参数:off_time 参数值:53 14 16 3 12 * 2019
+请求参数:on_method 参数值:toggle_ctrl_neutral
+请求参数:on_param 参数值:['channel_0', 'on']
+请求参数:on_time 参数值:53 15 6 3 12 * 2019
+请求参数:timer_type 参数值:0
+请求参数:on_filter 参数值:
+请求参数:off_filter 参数值:
+请求时间参数应该为: 15 6 03 12 * 2019
+tearDown
+Traceback (most recent call last):
+  File "lumi_ctrl_ln1_aq1_case.py", line 170, in test_case18
+    self.one_button_wall_switch_data.checking_timing_set(TIME_TYPE.time_on,TIME_CUSTOME_TYPE.once,start_time_str=on_time_text)
+  File "/Users/lumi/Documents/items/MIOT/Appium_Android_RPC/on_button_switch/on_button_wall_switch_data.py", line 270, in checking_timing_set
+    assert self.get_on_off_once_time(start_time_str) in setting_data['on_time'], '定时开启on_time参数错误'
+AssertionError: 定时开启on_time参数错误
+</pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='pt1.19' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_case19: 定时功能:定时开启,每天</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.19')" >
+        通过</a>
+
+    <div id='div_pt1.19' class="popup_window">
+        <pre>pt1.19: setUp
+从1758.0滑动到609.0的位置
+从1758.0滑动到609.0的位置
+设置的定时开启时间为: 03:29
+请求参数:enable_push 参数值:1
+请求参数:enable_timer 参数值:1
+请求参数:enable_timer_off 参数值:0
+请求参数:enable_timer_on 参数值:1
+请求参数:off_method 参数值:toggle_ctrl_neutral
+请求参数:off_param 参数值:['channel_0', 'off']
+请求参数:off_time 参数值:1 15 16 * * 0,1,2,3,4,5,6 2019
+请求参数:on_method 参数值:toggle_ctrl_neutral
+请求参数:on_param 参数值:['channel_0', 'on']
+请求参数:on_time 参数值:1 29 3 * * 0,1,2,3,4,5,6 2019
+请求参数:timer_type 参数值:0
+请求参数:on_filter 参数值:
+请求参数:off_filter 参数值:
+03:29
+请求时间参数应该为: 29 3 * * 0,1,2,3,4,5,6 2019
+tearDown
+</pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='pt1.20' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_case20: 定时功能:定时开启，法定工作日</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.20')" >
+        通过</a>
+
+    <div id='div_pt1.20' class="popup_window">
+        <pre>pt1.20: setUp
+从1758.0滑动到609.0的位置
+从1758.0滑动到609.0的位置
+设置的定时开启时间为: 03:28
+请求参数:enable_push 参数值:1
+请求参数:enable_timer 参数值:1
+请求参数:enable_timer_off 参数值:0
+请求参数:enable_timer_on 参数值:1
+请求参数:off_method 参数值:toggle_ctrl_neutral
+请求参数:off_param 参数值:['channel_0', 'off']
+请求参数:off_time 参数值:11 15 16 * * 0,1,2,3,4,5,6 2019
+请求参数:on_method 参数值:toggle_ctrl_neutral
+请求参数:on_param 参数值:['channel_0', 'on']
+请求参数:on_time 参数值:11 28 3 * * 0,1,2,3,4,5,6 2019
+请求参数:timer_type 参数值:0
+请求参数:on_filter 参数值:cn_workday
+请求参数:off_filter 参数值:cn_workday
+03:28
+请求时间参数应该为: 28 3 * * 0,1,2,3,4,5,6 2019
+tearDown
+</pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='pt1.21' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_case21: 定时功能:定时开启,法定节假日</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.21')" >
+        通过</a>
+
+    <div id='div_pt1.21' class="popup_window">
+        <pre>pt1.21: setUp
+从1758.0滑动到609.0的位置
+从1758.0滑动到609.0的位置
+设置的定时开启时间为: 06:29
+请求参数:enable_push 参数值:1
+请求参数:enable_timer 参数值:1
+请求参数:enable_timer_off 参数值:0
+请求参数:enable_timer_on 参数值:1
+请求参数:off_method 参数值:toggle_ctrl_neutral
+请求参数:off_param 参数值:['channel_0', 'off']
+请求参数:off_time 参数值:20 15 16 * * 0,1,2,3,4,5,6 2019
+请求参数:on_method 参数值:toggle_ctrl_neutral
+请求参数:on_param 参数值:['channel_0', 'on']
+请求参数:on_time 参数值:20 29 6 * * 0,1,2,3,4,5,6 2019
+请求参数:timer_type 参数值:0
+请求参数:on_filter 参数值:cn_freeday
+请求参数:off_filter 参数值:cn_freeday
+06:29
+请求时间参数应该为: 29 6 * * 0,1,2,3,4,5,6 2019
+tearDown
+</pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='pt1.22' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_case22: 定时功能:定时开启,自定义</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.22')" >
+        通过</a>
+
+    <div id='div_pt1.22' class="popup_window">
+        <pre>pt1.22: setUp
+从1758.0滑动到609.0的位置
+从1318.0滑动到1624.0的位置
+设置的定时开启时间为: 03:12
+请求参数:enable_push 参数值:1
+请求参数:enable_timer 参数值:1
+请求参数:enable_timer_off 参数值:0
+请求参数:enable_timer_on 参数值:1
+请求参数:off_method 参数值:toggle_ctrl_neutral
+请求参数:off_param 参数值:['channel_0', 'off']
+请求参数:off_time 参数值:30 15 16 * * 0 2019
+请求参数:on_method 参数值:toggle_ctrl_neutral
+请求参数:on_param 参数值:['channel_0', 'on']
+请求参数:on_time 参数值:30 12 3 * * 0 2019
+请求参数:timer_type 参数值:0
+请求参数:on_filter 参数值:
+请求参数:off_filter 参数值:
+03:12
+请求时间参数应该为: 12 3 * * 0 2019
+tearDown
+</pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='ft1.23' class='none'>
+    <td class='failCase'><div class='testcase'>test_case23: 定时功能:定时关闭,执行一次</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.23')" >
+        失败</a>
+
+    <div id='div_ft1.23' class="popup_window">
+        <pre>ft1.23: setUp
+从1758.0滑动到609.0的位置
+从1318.0滑动到1218.0的位置
+设置的定时关闭时间为: 明天 07:16
+请求参数:enable_push 参数值:1
+请求参数:enable_timer 参数值:1
+请求参数:enable_timer_off 参数值:1
+请求参数:enable_timer_on 参数值:0
+请求参数:off_method 参数值:toggle_ctrl_neutral
+请求参数:off_param 参数值:['channel_0', 'off']
+请求参数:off_time 参数值:41 16 7 3 12 * 2019
+请求参数:on_method 参数值:toggle_ctrl_neutral
+请求参数:on_param 参数值:['channel_0', 'on']
+请求参数:on_time 参数值:41 15 16 2 12 * 2019
+请求参数:timer_type 参数值:0
+请求参数:on_filter 参数值:
+请求参数:off_filter 参数值:
+请求时间参数应该为: 16 7 03 12 * 2019
+tearDown
+Traceback (most recent call last):
+  File "lumi_ctrl_ln1_aq1_case.py", line 205, in test_case23
+    self.one_button_wall_switch_data.checking_timing_set(TIME_TYPE.time_off, TIME_CUSTOME_TYPE.once, end_time_str=off_time_text)
+  File "/Users/lumi/Documents/items/MIOT/Appium_Android_RPC/on_button_switch/on_button_wall_switch_data.py", line 256, in checking_timing_set
+    assert self.get_on_off_once_time(end_time_str) in setting_data['off_time'], '定时关闭off_time参数错误'
+AssertionError: 定时关闭off_time参数错误
+</pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='pt1.24' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_case24: 定时功能:定时关闭,每天</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.24')" >
+        通过</a>
+
+    <div id='div_pt1.24' class="popup_window">
+        <pre>pt1.24: setUp
+从1758.0滑动到609.0的位置
+从1758.0滑动到609.0的位置
+设置的定时关闭时间为: 明天 05:28
+请求参数:enable_push 参数值:1
+请求参数:enable_timer 参数值:1
+请求参数:enable_timer_off 参数值:1
+请求参数:enable_timer_on 参数值:0
+请求参数:off_method 参数值:toggle_ctrl_neutral
+请求参数:off_param 参数值:['channel_0', 'off']
+请求参数:off_time 参数值:49 28 5 * * 0,1,2,3,4,5,6 2019
+请求参数:on_method 参数值:toggle_ctrl_neutral
+请求参数:on_param 参数值:['channel_0', 'on']
+请求参数:on_time 参数值:49 15 16 * * 0,1,2,3,4,5,6 2019
+请求参数:timer_type 参数值:0
+请求参数:on_filter 参数值:
+请求参数:off_filter 参数值:
+05:28
+请求时间参数应该为: 28 5 * * 0,1,2,3,4,5,6 2019
+tearDown
+</pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='pt1.25' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_case25: 定时功能:定时关闭，法定工作日</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.25')" >
+        通过</a>
+
+    <div id='div_pt1.25' class="popup_window">
+        <pre>pt1.25: setUp
+从1758.0滑动到609.0的位置
+从1758.0滑动到609.0的位置
+设置的定时关闭时间为: 明天 05:29
+请求参数:enable_push 参数值:1
+请求参数:enable_timer 参数值:1
+请求参数:enable_timer_off 参数值:1
+请求参数:enable_timer_on 参数值:0
+请求参数:off_method 参数值:toggle_ctrl_neutral
+请求参数:off_param 参数值:['channel_0', 'off']
+请求参数:off_time 参数值:58 29 5 * * 0,1,2,3,4,5,6 2019
+请求参数:on_method 参数值:toggle_ctrl_neutral
+请求参数:on_param 参数值:['channel_0', 'on']
+请求参数:on_time 参数值:58 15 16 * * 0,1,2,3,4,5,6 2019
+请求参数:timer_type 参数值:0
+请求参数:on_filter 参数值:cn_workday
+请求参数:off_filter 参数值:cn_workday
+05:29
+请求时间参数应该为: 29 5 * * 0,1,2,3,4,5,6 2019
+tearDown
+</pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='pt1.26' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_case26: 定时功能:定时关闭,法定节假日</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.26')" >
+        通过</a>
+
+    <div id='div_pt1.26' class="popup_window">
+        <pre>pt1.26: setUp
+从1758.0滑动到609.0的位置
+从1758.0滑动到609.0的位置
+设置的定时关闭时间为: 明天 06:27
+请求参数:enable_push 参数值:1
+请求参数:enable_timer 参数值:1
+请求参数:enable_timer_off 参数值:1
+请求参数:enable_timer_on 参数值:0
+请求参数:off_method 参数值:toggle_ctrl_neutral
+请求参数:off_param 参数值:['channel_0', 'off']
+请求参数:off_time 参数值:8 27 6 * * 0,1,2,3,4,5,6 2019
+请求参数:on_method 参数值:toggle_ctrl_neutral
+请求参数:on_param 参数值:['channel_0', 'on']
+请求参数:on_time 参数值:8 16 16 * * 0,1,2,3,4,5,6 2019
+请求参数:timer_type 参数值:0
+请求参数:on_filter 参数值:cn_freeday
+请求参数:off_filter 参数值:cn_freeday
+06:27
+请求时间参数应该为: 27 6 * * 0,1,2,3,4,5,6 2019
+tearDown
+</pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='pt1.27' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_case27: 定时功能:定时关闭,自定义</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.27')" >
+        通过</a>
+
+    <div id='div_pt1.27' class="popup_window">
+        <pre>pt1.27: setUp
+从1758.0滑动到609.0的位置
+从1318.0滑动到1624.0的位置
+设置的定时关闭时间为: 明天 06:13
+请求参数:enable_push 参数值:1
+请求参数:enable_timer 参数值:1
+请求参数:enable_timer_off 参数值:1
+请求参数:enable_timer_on 参数值:0
+请求参数:off_method 参数值:toggle_ctrl_neutral
+请求参数:off_param 参数值:['channel_0', 'off']
+请求参数:off_time 参数值:17 13 6 * * 0 2019
+请求参数:on_method 参数值:toggle_ctrl_neutral
+请求参数:on_param 参数值:['channel_0', 'on']
+请求参数:on_time 参数值:17 16 16 * * 0 2019
+请求参数:timer_type 参数值:0
+请求参数:on_filter 参数值:
+请求参数:off_filter 参数值:
+06:13
+请求时间参数应该为: 13 6 * * 0 2019
+tearDown
+</pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='ft1.28' class='none'>
+    <td class='errorCase'><div class='testcase'>test_case28: 转无线开关设置：获取转无线开关状态</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.28')" >
+        错误</a>
+
+    <div id='div_ft1.28' class="popup_window">
+        <pre>ft1.28: setUp
+tearDown
+Traceback (most recent call last):
+  File "lumi_ctrl_ln1_aq1_case.py", line 241, in test_case28
+    self.one_button_wall_switch_data.get_wireless_switch_status()
+  File "/Users/lumi/Documents/items/MIOT/Appium_Android_RPC/on_button_switch/on_button_wall_switch_data.py", line 184, in get_wireless_switch_status
+    request_data = self.rpc_operation_json.read_get_device_prop_request_data()
+  File "/Users/lumi/Documents/items/MIOT/Appium_Android_RPC/data/operation_json/rpc_operation_json.py", line 25, in read_get_device_prop_request_data
+    request_data = data['get_device_prop_request_data']
+KeyError: 'get_device_prop_request_data'
+</pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='ft1.29' class='none'>
+    <td class='errorCase'><div class='testcase'>test_case29: 转无线开关设置：打开/关闭转无线开关按钮</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.29')" >
+        错误</a>
+
+    <div id='div_ft1.29' class="popup_window">
+        <pre>ft1.29: setUp
+tearDown
+Traceback (most recent call last):
+  File "lumi_ctrl_ln1_aq1_case.py", line 250, in test_case29
+    rgba = self.ctrl_ln1_aq1_handle.get_switch_element_rgba()
+  File "/Users/lumi/Documents/items/MIOT/Appium_Android_RPC/on_button_switch/on_button_wall_switch_handle.py", line 25, in get_switch_element_rgba
+    return image_rgb.get_element_rgb(light_element, file_path)
+  File "/Users/lumi/Documents/items/MIOT/Appium_Android_RPC/util/get_image_rgb.py", line 27, in get_element_rgb
+    x = element.location['x']
+AttributeError: 'NoneType' object has no attribute 'location'
+</pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='ft1.30' class='none'>
+    <td class='failCase'><div class='testcase'>test_case30: 修改设备名称:取消修改设备名称</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.30')" >
+        失败</a>
+
+    <div id='div_ft1.30' class="popup_window">
+        <pre>ft1.30: setUp
+StaleElementReferenceException: &lt;on_button_switch.one_button_wall_switch_page.One_Button_Wall_Switch_Page object at 0x107a4ba10&gt;
+元素不存在
+tearDown
+Traceback (most recent call last):
+  File "lumi_ctrl_ln1_aq1_case.py", line 260, in test_case30
+    self.one_button_wall_switch_business.cancel_modify_device_name()
+  File "/Users/lumi/Documents/items/MIOT/Appium_Android_RPC/on_button_switch/on_button_wall_switch_business.py", line 109, in cancel_modify_device_name
+    self.device_rename_function.cancel_modify_device_name()
+  File "/Users/lumi/Documents/items/MIOT/Appium_Android_RPC/common/function/device_rename_function.py", line 8, in cancel_modify_device_name
+    assert self.handle.click_input_view_clear_element() == True, '修改设备名称-删除设备名称按钮不存在'
+AssertionError: 修改设备名称-删除设备名称按钮不存在
+</pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='ft1.31' class='none'>
+    <td class='failCase'><div class='testcase'>test_case31: 修改设备名称:0个字符</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.31')" >
+        失败</a>
+
+    <div id='div_ft1.31' class="popup_window">
+        <pre>ft1.31: setUp
+元素不存在
+tearDown
+Traceback (most recent call last):
+  File "lumi_ctrl_ln1_aq1_case.py", line 266, in test_case31
+    self.one_button_wall_switch_business.modify_device_name_0_characters()
+  File "/Users/lumi/Documents/items/MIOT/Appium_Android_RPC/on_button_switch/on_button_wall_switch_business.py", line 114, in modify_device_name_0_characters
+    self.device_rename_function.modify_device_name_0_characters()
+  File "/Users/lumi/Documents/items/MIOT/Appium_Android_RPC/common/function/device_rename_function.py", line 15, in modify_device_name_0_characters
+    assert self.handle.click_device_name_settings_element() == True, '设置-设备名称元素不存在'
+AssertionError: 设置-设备名称元素不存在
+</pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='ft1.32' class='none'>
+    <td class='failCase'><div class='testcase'>test_case32: 修改设备名称:21个字符</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.32')" >
+        失败</a>
+
+    <div id='div_ft1.32' class="popup_window">
+        <pre>ft1.32: setUp
+元素不存在
+tearDown
+Traceback (most recent call last):
+  File "lumi_ctrl_ln1_aq1_case.py", line 271, in test_case32
+    self.one_button_wall_switch_business.modify_device_name()
+  File "/Users/lumi/Documents/items/MIOT/Appium_Android_RPC/on_button_switch/on_button_wall_switch_business.py", line 119, in modify_device_name
+    self.device_rename_function.modify_device_name()
+  File "/Users/lumi/Documents/items/MIOT/Appium_Android_RPC/common/function/device_rename_function.py", line 30, in modify_device_name
+    assert self.handle.click_device_name_settings_element() == True, '设置-修改设备名称元素不存在'
+AssertionError: 设置-修改设备名称元素不存在
+</pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='ft1.33' class='none'>
+    <td class='failCase'><div class='testcase'>test_case33: 修改设备名称:>21个字符</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.33')" >
+        失败</a>
+
+    <div id='div_ft1.33' class="popup_window">
+        <pre>ft1.33: setUp
+元素不存在
+tearDown
+Traceback (most recent call last):
+  File "lumi_ctrl_ln1_aq1_case.py", line 277, in test_case33
+    self.one_button_wall_switch_business.modify_device_name_exceed_character_limit()
+  File "/Users/lumi/Documents/items/MIOT/Appium_Android_RPC/on_button_switch/on_button_wall_switch_business.py", line 124, in modify_device_name_exceed_character_limit
+    self.device_rename_function.modify_device_name_exceed_character_limit()
+  File "/Users/lumi/Documents/items/MIOT/Appium_Android_RPC/common/function/device_rename_function.py", line 44, in modify_device_name_exceed_character_limit
+    assert self.handle.click_device_name_settings_element() == True, '设置-修改设备名称元素不存在'
+AssertionError: 设置-修改设备名称元素不存在
+</pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='pt1.34' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_case34: 返回首页：滑动到顶部</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.34')" >
+        通过</a>
+
+    <div id='div_pt1.34' class="popup_window">
+        <pre>pt1.34: setUp
+向下滑动了3次到达顶部
 tearDown
 </pre>
     </div>
@@ -340,10 +1311,10 @@ tearDown
 
         <tr id='total_row'>
             <td>总计</td>
-            <td>4</td>
+            <td>34</td>
+            <td>24</td>
+            <td>7</td>
             <td>3</td>
-            <td>1</td>
-            <td>0</td>
             <td>&nbsp;</td>
         </tr>
     </table>
@@ -377,9 +1348,9 @@ tearDown
                     radius : '60%',
                     center: ['50%', '60%'],
                     data:[
-                        {value:3, name:'通过'},
-                        {value:1, name:'失败'},
-                        {value:0, name:'错误'}
+                        {value:24, name:'通过'},
+                        {value:7, name:'失败'},
+                        {value:3, name:'错误'}
                     ],
                     itemStyle: {
                         emphasis: {

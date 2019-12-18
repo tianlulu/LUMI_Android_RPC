@@ -39,7 +39,9 @@ class Server:
                     devices_list.append(device_info[0])
             return devices_list
         else:
+            print('请连接您的设备')
             return  None
+
 
     def create_port_list(self,start_port):
         '''
@@ -102,7 +104,6 @@ class Server:
         for i in range(len(self.device_list)):
             t = threading.Thread(target=self.execute_command, args=(i, ))
             threads.append(t)
-
         for thread in threads:
             print(thread)
             thread.start()
@@ -125,4 +126,4 @@ if __name__ == '__main__':
     print(server.get_devices())
     # print(server.create_port_list(4700))
     # print(server.create_command_list())
-    server.execute_command_on_thread()
+    # server.execute_command_on_thread()

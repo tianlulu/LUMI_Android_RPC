@@ -13,6 +13,7 @@ class ImageRGBD:
         screen_save_path = img_folder + time_str + '.png'
         return screen_save_path
 
+
     '''
     获取截图中的单个元素中心位置的rgba值
     '''
@@ -34,6 +35,9 @@ class ImageRGBD:
         # print('top_image:',top_image.size)
         top_rgba = top_image.getpixel((top_image.size[0]/2, top_image.size[1]/2))
         return top_rgba
+
+
+
 
 
 

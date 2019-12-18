@@ -2,19 +2,82 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="64bcebdc-fd77-4fa5-ba4e-ddc9fe185121" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/util/json_data/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/util/json_data/rpc_json_data.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/util/operation_json/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/util/operation_json/electricity_statistics_operation_json.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/util/operation_json/rpc_operation_json.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/appiumDemo.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/appiumDemo.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cases/lumi_ctrl_ln1_aq1_case.py" beforeDir="false" afterPath="$PROJECT_DIR$/cases/lumi_ctrl_ln1_aq1_case.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/base/base_business.py" beforeDir="false" afterPath="$PROJECT_DIR$/base/base_business.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/base/base_driver.py" beforeDir="false" afterPath="$PROJECT_DIR$/base/base_driver.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/base/base_handle.py" beforeDir="false" afterPath="$PROJECT_DIR$/base/base_handle.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/base/base_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/base/base_page.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/business/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/business/common_business.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/business/one_button_wall_switch_business.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/business/test.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cases/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cases/common_case.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cases/default_device_case.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cases/lumi_ctrl_ln1_aq1_case.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cases/lumi_ctrl_ln1_v1_case.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cases/lumi_ctrl_neutral1_v1_case.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cases/lumi_plug_mmeu01_case.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cases/lumi_sensor_ht_v1_case.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cases/lumi_switch_b1lacn02_case.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cases/lumi_switch_b1nacn02_case.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cases/test_all_case.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cases/test_json_data.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cases/user_custome_device_case.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/constant_enum.py" beforeDir="false" afterPath="$PROJECT_DIR$/common/constant_enum.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/LocalElement.ini" beforeDir="false" afterPath="$PROJECT_DIR$/config/LocalElement.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/SensorElement.ini" beforeDir="false" afterPath="$PROJECT_DIR$/config/SensorElement.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/controlElement.ini.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/config/userconfig.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/userconfig.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/json_data/scene_edit_data.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/json_data/scene_edit_data.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/operation_json/scene_edit_json.py" beforeDir="false" afterPath="$PROJECT_DIR$/data/operation_json/scene_edit_json.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/operation_json/test.json.py" beforeDir="false" afterPath="$PROJECT_DIR$/data/operation_json/test.json.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/handle/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/handle/lumi_ctrl_ln1_aq1_handle.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/handle/lumi_ctrl_ln1_v1_handle.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/handle/lumi_ctrl_neutral1_v1_handle.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/handle/lumi_plug_mmeu01_handle.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/handle/lumi_sensor_ht_v1_handle.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/handle/lumi_switch_b1lacn02_handle.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/handle/lumi_switch_b1nacn02_handle.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/on_button_switch/case/lumi_ctrl_neutral1_v1_case.py" beforeDir="false" afterPath="$PROJECT_DIR$/on_button_switch/case/lumi_ctrl_neutral1_v1_case.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/on_button_switch/handle/lumi_ctrl_ln1_v1_handle.py" beforeDir="false" afterPath="$PROJECT_DIR$/on_button_switch/handle/lumi_ctrl_ln1_v1_handle.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/on_button_switch/handle/lumi_ctrl_neutral1_v1_handle.py" beforeDir="false" afterPath="$PROJECT_DIR$/on_button_switch/handle/lumi_ctrl_neutral1_v1_handle.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/on_button_switch/handle/lumi_switch_b1lacn02_handle.py" beforeDir="false" afterPath="$PROJECT_DIR$/on_button_switch/handle/lumi_switch_b1lacn02_handle.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/on_button_switch/handle/lumi_switch_b1nacn02_handle.py" beforeDir="false" afterPath="$PROJECT_DIR$/on_button_switch/handle/lumi_switch_b1nacn02_handle.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/on_button_switch/page/lumi_ctrl_neutral1_v1_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/on_button_switch/page/lumi_ctrl_neutral1_v1_page.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/on_button_switch/page/lumi_ln1_aq1_page.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/on_button_switch/page/lumi_switch_b1lacn02_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/on_button_switch/page/lumi_switch_b1lacn02_page.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/on_button_switch/page/lumi_switch_b1nacn02_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/on_button_switch/page/lumi_switch_b1nacn02_page.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/page/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/page/lumi_ctrl_ln1_aq1_page.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/page/lumi_ctrl_ln1_v1_page.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/page/lumi_ctrl_neutral1_v1_page.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/page/lumi_plug_mmeu01_page.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/page/lumi_sensor_ht_v1_page.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/page/lumi_switch_b1lacn02_page.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/page/lumi_switch_b1nacn02_page.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/report/HTMLReport.html" beforeDir="false" afterPath="$PROJECT_DIR$/report/HTMLReport.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/util/addons.py" beforeDir="false" afterPath="$PROJECT_DIR$/util/addons.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/util/freedom_name.py" beforeDir="false" afterPath="$PROJECT_DIR$/util/freedom_name.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/util/get_by_local.py" beforeDir="false" afterPath="$PROJECT_DIR$/util/get_by_local.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/util/get_image_rgb.py" beforeDir="false" afterPath="$PROJECT_DIR$/util/get_image_rgb.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/util/json_data/__init.__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/util/json_data/device_rename_json.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/util/json_data/electricity_statistics_json_data.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/util/json_data/rpc_json_data.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/util/operation_json.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/util/operation_json/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/util/operation_json/device_rename_json.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/util/operation_json/electricity_statistics_operation_json.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/util/operation_json/rpc_operation_json.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/util/read_init.py" beforeDir="false" afterPath="$PROJECT_DIR$/util/read_init.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/util/rpc_data.json" beforeDir="false" afterPath="$PROJECT_DIR$/util/rpc_data.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/util/rpc_data.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/util/server.py" beforeDir="false" afterPath="$PROJECT_DIR$/util/server.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/util/swip_operation.py" beforeDir="false" afterPath="$PROJECT_DIR$/util/swip_operation.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/util/test.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/util/write_user_command.py" beforeDir="false" afterPath="$PROJECT_DIR$/util/write_user_command.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -42,51 +105,95 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/util/addons.py">
+        <entry file="file://$PROJECT_DIR$/on_button_switch/case/lumi_ctrl_ln1_aq1_case.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="342">
-              <caret line="63" column="58" selection-start-line="63" selection-start-column="58" selection-end-line="63" selection-end-column="58" />
+            <state relative-caret-position="493">
+              <caret line="29" column="57" selection-start-line="29" selection-start-column="57" selection-end-line="29" selection-end-column="57" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/on_button_switch/handle/lumi_ctrl_ln1_aq1_handle.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="425">
+              <caret line="27" column="48" selection-start-line="27" selection-start-column="48" selection-end-line="27" selection-end-column="48" />
               <folding>
-                <element signature="e#0#25#0" expanded="true" />
+                <element signature="e#266#353#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/util/operation_json/rpc_operation_json.py">
+        <entry file="file://$PROJECT_DIR$/base/base_page.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="104">
-              <caret line="37" column="8" selection-start-line="37" selection-start-column="8" selection-end-line="37" selection-end-column="8" />
+            <state relative-caret-position="-3129">
+              <caret line="16" column="58" lean-forward="true" selection-start-line="16" selection-start-column="58" selection-end-line="16" selection-end-column="58" />
+              <folding>
+                <element signature="e#13#68#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/on_button_switch/page/lumi_ctrl_ln1_aq1_page.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="374">
+              <caret line="22" column="36" selection-start-line="22" selection-start-column="36" selection-end-line="22" selection-end-column="36" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/on_button_switch/case/lumi_ctrl_neutral1_v1_case.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="5049">
+              <caret line="297" column="16" selection-start-line="297" selection-start-column="16" selection-end-line="297" selection-end-column="39" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/jenkins/test_all_case.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="476">
+              <caret line="28" column="21" lean-forward="true" selection-start-line="28" selection-start-column="21" selection-end-line="28" selection-end-column="21" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/util/operation_json/electricity_statistics_operation_json.py">
+        <entry file="file://$PROJECT_DIR$/jenkins/user_custome_device_case.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+            <state relative-caret-position="1189">
+              <caret line="81" column="60" selection-start-line="81" selection-start-column="31" selection-end-line="81" selection-end-column="60" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/util/json_data/rpc_json_data.json">
+        <entry file="file://$PROJECT_DIR$/util/freedom_name.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" column="19" lean-forward="true" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="19" />
+            <state relative-caret-position="1887">
+              <caret line="111" column="37" selection-start-line="111" selection-start-column="8" selection-end-line="111" selection-end-column="37" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/util/json_data/electricity_statistics_json_data.json">
+        <entry file="file://$PROJECT_DIR$/config/LocalElement.ini">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="19" column="1" lean-forward="true" selection-start-line="19" selection-start-column="1" selection-end-line="19" selection-end-column="1" />
+            <state relative-caret-position="136">
+              <caret line="8" column="56" selection-start-line="8" selection-start-column="56" selection-end-line="8" selection-end-column="56" />
             </state>
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/plug/case/lumi_plug_mmeu01_case.py">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -101,40 +208,55 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>add_device</find>
-      <find>home_temperature_and_humidity</find>
-      <find>is_offline_element</find>
-      <find>element_operation</find>
-      <find>maximum_power_picker_view</find>
-      <find>is_offline</find>
-      <find>swipe_on</find>
-      <find>operation_json</find>
-      <find>get_home_device_element</find>
-      <find>self.my_local</find>
-      <find>self.custom_name</find>
-      <find>click_universal_back_element</find>
-      <find>click_offline_close_element</find>
-      <find>click_get_electrical_disconnect_element</find>
-      <find>get_max_power_limit_element</find>
-      <find>click_change_element</find>
-      <find>DosCmd</find>
-      <find>top_element</find>
-      <find>get_custom_element</find>
-      <find>execute_addons</find>
-      <find>is_flag</find>
-      <find>get_room_element</find>
-      <find>click_use_back_element</find>
-      <find>get_use_back_element</find>
-      <find>first</find>
-      <find>uni</find>
-      <find>switch_b1nacn02_handle</find>
-      <find>switch_b1lacn02_page</find>
-      <find>switch_b1lacn02_handle</find>
-      <find>device_room</find>
+      <find>get_loading_icon_element</find>
+      <find>room_list_back</find>
+      <find>load</find>
+      <find>get_on_off_time_text</find>
+      <find>home_ctrl_ln1_aq1</find>
+      <find>cheaking_timing_set</find>
+      <find>get_on_off_once_time</find>
+      <find>接口返回的电量度数为</find>
+      <find>on_button_wall_switch_da</find>
+      <find>device_name_settings</find>
+      <find>click_confirm_button_element</find>
+      <find>click_confirm_fix_decvice_name_element</find>
+      <find>click_cancel_button_element</find>
+      <find>click_cancel_fix_device_name_element</find>
+      <find>self.handle</find>
+      <find>scene_edid_json</find>
+      <find>URL_PATh</find>
+      <find>Ctrl_Ln1_Aq1_Case</find>
+      <find>get_title_bar_room_element</find>
+      <find>home_ctrl_ln1_v1</find>
+      <find>get_device_prop_request_data</find>
+      <find>Ctrl_Ln1_V1_Case</find>
+      <find>home_ctrl_neutral1_v1</find>
+      <find>Ctrl_Neutral1_V1_Case</find>
+      <find>Switch_B1lacn02_Case</find>
+      <find>Switch_B1lacn02_Handle</find>
+      <find>Ctrl_Ln1_V1_Handle</find>
+      <find>response_power_day_data</find>
+      <find>sib</find>
+      <find>split_list</find>
     </findStrings>
     <replaceStrings>
       <replace>switch_b1nacn02_page</replace>
       <replace>lumi_switch_b1nacn02_handle</replace>
+      <replace>$PROJECT_DIR$</replace>
+      <replace>on_button_wall_switch_handle</replace>
+      <replace>ctrl_ln1_aq1_handle</replace>
+      <replace>checking_timing_set</replace>
+      <replace>click_confirm_button_element</replace>
+      <replace>click_cancel_button_element</replace>
+      <replace>scene_edit_json</replace>
+      <replace>URL_PATH</replace>
+      <replace />
+      <replace>Ctrl_Ln1_V1_Case</replace>
+      <replace>Ctrl_Neutral1_V1_Case</replace>
+      <replace>Switch_B1lacn02_Case</replace>
+      <replace>ctrl_neutral1_v1_handle</replace>
+      <replace>switch_b1lacn02_handle</replace>
+      <replace>switch_b1nacn02_handle</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -143,63 +265,63 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/cases/lumi_european_standard_case.py" />
-        <option value="$PROJECT_DIR$/handle/lumi_european_standard_handle.py" />
-        <option value="$PROJECT_DIR$/page/lumi_european_standard_page.py" />
-        <option value="$PROJECT_DIR$/cases/test_json_data.py" />
-        <option value="$PROJECT_DIR$/business/aqara_tep_and_hum_business.py" />
-        <option value="$PROJECT_DIR$/business/lumi_plug_mmeu01_business.py" />
-        <option value="$PROJECT_DIR$/util/swip_operation.py" />
-        <option value="$PROJECT_DIR$/handle/lumi_ctrl_ln1_aq1.case.handle.py" />
-        <option value="$PROJECT_DIR$/dos/dos_cmd.py" />
-        <option value="$PROJECT_DIR$/page/lumi_ctrl_ln1_aq1.page.py" />
-        <option value="$PROJECT_DIR$/handle/lumi_ctrl_ln1_aq1.handle.py" />
-        <option value="$PROJECT_DIR$/cases/lumi_ctrl_ln1_aq1.case.py" />
-        <option value="$PROJECT_DIR$/base/base_handle.py" />
-        <option value="$PROJECT_DIR$/cases/lumi_plug_mmeu01_case.py" />
-        <option value="$PROJECT_DIR$/cases/lumi_sensor_ht_v1_case.py" />
-        <option value="$PROJECT_DIR$/page/lumi_sensor_ht_v1_page.py" />
-        <option value="$PROJECT_DIR$/page/lumi_plug_mmeu01_page.py" />
-        <option value="$PROJECT_DIR$/handle/lumi_sensor_ht_v1_handle.py" />
-        <option value="$PROJECT_DIR$/base/base_page.py" />
-        <option value="$PROJECT_DIR$/handle/lumi_plug_mmeu01_handle.py" />
-        <option value="$PROJECT_DIR$/cases/lumi_ctrl_neutral1_v1.py" />
-        <option value="$PROJECT_DIR$/page/lumi_ctrl_ln1_aq1_page.py" />
+        <option value="$PROJECT_DIR$/base/base_image.py" />
         <option value="$PROJECT_DIR$/util/get_image_rgb.py" />
-        <option value="$PROJECT_DIR$/handle/lumi_ctrl_neutral1_v1_handle.py" />
-        <option value="$PROJECT_DIR$/page/lumi_ctrl_neutral1_v1_page.py" />
-        <option value="$PROJECT_DIR$/handle/lumi_ctrl_ln1_aq1_handle.py" />
-        <option value="$PROJECT_DIR$/cases/lumi_ctrl_ln1_v1_case.py" />
-        <option value="$PROJECT_DIR$/handle/lumi_ctrl_ln1_v1_handle.py" />
-        <option value="$PROJECT_DIR$/page/lumi_ctrl_ln1_v1_page.py" />
-        <option value="$PROJECT_DIR$/config/LocalElement.ini" />
-        <option value="$PROJECT_DIR$/page/lumi_switch_b1lacn02_page.py" />
-        <option value="$PROJECT_DIR$/handle/lumi_switch_b1lacn02_handle.py" />
-        <option value="$PROJECT_DIR$/cases/lumi_ctrl_neutral1_v1_case.py" />
-        <option value="$PROJECT_DIR$/cases/lumi_switch_b1lacn02_case.py" />
-        <option value="$PROJECT_DIR$/handle/lumi_switch_b1nacn02_handle.py" />
-        <option value="$PROJECT_DIR$/cases/lumi_switch_b1nacn02_case.py" />
-        <option value="$PROJECT_DIR$/page/lumi_switch_b1nacn02_page.py" />
-        <option value="$PROJECT_DIR$/cases/test_all_case.py" />
-        <option value="$PROJECT_DIR$/cases/default_device_case.py" />
-        <option value="$PROJECT_DIR$/util/freedom_name.py" />
-        <option value="$PROJECT_DIR$/cases/user_custome_device_case.py" />
         <option value="$PROJECT_DIR$/util/server.py" />
+        <option value="$PROJECT_DIR$/base/base_business.py" />
+        <option value="$PROJECT_DIR$/on_button_switch/page/lumi_ln1_aq1_page.py" />
+        <option value="$PROJECT_DIR$/base/base_page.py" />
         <option value="$PROJECT_DIR$/util/get_by_local.py" />
-        <option value="$PROJECT_DIR$/cases/lumi_ctrl_ln1_aq1_case.py" />
-        <option value="$PROJECT_DIR$/util/read_init.py" />
-        <option value="$PROJECT_DIR$/util/json_data/electricity_statistics_json_data.json.py" />
-        <option value="$PROJECT_DIR$/util/operation_json/__init__.py" />
-        <option value="$PROJECT_DIR$/util/json_data/__init__.py" />
-        <option value="$PROJECT_DIR$/util/operation_json/rpc_operation_json.py" />
+        <option value="$PROJECT_DIR$/on_button_switch/one_button_wall_switch_page.py" />
+        <option value="$PROJECT_DIR$/data/json_data/timer_json" />
+        <option value="$PROJECT_DIR$/data/operation_json/device_rename_json.py" />
+        <option value="$PROJECT_DIR$/data/operation_json/scene_edit_json.py" />
+        <option value="$PROJECT_DIR$/on_button_switch/handle/lumi_ln1_aq1_handle.py" />
+        <option value="$PROJECT_DIR$/on_button_switch/on_button_wall_switch_business.py" />
+        <option value="$PROJECT_DIR$/on_button_switch/on_button_wall_switch_handle.py" />
+        <option value="$PROJECT_DIR$/common/function/timer_function.py" />
+        <option value="$PROJECT_DIR$/on_button_switch/case/test_json_data.py" />
+        <option value="$PROJECT_DIR$/base/base_handle.py" />
         <option value="$PROJECT_DIR$/util/addons.py" />
-        <option value="$PROJECT_DIR$/util/operation_json/electricity_statistics_operation_json.py" />
+        <option value="$PROJECT_DIR$/on_button_switch/handle/lumi_ctrl_ln1_v1_handle.py" />
+        <option value="$PROJECT_DIR$/data/operation_json/statistics_operation_json.py" />
+        <option value="$PROJECT_DIR$/on_button_switch/page/lumi_ctrl_ln1_aq1_page.py" />
+        <option value="$PROJECT_DIR$/data/json_data/scene_edit_data.json" />
+        <option value="$PROJECT_DIR$/data/json_data/device_rename.json" />
+        <option value="$PROJECT_DIR$/data/json_data/rpc_json_data.json" />
+        <option value="$PROJECT_DIR$/on_button_switch/handle/lumi_switch_b1lacn02_handle.py" />
+        <option value="$PROJECT_DIR$/on_button_switch/handle/lumi_switch_b1nacn02_handle.py" />
+        <option value="$PROJECT_DIR$/jenkins/test_all_case.py" />
+        <option value="$PROJECT_DIR$/jenkins/user_custome_device_case.py" />
+        <option value="$PROJECT_DIR$/data/operation_json/rpc_operation_json.py" />
+        <option value="$PROJECT_DIR$/config/LocalElement.ini" />
+        <option value="$PROJECT_DIR$/config/SensorElement.ini.py" />
+        <option value="$PROJECT_DIR$/config/SensorElement.ini" />
+        <option value="$PROJECT_DIR$/common/constant_enum.py" />
+        <option value="$PROJECT_DIR$/on_button_switch/handle/lumi_ctrl_ln1_aq1_handle.py" />
+        <option value="$PROJECT_DIR$/util/freedom_name.py" />
+        <option value="$PROJECT_DIR$/util/read_init.py" />
+        <option value="$PROJECT_DIR$/config/ControlElement.ini" />
+        <option value="$PROJECT_DIR$/on_button_switch/page/lumi_switch_b1nacn02_page.py" />
+        <option value="$PROJECT_DIR$/on_button_switch/page/lumi_switch_b1lacn02_page.py" />
+        <option value="$PROJECT_DIR$/on_button_switch/page/lumi_ctrl_neutral1_v1_page.py" />
+        <option value="$PROJECT_DIR$/on_button_switch/handle/lumi_ctrl_neutral1_v1_handle.py" />
+        <option value="$PROJECT_DIR$/on_button_switch/case/lumi_switch_b1lacn02_case.py" />
+        <option value="$PROJECT_DIR$/on_button_switch/case/lumi_switch_b1nacn02_case.py" />
+        <option value="$PROJECT_DIR$/data/json_data/statistics_json_data.json" />
+        <option value="$PROJECT_DIR$/on_button_switch/page/lumi_ctrl_ln1_v1_page.py" />
+        <option value="$PROJECT_DIR$/on_button_switch/case/lumi_ctrl_ln1_aq1_case.py" />
+        <option value="$PROJECT_DIR$/on_button_switch/case/lumi_ctrl_ln1_v1_case.py" />
+        <option value="$PROJECT_DIR$/data/operation_json/test.json.py" />
+        <option value="$PROJECT_DIR$/on_button_switch/on_button_wall_switch_data.py" />
+        <option value="$PROJECT_DIR$/common/function/device_rename_function.py" />
+        <option value="$PROJECT_DIR$/on_button_switch/case/lumi_ctrl_neutral1_v1_case.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="111" />
-    <option name="y" value="27" />
+    <option name="x" value="102" />
+    <option name="y" value="23" />
     <option name="width" value="1440" />
     <option name="height" value="797" />
   </component>
@@ -211,7 +333,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -222,24 +343,28 @@
             <path>
               <item name="Appium_Android_RPC" type="b2602c69:ProjectViewProjectNode" />
               <item name="Appium_Android_RPC" type="462c0819:PsiDirectoryNode" />
-              <item name="util" type="462c0819:PsiDirectoryNode" />
+              <item name="base" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Appium_Android_RPC" type="b2602c69:ProjectViewProjectNode" />
               <item name="Appium_Android_RPC" type="462c0819:PsiDirectoryNode" />
-              <item name="util" type="462c0819:PsiDirectoryNode" />
-              <item name="json_data" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Appium_Android_RPC" type="b2602c69:ProjectViewProjectNode" />
               <item name="Appium_Android_RPC" type="462c0819:PsiDirectoryNode" />
-              <item name="util" type="462c0819:PsiDirectoryNode" />
-              <item name="operation_json" type="462c0819:PsiDirectoryNode" />
+              <item name="jenkins" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Appium_Android_RPC" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Appium_Android_RPC" type="462c0819:PsiDirectoryNode" />
+              <item name="on_button_switch" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -254,8 +379,11 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/jenkins" />
+      <recent name="$PROJECT_DIR$/temperature_and_humidity/case" />
+      <recent name="$PROJECT_DIR$/plug/case" />
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/util" />
-      <recent name="$PROJECT_DIR$/cases" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -270,8 +398,30 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.default_device_case">
-    <configuration name="addons" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.test.json">
+    <configuration name="on_button_wall_switch_data" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="appiumDemo" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/on_button_switch" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/on_button_switch/on_button_wall_switch_data.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="read_init" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="appiumDemo" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -284,7 +434,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/util/addons.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/util/read_init.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -293,29 +443,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="default_device_case" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="appiumDemo" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/cases" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/cases/default_device_case.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="freedom_name" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="server" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="appiumDemo" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -328,7 +456,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/util/freedom_name.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/util/server.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -337,7 +465,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="new" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="test.json" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="appiumDemo" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -345,12 +473,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/cases" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/data/operation_json" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/cases/new.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/data/operation_json/test.json.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -367,12 +495,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/cases" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/on_button_switch/case" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/cases/test_json_data.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/on_button_switch/case/test_json_data.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -383,11 +511,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.default_device_case" />
-        <item itemvalue="Python.freedom_name" />
-        <item itemvalue="Python.addons" />
+        <item itemvalue="Python.test.json" />
+        <item itemvalue="Python.on_button_wall_switch_data" />
         <item itemvalue="Python.test_json_data" />
-        <item itemvalue="Python.new" />
+        <item itemvalue="Python.server" />
+        <item itemvalue="Python.read_init" />
       </list>
     </recent_temporary>
   </component>
@@ -525,17 +653,69 @@
       <workItem from="1572836000728" duration="41000" />
       <workItem from="1572853192826" duration="6623000" />
       <workItem from="1572918346755" duration="88000" />
-      <workItem from="1573003157603" duration="4403000" />
+      <workItem from="1573003157603" duration="24084000" />
+      <workItem from="1573096842177" duration="15292000" />
+      <workItem from="1573176143023" duration="23393000" />
+      <workItem from="1573224956712" duration="3000" />
+      <workItem from="1573225128706" duration="3773000" />
+      <workItem from="1573467269249" duration="3000" />
+      <workItem from="1573475988366" duration="2696000" />
+      <workItem from="1573539093742" duration="2035000" />
+      <workItem from="1573541169006" duration="13107000" />
+      <workItem from="1573558616233" duration="4959000" />
+      <workItem from="1573570780552" duration="5034000" />
+      <workItem from="1573609708322" duration="25233000" />
+      <workItem from="1573702272071" duration="21433000" />
+      <workItem from="1573744309680" duration="4968000" />
+      <workItem from="1573783986390" duration="644000" />
+      <workItem from="1573791886219" duration="2044000" />
+      <workItem from="1573806114657" duration="1275000" />
+      <workItem from="1573807620067" duration="6184000" />
+      <workItem from="1573829833952" duration="1831000" />
+      <workItem from="1574044436105" duration="20914000" />
+      <workItem from="1574127320641" duration="17520000" />
+      <workItem from="1574153473425" duration="3363000" />
+      <workItem from="1574213819505" duration="31357000" />
+      <workItem from="1574305751446" duration="18856000" />
+      <workItem from="1574347458521" duration="2213000" />
+      <workItem from="1574386985105" duration="20818000" />
+      <workItem from="1574436496945" duration="1545000" />
+      <workItem from="1574650164081" duration="17974000" />
+      <workItem from="1574688415063" duration="396000" />
+      <workItem from="1574732642006" duration="27661000" />
+      <workItem from="1574818774917" duration="21276000" />
+      <workItem from="1574905391771" duration="25547000" />
+      <workItem from="1574991168004" duration="17523000" />
+      <workItem from="1575163711615" duration="3189000" />
+      <workItem from="1575181762049" duration="1622000" />
+      <workItem from="1575254464742" duration="5000000" />
+      <workItem from="1575270803903" duration="3490000" />
+      <workItem from="1575359389251" duration="781000" />
+      <workItem from="1575423081045" duration="6000" />
+      <workItem from="1575428725615" duration="4048000" />
+      <workItem from="1575516992914" duration="1893000" />
+      <workItem from="1575529941322" duration="1922000" />
+      <workItem from="1575617138421" duration="577000" />
+      <workItem from="1575635993830" duration="446000" />
+      <workItem from="1575682195984" duration="906000" />
+      <workItem from="1575684247386" duration="686000" />
+      <workItem from="1575690106138" duration="6000" />
+      <workItem from="1575690208288" duration="5000" />
+      <workItem from="1575691704313" duration="803000" />
+      <workItem from="1575871810499" duration="1827000" />
+      <workItem from="1575950075530" duration="8058000" />
+      <workItem from="1576210278980" duration="3325000" />
+      <workItem from="1576288180424" duration="19000" />
+      <workItem from="1576464651391" duration="125000" />
+      <workItem from="1576490029175" duration="61000" />
+      <workItem from="1576490152047" duration="111000" />
+      <workItem from="1576490802273" duration="1157000" />
+      <workItem from="1576555573189" duration="3066000" />
+      <workItem from="1576585282958" duration="472000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Unittests_for_lumi_plug_v1_case_TestCase_test_case1 - 2019.07.19 at 17h 16m 28s.xml">
-      <configuration name="Unittests for lumi_plug_v1_case.TestCase.test_case1" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_for_lumi_plug_v1_case_TestCase_test_case1 - 2019.07.19 at 17h 17m 25s.xml">
-      <configuration name="Unittests for lumi_plug_v1_case.TestCase.test_case1" configurationId="tests" />
-    </history-entry>
     <history-entry file="Unittests_in_lumi_european_standard_case_py - 2019.08.20 at 21h 31m 18s.xml">
       <configuration name="Unittests in lumi_european_standard_case.py" configurationId="tests" />
     </history-entry>
@@ -560,9 +740,15 @@
     <history-entry file="Unittests_in_case_test1_demo_py - 2019.09.03 at 11h 27m 47s.xml">
       <configuration name="Unittests in case_test1_demo.py" configurationId="tests" />
     </history-entry>
+    <history-entry file="Unittests_in_lumi_ctrl_ln1_aq1_case_py - 2019.11.06 at 17h 06m 09s.xml">
+      <configuration name="Unittests in lumi_ctrl_ln1_aq1_case.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_lumi_ctrl_ln1_aq1_case_py - 2019.11.06 at 17h 07m 27s.xml">
+      <configuration name="Unittests in lumi_ctrl_ln1_aq1_case.py" configurationId="tests" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="853305000" />
+    <option name="totallyTimeSpent" value="1277457000" />
   </component>
   <component name="TodoView" selected-index="1">
     <todo-panel id="selected-file">
@@ -574,53 +760,52 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="111" y="27" width="1440" height="797" extended-state="0" />
-    <editor active="true" />
+    <frame x="102" y="23" width="1440" height="797" extended-state="0" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.8545198" visible="true" weight="0.2081545" />
-      <window_info id="Structure" order="1" sideWeight="0.1349353" side_tool="true" weight="0.13662376" />
-      <window_info id="Favorites" order="2" sideWeight="0.14548023" side_tool="true" weight="0.23748212" />
+      <window_info anchor="top" id="Terminal" order="0" sideWeight="0.4996192" side_tool="true" weight="0.036144577" />
+      <window_info id="Structure" order="0" sideWeight="0.1349353" side_tool="true" weight="0.13662376" />
+      <window_info id="Favorites" order="1" sideWeight="0.14548023" side_tool="true" weight="0.23748212" />
+      <window_info active="true" content_ui="combo" id="Project" order="2" sideWeight="0.8545198" visible="true" weight="0.1874106" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.35460994" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.04255319" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.32515338" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.35431919" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.04658385" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.32416788" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.32907802" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.037082817" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" weight="0.32624114" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.08918129" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5003808" side_tool="true" weight="0.25531915" />
-      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.4996192" visible="true" weight="0.13475177" />
-      <window_info anchor="bottom" id="Python Console" order="12" weight="0.4287856" />
+      <window_info anchor="bottom" id="Python Console" order="11" weight="0.42836258" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.19170243" />
-      <window_info anchor="right" id="SciView" order="3" weight="0.2014315" />
-      <window_info anchor="right" id="Database" order="4" weight="0.31461602" />
+      <window_info anchor="right" id="SciView" order="3" weight="0.20100144" />
+      <window_info anchor="right" id="Database" order="4" weight="0.31402004" />
     </layout>
     <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.8545198" visible="true" weight="0.23748212" />
-      <window_info id="Structure" order="1" sideWeight="0.1349353" side_tool="true" weight="0.13662376" />
-      <window_info id="Favorites" order="2" sideWeight="0.14548023" side_tool="true" weight="0.23748212" />
+      <window_info anchor="top" id="Terminal" order="0" sideWeight="0.4996192" side_tool="true" weight="0.036144577" />
+      <window_info id="Structure" order="0" sideWeight="0.1349353" side_tool="true" weight="0.13662376" />
+      <window_info id="Favorites" order="1" sideWeight="0.14548023" side_tool="true" weight="0.23748212" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.35460994" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.14698794" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.32515338" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.22249691" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.32456142" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.32907802" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.037082817" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" weight="0.32624114" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.08918129" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5003808" side_tool="true" weight="0.25531915" />
-      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.4996192" weight="0.3106383" />
-      <window_info anchor="bottom" id="Python Console" order="12" weight="0.4287856" />
+      <window_info anchor="bottom" id="Python Console" order="11" weight="0.42836258" />
+      <window_info anchor="bottom" content_ui="combo" id="Project" order="12" sideWeight="0.8545198" weight="0.26081583" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="SciView" order="3" weight="0.2014315" />
-      <window_info anchor="right" id="Database" order="4" weight="0.31461602" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.19170243" />
+      <window_info anchor="right" id="SciView" order="3" weight="0.20100144" />
+      <window_info anchor="right" id="Database" order="4" weight="0.31402004" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -631,11 +816,12 @@
     <SUITE FILE_PATH="coverage/appiumDemo$server.coverage" NAME="server Coverage Results" MODIFIED="1561821997739" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dos" />
     <SUITE FILE_PATH="coverage/Appium_Android_RPC$default_device_case.coverage" NAME="default_device_case Coverage Results" MODIFIED="1572578755434" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/cases" />
     <SUITE FILE_PATH="coverage/appiumDemo$test_threading.coverage" NAME="test_threading Coverage Results" MODIFIED="1560744081684" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/cases" />
-    <SUITE FILE_PATH="coverage/Appium_Android_RPC$addons.coverage" NAME="addons Coverage Results" MODIFIED="1571897712894" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/util" />
+    <SUITE FILE_PATH="coverage/Appium_Android_RPC$addons.coverage" NAME="addons Coverage Results" MODIFIED="1574134096704" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/util" />
     <SUITE FILE_PATH="coverage/Appium_Android_RPC$Unittests_for_case_test1_demo_TestCase1.coverage" NAME="Unittests for case_test1_demo.TestCase1 Coverage Results" MODIFIED="1567480504630" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/cases" />
     <SUITE FILE_PATH="coverage/Appium_Android_LUMI$Unittests_for_lumi_plug_v1_case_TestCase_test_case1.coverage" NAME="Unittests for lumi_plug_v1_case.TestCase.test_case1 Coverage Results" MODIFIED="1563527844938" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/cases" />
     <SUITE FILE_PATH="coverage/appiumDemo$run_main.coverage" NAME="run_main Coverage Results" MODIFIED="1562428945626" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/keyword" />
     <SUITE FILE_PATH="coverage/appiumDemo$Unittests_for_test_case_TestCase_test_case1.coverage" NAME="Unittests for test_case.TestCase.test_case1 Coverage Results" MODIFIED="1560745062332" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/cases" />
+    <SUITE FILE_PATH="coverage/Appium_Android_RPC$read_init.coverage" NAME="read_init Coverage Results" MODIFIED="1574394848404" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/util" />
     <SUITE FILE_PATH="coverage/Appium_Android_RPC$user_case.coverage" NAME="user_case Coverage Results" MODIFIED="1568598536339" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/cases" />
     <SUITE FILE_PATH="coverage/Appium_Android_LUMI$get_log.coverage" NAME="get_log Coverage Results" MODIFIED="1565664497864" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../app_log" />
     <SUITE FILE_PATH="coverage/Appium_Android_RPC$new.coverage" NAME="new Coverage Results" MODIFIED="1571631534710" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/cases" />
@@ -645,367 +831,373 @@
     <SUITE FILE_PATH="coverage/Appium_Android_LUMI$start_demo.coverage" NAME="start_demo Coverage Results" MODIFIED="1563502215807" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/cases" />
     <SUITE FILE_PATH="coverage/appiumDemo$read_init.coverage" NAME="read_init Coverage Results" MODIFIED="1560738041537" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/util" />
     <SUITE FILE_PATH="coverage/Appium_Android_RPC$aqara_tem_and_hum_page.coverage" NAME="aqara_tem_and_hum_page Coverage Results" MODIFIED="1567480416617" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/page" />
+    <SUITE FILE_PATH="coverage/Appium_Android_RPC$Unittests_in_lumi_ctrl_ln1_aq1_case_py.coverage" NAME="Unittests in lumi_ctrl_ln1_aq1_case.py Coverage Results" MODIFIED="1573031246776" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/cases" />
     <SUITE FILE_PATH="coverage/appiumDemo$operation_excel.coverage" NAME="operation_excel Coverage Results" MODIFIED="1562299885102" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/util" />
     <SUITE FILE_PATH="coverage/appiumDemo$port.coverage" NAME="port Coverage Results" MODIFIED="1561822239829" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/util" />
+    <SUITE FILE_PATH="coverage/Appium_Android_RPC$test__2_.coverage" NAME="test (2) Coverage Results" MODIFIED="1573031502068" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/cases" />
+    <SUITE FILE_PATH="coverage/Appium_Android_RPC$test_json.coverage" NAME="test.json Coverage Results" MODIFIED="1575441615613" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/data/operation_json" />
     <SUITE FILE_PATH="coverage/Appium_Android_RPC$port.coverage" NAME="port Coverage Results" MODIFIED="1566295162997" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/util" />
     <SUITE FILE_PATH="coverage/appiumDemo$write_user_command.coverage" NAME="write_user_command Coverage Results" MODIFIED="1562214055447" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/util" />
+    <SUITE FILE_PATH="coverage/Appium_Android_RPC$one_button_wall_switch_business.coverage" NAME="one_button_wall_switch_business Coverage Results" MODIFIED="1573031028581" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/util" />
+    <SUITE FILE_PATH="coverage/Appium_Android_RPC$one_button_wall_switch_business__1_.coverage" NAME="one_button_wall_switch_business (1) Coverage Results" MODIFIED="1573130629735" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/business" />
     <SUITE FILE_PATH="coverage/Appium_Android_RPC$dos_cmd.coverage" NAME="dos_cmd Coverage Results" MODIFIED="1566306819488" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dos" />
     <SUITE FILE_PATH="coverage/appiumDemo$start_demo.coverage" NAME="start_demo Coverage Results" MODIFIED="1559979881492" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/appium_start" />
-    <SUITE FILE_PATH="coverage/Appium_Android_RPC$test.coverage" NAME="test Coverage Results" MODIFIED="1566305353868" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/cases" />
+    <SUITE FILE_PATH="coverage/Appium_Android_RPC$on_button_wall_switch_data.coverage" NAME="on_button_wall_switch_data Coverage Results" MODIFIED="1574998358940" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/on_button_switch" />
+    <SUITE FILE_PATH="coverage/Appium_Android_RPC$test.coverage" NAME="test Coverage Results" MODIFIED="1573029672231" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/util" />
     <SUITE FILE_PATH="coverage/Appium_Android_RPC$Unittests_in_case_test1_demo_py.coverage" NAME="Unittests in case_test1_demo.py Coverage Results" MODIFIED="1567481267125" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/cases" />
     <SUITE FILE_PATH="coverage/Appium_Android_RPC$Unittests_in_lumi_european_standard_case_py.coverage" NAME="Unittests in lumi_european_standard_case.py Coverage Results" MODIFIED="1567138390348" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/cases" />
-    <SUITE FILE_PATH="coverage/Appium_Android_RPC$test_json_data.coverage" NAME="test_json_data Coverage Results" MODIFIED="1571832321526" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/cases" />
-    <SUITE FILE_PATH="coverage/Appium_Android_RPC$freedom_name.coverage" NAME="freedom_name Coverage Results" MODIFIED="1571922882981" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/util" />
+    <SUITE FILE_PATH="coverage/Appium_Android_RPC$test__1_.coverage" NAME="test (1) Coverage Results" MODIFIED="1574233925301" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/business" />
+    <SUITE FILE_PATH="coverage/Appium_Android_RPC$server.coverage" NAME="server Coverage Results" MODIFIED="1574437391947" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/util" />
+    <SUITE FILE_PATH="coverage/Appium_Android_RPC$test_json_data.coverage" NAME="test_json_data Coverage Results" MODIFIED="1574927993576" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/on_button_switch/case" />
+    <SUITE FILE_PATH="coverage/Appium_Android_RPC$freedom_name.coverage" NAME="freedom_name Coverage Results" MODIFIED="1574133949618" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/util" />
     <SUITE FILE_PATH="coverage/appiumDemo$Unittests_for_test_case_TestCase_test_case2.coverage" NAME="Unittests for test_case.TestCase.test_case2 Coverage Results" MODIFIED="1560169091216" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/cases" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/cases/lumi_ctrl_neutral1_v1.py" />
-    <entry file="file://$PROJECT_DIR$/screenshots20191030171725.png" />
-    <entry file="file://$PROJECT_DIR$/screenshots20191030180911.png" />
-    <entry file="file://$PROJECT_DIR$/util/get_image_rgb.py">
+    <entry file="file://$PROJECT_DIR$/screenshots20191129115029.png" />
+    <entry file="file://$PROJECT_DIR$/screenshots20191129120343.png" />
+    <entry file="file://$PROJECT_DIR$/screenshots20191129121454.png" />
+    <entry file="file://$PROJECT_DIR$/config/SensorElement.ini.py" />
+    <entry file="file://$PROJECT_DIR$/util/read_init.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="612">
-          <caret line="36" selection-start-line="36" selection-end-line="36" />
+        <state relative-caret-position="436">
+          <caret line="29" column="41" selection-start-line="29" selection-start-column="41" selection-end-line="29" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/util/get_by_local.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="9" column="21" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/screenshots20191129143348.png" />
+    <entry file="file://$PROJECT_DIR$/data/operation_json/rpc_operation_json.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="116">
+          <caret line="68" column="40" lean-forward="true" selection-start-line="68" selection-start-column="40" selection-end-line="68" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/function/timer_function.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="22" column="8" selection-start-line="22" selection-start-column="8" selection-end-line="22" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/on_button_switch/handle/lumi_switch_b1lacn02_handle.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="50" selection-start-line="19" selection-start-column="50" selection-end-line="19" selection-end-column="50" />
+          <folding>
+            <element signature="e#0#87#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/on_button_switch/handle/lumi_switch_b1nacn02_handle.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="56" column="51" lean-forward="true" selection-start-line="56" selection-start-column="51" selection-end-line="56" selection-end-column="51" />
+          <folding>
+            <element signature="e#0#87#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/json_data/rpc_json_data.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="2" selection-start-column="2" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/on_button_switch/case/lumi_switch_b1lacn02_case.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1479">
+          <caret line="118" selection-start-line="118" selection-end-line="118" />
+          <folding>
+            <element signature="e#1020#1738#0" />
+            <element signature="e#1774#1939#0" />
+            <element signature="e#1975#2358#0" />
+            <element signature="e#4276#4648#0" />
+            <element signature="e#8653#9025#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/json_data/scene_edit_data.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="26" selection-start-line="11" selection-start-column="26" selection-end-line="11" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dos/dos_cmd.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/operation_json/statistics_operation_json.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="85" column="61" selection-start-line="85" selection-start-column="38" selection-end-line="85" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/on_button_switch/case/lumi_switch_b1nacn02_case.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="409">
+          <caret line="40" lean-forward="true" selection-start-line="40" selection-end-line="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/on_button_switch/handle/lumi_ctrl_neutral1_v1_handle.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="3" column="47" selection-start-line="3" selection-start-column="47" selection-end-line="3" selection-end-column="47" />
+          <folding>
+            <element signature="e#0#87#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/on_button_switch/handle/lumi_ctrl_ln1_v1_handle.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1003">
+          <caret line="61" column="54" selection-start-line="61" selection-start-column="54" selection-end-line="61" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/on_button_switch/page/lumi_ctrl_ln1_v1_page.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="25" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/json_data/device_rename.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="1" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/on_button_switch/page/lumi_switch_b1lacn02_page.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="24" column="66" selection-start-line="24" selection-start-column="66" selection-end-line="24" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/on_button_switch/page/lumi_switch_b1nacn02_page.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="66" selection-start-line="19" selection-start-column="66" selection-end-line="19" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/on_button_switch/page/lumi_ctrl_neutral1_v1_page.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="41" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/operation_json/device_rename_json.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/handle/lumi_sensor_ht_v1_handle.py">
+    <entry file="file://$PROJECT_DIR$/data/operation_json/test.json.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="197">
-          <caret line="25" column="25" selection-start-line="25" selection-start-column="25" selection-end-line="25" selection-end-column="25" />
+        <state relative-caret-position="238">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
           <folding>
-            <element signature="e#13#70#0" expanded="true" />
+            <element signature="e#0#83#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/page/lumi_sensor_ht_v1_page.py">
+    <entry file="file://$PROJECT_DIR$/temperature_and_humidity/case/lumi_sensor_ht_v1_case.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/report/HTMLTestRunner.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/report/HTMLReport.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/constant_enum.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="15" column="52" lean-forward="true" selection-start-line="15" selection-start-column="52" selection-end-line="15" selection-end-column="52" />
+        <state relative-caret-position="374">
+          <caret line="22" selection-start-line="22" selection-end-line="22" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/handle/lumi_ctrl_neutral1_v1_handle.py">
+    <entry file="file://$PROJECT_DIR$/util/get_image_rgb.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="18" lean-forward="true" selection-end-line="130" selection-end-column="24" />
+        <state relative-caret-position="221">
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
           <folding>
-            <element signature="e#13#52#0" expanded="true" />
+            <element signature="e#0#9#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/page/lumi_ctrl_neutral1_v1_page.py">
+    <entry file="file://$PROJECT_DIR$/data/json_data/statistics_json_data.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="7" lean-forward="true" selection-end-line="43" />
+        <state relative-caret-position="1479">
+          <caret line="87" column="17" selection-start-line="87" selection-start-column="17" selection-end-line="87" selection-end-column="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cases/lumi_ctrl_neutral1_v1_case.py">
+    <entry file="file://$PROJECT_DIR$/on_button_switch/one_button_wall_switch_page.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="436">
-          <caret line="68" column="35" lean-forward="true" selection-start-line="68" selection-start-column="35" selection-end-line="68" selection-end-column="35" />
+        <state relative-caret-position="1343">
+          <caret line="81" column="52" selection-start-line="81" selection-start-column="34" selection-end-line="81" selection-end-column="52" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cases/lumi_plug_mmeu01_case.py">
+    <entry file="file://$PROJECT_DIR$/on_button_switch/on_button_wall_switch_data.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2669">
-          <caret line="219" lean-forward="true" selection-start-line="219" selection-end-line="219" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cases/lumi_sensor_ht_v1_case.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1176">
-          <caret line="31" column="52" selection-start-line="31" selection-start-column="52" selection-end-line="31" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cases/lumi_switch_b1lacn02_case.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="159" column="26" selection-end-line="168" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/handle/lumi_switch_b1lacn02_handle.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="130" selection-end-column="24" />
+        <state relative-caret-position="2176">
+          <caret line="134" column="49" selection-start-line="134" selection-start-column="49" selection-end-line="134" selection-end-column="49" />
           <folding>
-            <element signature="e#13#52#0" expanded="true" />
+            <element signature="e#0#69#0" expanded="true" />
+            <element signature="e#17943#17949#0" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cases/user_custome_device_case.py">
+    <entry file="file://$PROJECT_DIR$/on_button_switch/on_button_wall_switch_handle.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1343">
+          <caret line="82" selection-start-line="82" selection-end-line="82" />
+          <folding>
+            <element signature="e#14#53#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/on_button_switch/on_button_wall_switch_business.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1870">
-          <caret line="110" column="28" selection-start-line="110" selection-start-column="28" selection-end-line="110" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cases/lumi_switch_b1nacn02_case.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2346">
-          <caret line="138" selection-start-line="138" selection-end-line="138" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/handle/lumi_switch_b1nacn02_handle.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="12" selection-start-column="12" selection-end-column="12" />
+          <caret line="113" column="52" selection-start-line="113" selection-start-column="52" selection-end-line="113" selection-end-column="52" />
           <folding>
-            <element signature="e#13#52#0" expanded="true" />
+            <element signature="e#0#73#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/page/lumi_switch_b1nacn02_page.py">
+    <entry file="file://$PROJECT_DIR$/common/function/device_rename_function.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="6" selection-start-line="20" selection-start-column="6" selection-end-line="20" selection-end-column="6" />
+        <state relative-caret-position="357">
+          <caret line="21" column="80" selection-start-line="21" selection-start-column="80" selection-end-line="21" selection-end-column="80" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/page/lumi_switch_b1lacn02_page.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="731">
-          <caret line="43" selection-end-line="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cases/test_all_case.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="24" column="69" selection-start-line="24" selection-start-column="69" selection-end-line="24" selection-end-column="69" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/page/lumi_ctrl_ln1_v1_page.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="36" selection-start-line="17" selection-start-column="36" selection-end-line="17" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/util/operation_json.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="331">
-          <caret line="20" column="7" selection-start-line="20" selection-start-column="7" selection-end-line="20" selection-end-column="7" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dos/dos_cmd.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="681">
-          <caret line="48" selection-start-line="48" selection-end-line="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/util/server.py">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/base/base_handle.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-388">
-          <caret line="79" column="38" selection-start-line="79" selection-start-column="38" selection-end-line="79" selection-end-column="38" />
+        <state relative-caret-position="2737">
+          <caret line="166" column="8" selection-start-line="166" selection-start-column="8" selection-end-line="166" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/SensorElement.ini">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1207">
+          <caret line="71" selection-start-line="71" selection-end-line="71" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/ControlElement.ini">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="578">
+          <caret line="34" column="53" selection-start-line="34" selection-start-column="53" selection-end-line="34" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/on_button_switch/case/lumi_ctrl_ln1_v1_case.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="29" column="53" selection-start-line="29" selection-start-column="53" selection-end-line="29" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/on_button_switch/case/lumi_ctrl_ln1_aq1_case.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="29" column="57" selection-start-line="29" selection-start-column="57" selection-end-line="29" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/on_button_switch/handle/lumi_ctrl_ln1_aq1_handle.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="27" column="48" selection-start-line="27" selection-start-column="48" selection-end-line="27" selection-end-column="48" />
           <folding>
-            <element signature="e#13#56#0" expanded="true" />
+            <element signature="e#266#353#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/userconfig.yaml">
+    <entry file="file://$PROJECT_DIR$/on_button_switch/page/lumi_ctrl_ln1_aq1_page.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="10" lean-forward="true" selection-start-line="1" selection-start-column="10" selection-end-line="1" selection-end-column="10" />
+        <state relative-caret-position="374">
+          <caret line="22" column="36" selection-start-line="22" selection-start-column="36" selection-end-line="22" selection-end-column="36" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/util/rpc_data.json">
+    <entry file="file://$PROJECT_DIR$/on_button_switch/case/lumi_ctrl_neutral1_v1_case.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5049">
+          <caret line="297" column="16" selection-start-line="297" selection-start-column="16" selection-end-line="297" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/util/freedom_name.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1887">
+          <caret line="111" column="37" selection-start-line="111" selection-start-column="8" selection-end-line="111" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/LocalElement.ini">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="56" selection-start-line="8" selection-start-column="56" selection-end-line="8" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plug/case/lumi_plug_mmeu01_case.py">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/util/write_user_command.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-771">
-          <caret line="17" column="8" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="8" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/base/base_page.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="986">
-          <caret line="58" column="31" lean-forward="true" selection-start-line="58" selection-start-column="31" selection-end-line="58" selection-end-column="31" />
+        <state relative-caret-position="-3129">
+          <caret line="16" column="58" lean-forward="true" selection-start-line="16" selection-start-column="58" selection-end-line="16" selection-end-column="58" />
           <folding>
             <element signature="e#13#68#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/page/lumi_ctrl_ln1_aq1_page.py">
+    <entry file="file://$PROJECT_DIR$/jenkins/test_all_case.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="45" selection-start-line="12" selection-start-column="45" selection-end-line="12" selection-end-column="45" />
+        <state relative-caret-position="476">
+          <caret line="28" column="21" lean-forward="true" selection-start-line="28" selection-start-column="21" selection-end-line="28" selection-end-column="21" />
         </state>
       </provider>
     </entry>
-    <entry file="file:///usr/local/Cellar/python/3.7.4/Frameworks/Python.framework/Versions/3.7/lib/python3.7/configparser.py">
+    <entry file="file://$PROJECT_DIR$/jenkins/user_custome_device_case.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="58">
-          <caret line="763" column="8" selection-start-line="763" selection-start-column="8" selection-end-line="763" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cases/default_device_case.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" selection-start-line="2" selection-end-line="2" selection-end-column="70" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cases/lumi_ctrl_ln1_aq1_case.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cases/lumi_ctrl_ln1_v1_case.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="70" lean-forward="true" selection-start-line="2" selection-start-column="70" selection-end-line="2" selection-end-column="70" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/handle/lumi_ctrl_ln1_aq1_handle.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="30" column="49" selection-start-line="30" selection-start-column="49" selection-end-line="30" selection-end-column="49" />
-          <folding>
-            <element signature="e#13#52#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/util/swip_operation.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/base/base_driver.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="23" column="19" selection-start-line="23" selection-start-column="19" selection-end-line="23" selection-end-column="95" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/util/get_by_local.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="13" column="35" selection-start-line="13" selection-start-column="35" selection-end-line="13" selection-end-column="35" />
-          <folding>
-            <element signature="e#14#48#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/LocalElement.ini">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1428">
-          <caret line="84" column="57" selection-start-line="84" selection-start-column="57" selection-end-line="84" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/util/read_init.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" selection-start-line="15" selection-end-line="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/util/__init__.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/handle/lumi_ctrl_ln1_v1_handle.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2125">
-          <caret line="128" column="23" selection-start-line="128" selection-start-column="23" selection-end-line="128" selection-end-column="23" />
-          <folding>
-            <element signature="e#13#52#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/handle/lumi_plug_mmeu01_handle.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="21" column="22" selection-start-line="21" selection-start-column="22" selection-end-line="21" selection-end-column="22" />
-          <folding>
-            <element signature="e#13#52#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/util/json_data/electricity_statistics_json_data.json.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/util/operation_json/__init__.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/util/json_data/__init__.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/util/freedom_name.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="4" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/util/json_data/electricity_statistics_json_data.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="1" lean-forward="true" selection-start-line="19" selection-start-column="1" selection-end-line="19" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/util/json_data/rpc_json_data.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="19" lean-forward="true" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/util/operation_json/rpc_operation_json.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="104">
-          <caret line="37" column="8" selection-start-line="37" selection-start-column="8" selection-end-line="37" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/util/addons.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="63" column="58" selection-start-line="63" selection-start-column="58" selection-end-line="63" selection-end-column="58" />
-          <folding>
-            <element signature="e#0#25#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/util/operation_json/electricity_statistics_operation_json.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+        <state relative-caret-position="1189">
+          <caret line="81" column="60" selection-start-line="81" selection-start-column="31" selection-end-line="81" selection-end-column="60" />
         </state>
       </provider>
     </entry>

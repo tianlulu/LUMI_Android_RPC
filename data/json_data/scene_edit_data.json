@@ -1,0 +1,38 @@
+{
+    "timer_request_data": {
+        "identify": "lumi_ln_neutral_onOff.timer.name",
+        "name": "S-墙壁开关PA零火单键-定时关",
+        "st_id": 8,
+        "setting": {
+            "enable_push": "1",
+            "enable_timer": "1",
+            "enable_timer_off": "1",
+            "enable_timer_on": "0",
+            "off_method": "toggle_ctrl_neutral",
+            "off_param": [
+                "channel_0",
+                "off"
+            ],
+            "off_time": "17 13 6 * * 0 2019",
+            "on_method": "toggle_ctrl_neutral",
+            "on_param": [
+                "channel_0",
+                "on"
+            ],
+            "on_time": "17 16 16 * * 0 2019",
+            "timer_type": "0",
+            "on_filter": "",
+            "off_filter": ""
+        },
+        "authed": [
+            "lumi.158d0002112ad0"
+        ]
+    },
+    "timer_response_data": {
+        "code": 0,
+        "message": "ok",
+        "result": {
+            "us_id": 2613704273
+        }
+    }
+}

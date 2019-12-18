@@ -9,7 +9,7 @@ class WriteUserCommand:
         加载ymal文件内容
         :return:
         '''
-        with open('../config/userconfig.yaml') as  fr:
+        with open('/Users/lumi/Documents/items/MIOT/Appium_Android_RPC/config/userconfig.yaml') as  fr:
             # 返回的是字典信息 通过默认加载​​器（FullLoader）禁止执行任意函数，该load函数也变得更加安全
             data = yaml.load(fr,Loader=yaml.FullLoader)
             return data
@@ -31,7 +31,7 @@ class WriteUserCommand:
         :param data:
         :return:
         '''
-        with open('../config/userconfig.yaml','a') as fr:
+        with open('/Users/lumi/Documents/items/MIOT/Appium_Android_RPC/config/userconfig.yaml','a') as fr:
             data =self.join_data(i,deviceName,bp,port)
             yaml.dump(data,fr)
 
@@ -56,7 +56,7 @@ class WriteUserCommand:
 
 
     def clear_yaml_data(self):
-        with open('../config/userconfig.yaml', 'w') as fr:
+        with open('/Users/lumi/Documents/items/MIOT/Appium_Android_RPC/config/userconfig.yaml', 'w') as fr:
             fr.truncate()
         fr.close()
 
