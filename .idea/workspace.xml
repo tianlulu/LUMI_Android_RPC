@@ -2,82 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="64bcebdc-fd77-4fa5-ba4e-ddc9fe185121" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/appiumDemo.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/appiumDemo.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/base/base_business.py" beforeDir="false" afterPath="$PROJECT_DIR$/base/base_business.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/base/base_driver.py" beforeDir="false" afterPath="$PROJECT_DIR$/base/base_driver.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/base/base_handle.py" beforeDir="false" afterPath="$PROJECT_DIR$/base/base_handle.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/base/base_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/base/base_page.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/business/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/business/common_business.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/business/one_button_wall_switch_business.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/business/test.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cases/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cases/common_case.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cases/default_device_case.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cases/lumi_ctrl_ln1_aq1_case.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cases/lumi_ctrl_ln1_v1_case.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cases/lumi_ctrl_neutral1_v1_case.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cases/lumi_plug_mmeu01_case.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cases/lumi_sensor_ht_v1_case.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cases/lumi_switch_b1lacn02_case.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cases/lumi_switch_b1nacn02_case.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cases/test_all_case.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cases/test_json_data.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cases/user_custome_device_case.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/constant_enum.py" beforeDir="false" afterPath="$PROJECT_DIR$/common/constant_enum.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/LocalElement.ini" beforeDir="false" afterPath="$PROJECT_DIR$/config/LocalElement.ini" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/SensorElement.ini" beforeDir="false" afterPath="$PROJECT_DIR$/config/SensorElement.ini" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/controlElement.ini.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/userconfig.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/userconfig.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/json_data/scene_edit_data.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/json_data/scene_edit_data.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/operation_json/scene_edit_json.py" beforeDir="false" afterPath="$PROJECT_DIR$/data/operation_json/scene_edit_json.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/operation_json/test.json.py" beforeDir="false" afterPath="$PROJECT_DIR$/data/operation_json/test.json.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/handle/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/handle/lumi_ctrl_ln1_aq1_handle.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/handle/lumi_ctrl_ln1_v1_handle.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/handle/lumi_ctrl_neutral1_v1_handle.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/handle/lumi_plug_mmeu01_handle.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/handle/lumi_sensor_ht_v1_handle.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/handle/lumi_switch_b1lacn02_handle.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/handle/lumi_switch_b1nacn02_handle.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/on_button_switch/case/lumi_ctrl_neutral1_v1_case.py" beforeDir="false" afterPath="$PROJECT_DIR$/on_button_switch/case/lumi_ctrl_neutral1_v1_case.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/on_button_switch/handle/lumi_ctrl_ln1_v1_handle.py" beforeDir="false" afterPath="$PROJECT_DIR$/on_button_switch/handle/lumi_ctrl_ln1_v1_handle.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/on_button_switch/handle/lumi_ctrl_neutral1_v1_handle.py" beforeDir="false" afterPath="$PROJECT_DIR$/on_button_switch/handle/lumi_ctrl_neutral1_v1_handle.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/on_button_switch/handle/lumi_switch_b1lacn02_handle.py" beforeDir="false" afterPath="$PROJECT_DIR$/on_button_switch/handle/lumi_switch_b1lacn02_handle.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/on_button_switch/handle/lumi_switch_b1nacn02_handle.py" beforeDir="false" afterPath="$PROJECT_DIR$/on_button_switch/handle/lumi_switch_b1nacn02_handle.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/on_button_switch/page/lumi_ctrl_neutral1_v1_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/on_button_switch/page/lumi_ctrl_neutral1_v1_page.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/on_button_switch/page/lumi_ln1_aq1_page.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/on_button_switch/page/lumi_switch_b1lacn02_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/on_button_switch/page/lumi_switch_b1lacn02_page.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/on_button_switch/page/lumi_switch_b1nacn02_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/on_button_switch/page/lumi_switch_b1nacn02_page.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/page/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/page/lumi_ctrl_ln1_aq1_page.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/page/lumi_ctrl_ln1_v1_page.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/page/lumi_ctrl_neutral1_v1_page.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/page/lumi_plug_mmeu01_page.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/page/lumi_sensor_ht_v1_page.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/page/lumi_switch_b1lacn02_page.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/page/lumi_switch_b1nacn02_page.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/HTMLReport.html" beforeDir="false" afterPath="$PROJECT_DIR$/report/HTMLReport.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/util/addons.py" beforeDir="false" afterPath="$PROJECT_DIR$/util/addons.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/util/freedom_name.py" beforeDir="false" afterPath="$PROJECT_DIR$/util/freedom_name.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/util/get_by_local.py" beforeDir="false" afterPath="$PROJECT_DIR$/util/get_by_local.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/util/get_image_rgb.py" beforeDir="false" afterPath="$PROJECT_DIR$/util/get_image_rgb.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/util/json_data/__init.__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/util/json_data/device_rename_json.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/util/json_data/electricity_statistics_json_data.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/util/json_data/rpc_json_data.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/util/operation_json.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/util/operation_json/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/util/operation_json/device_rename_json.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/util/operation_json/electricity_statistics_operation_json.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/util/operation_json/rpc_operation_json.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/util/read_init.py" beforeDir="false" afterPath="$PROJECT_DIR$/util/read_init.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/util/rpc_data.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/util/server.py" beforeDir="false" afterPath="$PROJECT_DIR$/util/server.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/util/swip_operation.py" beforeDir="false" afterPath="$PROJECT_DIR$/util/swip_operation.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/util/test.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/util/write_user_command.py" beforeDir="false" afterPath="$PROJECT_DIR$/util/write_user_command.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jenkins/user_custome_device_case.py" beforeDir="false" afterPath="$PROJECT_DIR$/jenkins/user_custome_device_case.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -128,8 +53,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/base/base_page.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-3129">
-              <caret line="16" column="58" lean-forward="true" selection-start-line="16" selection-start-column="58" selection-end-line="16" selection-end-column="58" />
+            <state relative-caret-position="187">
+              <caret line="16" column="58" selection-start-line="16" selection-start-column="58" selection-end-line="16" selection-end-column="58" />
               <folding>
                 <element signature="e#13#68#0" expanded="true" />
               </folding>
@@ -159,7 +84,7 @@
         <entry file="file://$PROJECT_DIR$/jenkins/test_all_case.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="476">
-              <caret line="28" column="21" lean-forward="true" selection-start-line="28" selection-start-column="21" selection-end-line="28" selection-end-column="21" />
+              <caret line="28" column="21" selection-start-line="28" selection-start-column="21" selection-end-line="28" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -167,8 +92,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/jenkins/user_custome_device_case.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1189">
-              <caret line="81" column="60" selection-start-line="81" selection-start-column="31" selection-end-line="81" selection-end-column="60" />
+            <state relative-caret-position="127">
+              <caret line="53" column="45" selection-start-line="53" selection-start-column="45" selection-end-line="53" selection-end-column="45" />
             </state>
           </provider>
         </entry>
@@ -292,7 +217,6 @@
         <option value="$PROJECT_DIR$/on_button_switch/handle/lumi_switch_b1lacn02_handle.py" />
         <option value="$PROJECT_DIR$/on_button_switch/handle/lumi_switch_b1nacn02_handle.py" />
         <option value="$PROJECT_DIR$/jenkins/test_all_case.py" />
-        <option value="$PROJECT_DIR$/jenkins/user_custome_device_case.py" />
         <option value="$PROJECT_DIR$/data/operation_json/rpc_operation_json.py" />
         <option value="$PROJECT_DIR$/config/LocalElement.ini" />
         <option value="$PROJECT_DIR$/config/SensorElement.ini.py" />
@@ -316,12 +240,13 @@
         <option value="$PROJECT_DIR$/on_button_switch/on_button_wall_switch_data.py" />
         <option value="$PROJECT_DIR$/common/function/device_rename_function.py" />
         <option value="$PROJECT_DIR$/on_button_switch/case/lumi_ctrl_neutral1_v1_case.py" />
+        <option value="$PROJECT_DIR$/jenkins/user_custome_device_case.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="102" />
-    <option name="y" value="23" />
+    <option name="x" value="147" />
+    <option name="y" value="53" />
     <option name="width" value="1440" />
     <option name="height" value="797" />
   </component>
@@ -712,6 +637,7 @@
       <workItem from="1576490802273" duration="1157000" />
       <workItem from="1576555573189" duration="3066000" />
       <workItem from="1576585282958" duration="472000" />
+      <workItem from="1576679149501" duration="12000" />
     </task>
     <servers />
   </component>
@@ -748,7 +674,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1277457000" />
+    <option name="totallyTimeSpent" value="1277469000" />
   </component>
   <component name="TodoView" selected-index="1">
     <todo-panel id="selected-file">
@@ -760,12 +686,13 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="102" y="23" width="1440" height="797" extended-state="0" />
+    <frame x="147" y="53" width="1440" height="797" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info anchor="top" id="Terminal" order="0" sideWeight="0.4996192" side_tool="true" weight="0.036144577" />
       <window_info id="Structure" order="0" sideWeight="0.1349353" side_tool="true" weight="0.13662376" />
       <window_info id="Favorites" order="1" sideWeight="0.14548023" side_tool="true" weight="0.23748212" />
-      <window_info active="true" content_ui="combo" id="Project" order="2" sideWeight="0.8545198" visible="true" weight="0.1874106" />
+      <window_info active="true" content_ui="combo" id="Project" order="2" sideWeight="0.8545198" visible="true" weight="0.18955651" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.35431919" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.04658385" />
@@ -1146,6 +1073,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/base/base_page.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="16" column="58" selection-start-line="16" selection-start-column="58" selection-end-line="16" selection-end-column="58" />
+          <folding>
+            <element signature="e#13#68#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/on_button_switch/page/lumi_ctrl_ln1_aq1_page.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
@@ -1157,6 +1094,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="5049">
           <caret line="297" column="16" selection-start-line="297" selection-start-column="16" selection-end-line="297" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jenkins/test_all_case.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="28" column="21" selection-start-line="28" selection-start-column="21" selection-end-line="28" selection-end-column="21" />
         </state>
       </provider>
     </entry>
@@ -1177,27 +1121,10 @@
     <entry file="file://$PROJECT_DIR$/plug/case/lumi_plug_mmeu01_case.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/base/base_page.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3129">
-          <caret line="16" column="58" lean-forward="true" selection-start-line="16" selection-start-column="58" selection-end-line="16" selection-end-column="58" />
-          <folding>
-            <element signature="e#13#68#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jenkins/test_all_case.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="28" column="21" lean-forward="true" selection-start-line="28" selection-start-column="21" selection-end-line="28" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/jenkins/user_custome_device_case.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1189">
-          <caret line="81" column="60" selection-start-line="81" selection-start-column="31" selection-end-line="81" selection-end-column="60" />
+        <state relative-caret-position="127">
+          <caret line="53" column="45" selection-start-line="53" selection-start-column="45" selection-end-line="53" selection-end-column="45" />
         </state>
       </provider>
     </entry>
